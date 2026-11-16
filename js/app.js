@@ -5,9 +5,10 @@ const $app = document.getElementById('app');
 const OPTIONS = [
   { v: 2, t: "Tout à fait d'accord" },
   { v: 1, t: "Plutôt d'accord" },
-  { v: null, t: 'Sans avis' },
+  { v: 0, t: 'Neutre' },
   { v: -1, t: "Plutôt pas d'accord" },
   { v: -2, t: "Pas du tout d'accord" },
+  { v: null, t: 'Sans avis', na: true },
 ];
 const IMPORTANCE = [['faible', 'Faible', 0.5], ['moyenne', 'Moyenne', 1], ['forte', 'Forte', 2]];
 const STANCE = { 2: ['Favorable', 'p2'], 1: ['Plutôt favorable', 'p1'], 0: ['Nuancé', 'p0'], '-1': ['Plutôt opposé', 'm1'], '-2': ['Opposé', 'm2'] };
@@ -15,15 +16,16 @@ const NIVEAU = { programme: 3, candidat: 2, proche: 1 };
 const NIVEAU_LABEL = { programme: 'Programme', candidat: 'Déclaration du candidat', proche: "Déclaration d'un proche" };
 const MIN_COMMON = 6;    // questions comparables minimales pour une proximité non « indicative »
 const MAX_SEL = 3;       // candidats superposés au radar
+const PRESEL = 2;        // présélection : les plus proches sur une base suffisante
 const PER = 8;           // questions par série
 const MIN_RESULTS = 8;   // réponses avec un avis nécessaires pour afficher le graphe
 const GOLD = '#D8B45A';
 
 let D = {};
-let state = { answers: {}, counted: false };
+let state = { answers: {}, counted: false, seed: 0 };
 let mem = null;
 const KEY = 'e2027.v1';
-let resSel = [];
+let resSel = null;
 let showAllAxes = false;
 
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -39,9 +41,13 @@ const ICON = {
 // ---------- stockage local ----------
 function load() {
   try { const r = localStorage.getItem(KEY); if (r) state = { ...state, ...JSON.parse(r) }; } catch { if (mem) state = mem; }
+  if (!state.seed) { state.seed = (Math.random() * 2 ** 31) | 0; save(); }
 }
+// ordre aléatoire (fixe pendant une session) partout où l'ordre pourrait suggérer une préférence
+function rng(seed) { let a = seed >>> 0; return () => { a = (a + 0x6d2b79f5) >>> 0; let t = a; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
+function shuffled(arr, salt = 0) { const r = rng(state.seed + salt), a = [...arr]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch { mem = state; } }
-function reset() { state = { answers: {}, counted: false }; save(); resSel = []; }
+function reset() { state = { answers: {}, counted: false, seed: (Math.random() * 2 ** 31) | 0 }; save(); resSel = null; }
 
 // ---------- calculs ----------
 function posFor(qid, cid) {
@@ -82,7 +88,7 @@ function proximity(cid) {
   }
   return { pct: den ? Math.round((num / den) * 100) : null, n };
 }
-const withData = () => D.candidats.filter((c) => D.positions.some((p) => p.candidat === c.id)).sort(alpha);
+const withData = () => D.candidats.filter((c) => D.positions.some((p) => p.candidat === c.id));
 const candCount = (cid) => new Set(D.positions.filter((p) => p.candidat === cid).map((p) => p.question)).size;
 const byId = (id) => D.candidats.find((c) => c.id === id);
 
@@ -158,7 +164,7 @@ function viewQuiz(n) {
   const ai = D.axes.findIndex((x) => x.id === q.axe), axe = D.axes[ai];
   const serie = Math.ceil(n / PER), endSerie = n % PER === 0 || n === tot;
   const nextHref = n === tot ? '#/resultats' : endSerie ? '#/serie/' + serie : '#/quiz/' + (n + 1);
-  const opts = OPTIONS.map((o) => `<button class="opt" data-v="${o.v}" aria-pressed="${!!a && a.v === o.v}"><span class="dot"></span>${o.t}</button>`).join('');
+  const opts = OPTIONS.map((o) => `<button class="opt${o.na ? ' na' : ''}" data-v="${o.v}" aria-pressed="${!!a && a.v === o.v}"><span class="dot"></span>${o.t}</button>`).join('');
   const imp = a && a.v !== null && a.v !== undefined ? (a.imp === true ? 'forte' : a.imp || 'moyenne') : null;
   return `
   <div class="topbar">
@@ -180,13 +186,13 @@ function viewQuiz(n) {
 
 function saysBlock(q) {
   const has = [], none = [];
-  for (const c of [...D.candidats].sort(alpha)) { const p = posFor(q.id, c.id); (p ? has : none).push([c, p]); }
+  for (const c of shuffled(D.candidats, Number(q.id.slice(1)) * 97)) { const p = posFor(q.id, c.id); (p ? has : none).push([c, p]); }
   const cards = has.map(([c, p]) => {
     const [lab, cls] = STANCE[String(Math.round(p.score))] || STANCE[0];
     const it = p.items[0];
     const media = it.source.media || new URL(it.source.url).hostname.replace(/^www\./, '');
-    return `<details class="pos">
-      <summary><span class="pdot" style="--c:${c.couleur}"></span><span class="who"><b>${esc(c.nom)}</b><span>${esc(c.parti)}</span></span><span class="tag ${cls}">${lab}</span></summary>
+    return `<details class="pos" style="--c:${c.couleur}">
+      <summary><span class="who"><b>${esc(c.nom)}</b><span>${esc(c.parti)}</span></span><span class="tag ${cls}">${lab}</span></summary>
       <div class="body">
         <blockquote>« ${esc(it.citation)} »</blockquote>
         ${it.note ? `<p class="small muted">${esc(it.note)}</p>` : ''}
@@ -195,9 +201,9 @@ function saysBlock(q) {
   }).join('');
   return `<div class="says">
     <h2>Ce qu'en disent les candidats</h2>
-    <p class="sub">Ordre alphabétique. ${has.length} candidat${has.length > 1 ? 's' : ''} avec une position identifiée. « Favorable » ou « opposé » est une lecture de la citation par rapport à l'affirmation : touchez un nom pour lire l'extrait et sa source.</p>
+    <p class="sub">Ordre tiré au sort. ${has.length} candidat${has.length > 1 ? 's' : ''} avec une position identifiée. « Favorable » ou « opposé » est une lecture de la citation par rapport à l'affirmation : touchez un nom pour lire l'extrait et sa source.</p>
     ${cards || '<p class="muted">Aucune position identifiée pour cette question.</p>'}
-    <div class="none-list"><b>Pas de position publique identifiée dans les sources consultées (${none.length}) :</b> ${none.map(([c]) => esc(c.nom)).join(', ')}.</div>
+    <div class="none-list"><b>Pas de position publique identifiée dans les sources consultées (${none.length}) :</b> ${[...none].sort((x, y) => alpha(x[0], y[0])).map(([c]) => esc(c.nom)).join(', ')}.</div>
   </div>`;
 }
 
@@ -225,10 +231,12 @@ function viewResults() {
     return `${head}<p class="eyebrow">Résultat · 8 axes</p><h1>Graphe verrouillé</h1><p class="lead">Il faut au moins ${MIN_RESULTS} réponses avec un avis pour dessiner vos positions. Il vous en manque ${need}.</p><div class="stack"><a class="btn primary block" href="#/quiz/${firstUnanswered()}">${done ? 'Continuer le questionnaire' : 'Commencer'}</a></div>`;
   }
   counterBump();
+  const prox = withData().map((c) => ({ c, ...proximity(c.id) })).filter((x) => x.pct !== null).sort((a, b) => b.pct - a.pct || b.n - a.n);
+  if (!resSel) resSel = prox.filter((x) => x.n >= MIN_COMMON).slice(0, PRESEL).map((x) => x.c.id);
   const series = resSel.map((id) => ({ vals: D.axes.map((a) => candPos(a.id, id)), color: byId(id).couleur }));
   series.push({ vals: D.axes.map((a) => userPos(a.id)), color: GOLD, me: true });
   const legend = `<span>${legendLine(GOLD)}Vous</span>` + resSel.map((id) => `<span>${legendLine(byId(id).couleur, true)}${esc(byId(id).nom)}</span>`).join('');
-  const chips = withData().map((c) => `<button class="chip" data-sel="${c.id}" aria-pressed="${resSel.includes(c.id)}"><span class="pdot" style="--c:${c.couleur}"></span>${esc(c.nom)}</button>`).join('');
+  const chips = shuffled(withData(), 7).map((c) => `<button class="chip" style="--c:${c.couleur}" data-sel="${c.id}" aria-pressed="${resSel.includes(c.id)}"><span class="pdot" style="--c:${c.couleur}"></span>${esc(c.nom)}</button>`).join('');
   const axes = showAllAxes ? D.axes : D.axes.slice(0, 3);
   const rows = axes.map((a) => {
     const u = userPos(a.id), x = (v) => ((v + 1) * 50).toFixed(1);
@@ -243,24 +251,25 @@ function viewResults() {
       <div class="poles"><span>${esc(a.poleA)}</span><span>${esc(a.poleB)}</span></div>
       ${nd.length ? `<p class="small muted" style="margin:-4px 0 8px 106px">Non documenté : ${nd.map(esc).join(', ')}</p>` : ''}`;
   }).join('');
-  const prox = withData().map((c) => ({ c, ...proximity(c.id) })).filter((x) => x.pct !== null);
-  const row = (x) => `<div class="prox-row"><span class="pdot" style="--c:${x.c.couleur}"></span><b>${esc(x.c.nom)}</b><span class="pct">${x.pct} %</span><span class="bar"><i style="width:${x.pct}%"></i></span><span class="n">${esc(x.c.parti)} · ${x.n} question${x.n > 1 ? 's' : ''} comparable${x.n > 1 ? 's' : ''}${x.n < MIN_COMMON ? ' · base trop étroite, indicatif' : ''}</span></div>`;
+  const row = (x) => `<div class="prox-row" style="--c:${x.c.couleur}"><span class="pdot"></span><b>${esc(x.c.nom)}</b><span class="pct">${x.pct} %</span><span class="pbar"><i style="width:${x.pct}%"></i></span><span class="n">${esc(x.c.parti)} · ${x.n} question${x.n > 1 ? 's' : ''} comparable${x.n > 1 ? 's' : ''}</span></div>`;
+  const solid = prox.filter((x) => x.n >= MIN_COMMON), thin = prox.filter((x) => x.n < MIN_COMMON);
   const nodata = D.candidats.length - withData().length;
   return `${head}
   <p class="eyebrow">Résultat · 8 axes · ${countValued()} réponses</p>
   ${radarSVG(series)}
   <div class="legend">${legend}</div>
   ${done < tot ? `<div class="card" style="margin-top:14px"><b>Il reste ${tot - done} question${tot - done > 1 ? 's' : ''}.</b><p class="small muted" style="margin:4px 0 12px">Chaque réponse affine la carte, surtout sur les thèmes où vous avez peu répondu.</p><a class="btn primary block" href="#/quiz/${firstUnanswered()}">Affiner mon graphe</a></div>` : ''}
-  <div class="rowhead"><h2>Comparer avec</h2><span class="small muted">Ordre alphabétique</span></div>
+  <div class="rowhead"><h2>Comparer avec</h2><span class="small muted">Ordre tiré au sort</span></div>
   <div class="chips">${chips}</div>
   <div class="card">
     <p class="eyebrow">Écart par thème</p>
     ${rows}
     <button class="more" data-act="axes">${showAllAxes ? 'Voir moins' : `Voir les ${D.axes.length} axes`} ${ICON.chev}</button>
   </div>
-  <div class="rowhead"><h2>Proximité par candidat</h2><span class="small muted">Ordre alphabétique</span></div>
-  <p class="small muted">Écart moyen entre vos réponses et les positions documentées, pondéré par l'importance indiquée. Ce n'est ni un classement ni une consigne de vote.</p>
-  <div class="prox">${prox.map(row).join('') || '<p class="muted">Aucune question comparable pour l\'instant.</p>'}</div>
+  <div class="rowhead"><h2>Proximité par candidat</h2></div>
+  <p class="small muted">Écart moyen entre vos réponses et les positions documentées, pondéré par l'importance indiquée. Ce n'est pas une consigne de vote : un score élevé sur peu de questions dit peu de chose.</p>
+  <div class="prox">${solid.map(row).join('') || '<p class="muted">Aucun candidat ne compte encore assez de questions comparables.</p>'}</div>
+  ${thin.length ? `<h3 style="margin:18px 0 4px">Base trop étroite pour comparer</h3><p class="small muted">Moins de ${MIN_COMMON} questions comparables : pourcentages fragiles, non classés avec les autres.</p><div class="prox">${thin.sort((a, b) => alpha(a.c, b.c)).map(row).join('')}</div>` : ''}
   <p class="small muted" style="margin-top:12px">${nodata} autres candidats déclarés n'ont pas encore de position sourcée : <a href="#/candidats">voir la liste</a>.</p>
   <div class="duo" style="margin-top:20px"><a class="btn" href="#/methode">Méthodologie</a><button class="btn primary" data-act="share">Partager</button></div>
   <button class="btn quiet block" data-act="reset" style="margin-top:8px">Recommencer</button>`;
@@ -269,14 +278,14 @@ function viewResults() {
 function viewCandidates() {
   const items = [...D.candidats].sort(alpha).map((c) => {
     const k = candCount(c.id);
-    return `<div class="cand"><span class="pdot" style="--c:${c.couleur}"></span><div class="info"><b>${esc(c.nom)}</b><span>${esc(c.parti)}</span>
+    return `<div class="cand" style="--c:${c.couleur}"><div class="info"><b>${esc(c.nom)}</b><span>${esc(c.parti)}</span>
       ${c.declaration ? `<span>${esc(c.declaration)}</span>` : ''}
       ${c.programme ? `<span><a href="${esc(c.programme.url)}" target="_blank" rel="noopener noreferrer">${esc(c.programme.titre)}</a></span>` : ''}</div>
       <span class="badge ${k ? 'on' : ''}">${k ? `${k}/${D.questions.length}` : 'à documenter'}</span></div>`;
   }).join('');
   return `<p class="eyebrow">Ordre alphabétique</p><h1>Candidats déclarés</h1>
   <p class="lead">${D.candidats.length} personnes ayant officiellement et publiquement annoncé leur candidature. La liste officielle sera arrêtée par le Conseil constitutionnel au plus tard le 26 mars 2027, après réception des 500 parrainages.</p>
-  <p class="small muted">Liste établie d'après <a href="https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html" target="_blank" rel="noopener noreferrer">franceinfo</a> et <a href="https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027" target="_blank" rel="noopener noreferrer">Wikipédia</a>. La pastille reprend la couleur usuelle du parti, uniquement pour lire les graphiques ; gris pour les candidats sans étiquette. Le nombre indique les questions où une position est documentée.</p>
+  <p class="small muted">Liste établie d'après <a href="https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html" target="_blank" rel="noopener noreferrer">franceinfo</a> et <a href="https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027" target="_blank" rel="noopener noreferrer">Wikipédia</a>. Le liseré reprend la couleur usuelle du parti ; gris pour les candidats sans étiquette. Le nombre indique les questions où une position est documentée.</p>
   ${items}`;
 }
 
@@ -287,10 +296,10 @@ function viewMethod() {
   return `<div class="prose"><p class="eyebrow">Méthodologie et sources</p><h1>Méthode</h1>
   <div class="banner">${esc(D.version.statut)}. Version ${esc(D.version.version)} du ${frDate(D.version.date)}.</div>
   <h2>Qui figure dans l'outil</h2>
-  <p>Toute personne ayant officiellement et publiquement annoncé sa candidature, sans filtre de notoriété ni de sondage. Les personnes seulement pressenties ne sont pas incluses. Dès publication de la liste du Conseil constitutionnel, l'outil bascule sur cette liste. Les candidats sont toujours présentés par ordre alphabétique.</p>
+  <p>Toute personne ayant officiellement et publiquement annoncé sa candidature, sans filtre de notoriété ni de sondage. Les personnes seulement pressenties ne sont pas incluses. Dès publication de la liste du Conseil constitutionnel, l'outil bascule sur cette liste. Quand l'ordre d'affichage pourrait suggérer une préférence (positions des candidats, choix des candidats à comparer), il est tiré au sort à chaque session ; les listes de référence sont alphabétiques.</p>
   <h2>Comment les questions sont rédigées</h2>
   <ul><li>Une affirmation neutre, formulée dans le même sens pour tous, accompagnée d'un court rappel factuel.</li>
-  <li>Les réponses possibles sont identiques pour toutes les questions ; « sans avis » ne compte pas dans le calcul.</li>
+  <li>Les réponses possibles sont identiques pour toutes les questions : « neutre » compte comme une position médiane, « sans avis » n'est pas pris en compte.</li>
   <li>Les positions des candidats ne sont visibles qu'après votre réponse.</li></ul>
   <h2>Les huit axes</h2>
   <div class="tablewrap"><table><thead><tr><th>Axe</th><th>Centre du radar</th><th>Bord du radar</th></tr></thead><tbody>${axes}</tbody></table></div>
@@ -303,7 +312,7 @@ function viewMethod() {
   <h2>Séries et précision du graphe</h2>
   <p>Les questions sont groupées en séries de ${PER}, chacune comportant une question par thème. Le graphe s'affiche à partir de ${MIN_RESULTS} réponses avec un avis. Un thème où vous n'avez répondu qu'à une question est signalé comme indicatif.</p>
   <h2>Calcul de la proximité</h2>
-  <p>Pour chaque candidat, on compare uniquement les questions où vous avez répondu et où une position est documentée. L'écart moyen est converti en pourcentage ; l'importance indiquée pondère chaque question (faible ×0,5, moyenne ×1, forte ×2). Le nombre de questions comparables est toujours indiqué. En dessous de ${MIN_COMMON}, le résultat est signalé comme indicatif. Les résultats sont présentés par ordre alphabétique, jamais sous forme de classement.</p>
+  <p>Pour chaque candidat, on compare uniquement les questions où vous avez répondu et où une position est documentée. L'écart moyen est converti en pourcentage ; l'importance indiquée pondère chaque question (faible ×0,5, moyenne ×1, forte ×2). Le nombre de questions comparables est toujours indiqué. En dessous de ${MIN_COMMON}, le résultat est signalé comme indicatif. Les candidats sont classés par proximité ; ceux qui ont trop peu de questions comparables sont présentés à part, sans classement. Le radar présélectionne les deux plus proches sur une base suffisante.</p>
   <h2>Limites de cette version</h2>
   <ul><li>Les programmes complets sont rares à ce stade. Les textes utilisés sont ceux publiés par les candidats ou leur parti, complétés par des déclarations rapportées par la presse.</li>
   <li>Le programme du Rassemblement national utilisé est celui des législatives de 2024.</li>
