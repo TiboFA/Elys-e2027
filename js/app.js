@@ -330,7 +330,7 @@ function viewResults() {
   const noProx = withData().filter((c) => !prox.some((x) => x.c.id === c.id)).sort(alpha);
   const chipList = chipSort === 'alpha' ? [...withData()].sort(alpha) : chipSort === 'prox' ? [...solidC, ...thinC, ...noProx] : shuffled(withData(), 7);
   const sortBtn = (k, label) => `<button type="button" class="seg" data-act="chipsort" data-sort="${k}" aria-pressed="${chipSort === k}">${label}</button>`;
-  const chips = chipList.map((c) => `<button class="chip" style="--c:${ds[c.id] ? ds[c.id].color : c.couleur}" data-sel="${c.id}" aria-pressed="${resSel.includes(c.id)}"><span class="pdot" style="--c:${ds[c.id] ? ds[c.id].color : c.couleur}"></span>${esc(c.nom)}</button>`).join('');
+  const chips = chipList.map((c) => `<button class="chip" style="--c:${ds[c.id] ? ds[c.id].color : c.couleur}" data-sel="${c.id}" aria-pressed="${resSel.includes(c.id)}">${ds[c.id] ? `<span class="chip-mark">${legendLine(ds[c.id].color, ds[c.id].dash, ds[c.id].shape)}</span>` : `<span class="pdot" style="--c:${c.couleur}"></span>`}${esc(c.nom)}</button>`).join('');
   const axes = showAllAxes ? D.axes : D.axes.slice(0, 3);
   const rows = axes.map((a) => {
     const u = userPos(a.id), x = (v) => ((v + 1) * 50).toFixed(1);

@@ -144,6 +144,8 @@ main{flex:1;width:100%;max-width:720px;margin:0 auto;padding:12px var(--pad) 32p
 .seg[aria-pressed="true"]{border-color:var(--or);color:var(--or);background:rgba(216,180,90,.12)}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
 .chip{min-height:40px;padding:8px 14px;border-radius:999px;border:1px solid var(--trait);background:transparent;color:var(--muted);font:inherit;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.chip-mark{display:inline-flex;flex:none}
+.chip-mark svg{width:30px;height:10px;display:block}
 .chip[aria-pressed=true]{border-color:var(--c,var(--or));color:var(--txt);border-width:1.5px}
 .gap-row{display:grid;grid-template-columns:96px 1fr;gap:10px;align-items:center;min-height:44px}
 .gap-row .lbl{font-size:15px}
