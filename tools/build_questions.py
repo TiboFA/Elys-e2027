@@ -126,7 +126,9 @@ for i, a, s, e, c in new:
 AXE_V11 = {"q08": "defense", "q23": "defense", "q24": "defense", "q67": "defense"}
 HORS = {"q05": "Énergie", "q63": "Énergie", "q53": "Territoires et pouvoirs", "q54": "Territoires et pouvoirs",
         "q55": "Territoires et pouvoirs", "q56": "Enfance et numérique", "q75": "Enfance et numérique",
-        "q107": "International", "q108": "International", "q114": "Défense nationale"}
+        "q107": "International", "q108": "International", "q114": "Défense nationale",
+        "q14": "Laïcité", "q99": "Laïcité", "q117": "Laïcité", "q98": "Laïcité",
+        "q122": "Laïcité", "q123": "Laïcité", "q124": "Laïcité"}
 for qid, ax in AXE_V11.items():
     Q[qid]["axe"] = ax
 for qid, th in HORS.items():

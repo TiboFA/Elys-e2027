@@ -50,11 +50,12 @@
  },
  {
   "id": "q14",
-  "axe": "societe",
+  "axe": null,
   "sens": 1,
   "enonce": "Le port de signes religieux visibles doit être interdit à l'université.",
   "contexte": "L'interdiction s'applique aujourd'hui à l'école, au collège et au lycée publics, pas à l'université.",
-  "serie": 1
+  "serie": 1,
+  "theme": "Laïcité"
  },
  {
   "id": "q16",
@@ -696,11 +697,12 @@
  },
  {
   "id": "q98",
-  "axe": "societe",
+  "axe": null,
   "sens": -1,
   "enonce": "Le financement public de l'enseignement privé sous contrat doit être réduit.",
   "contexte": "L'État rémunère les enseignants des écoles privées sous contrat, qui scolarisent environ 17 % des élèves.",
-  "serie": 11
+  "serie": 11,
+  "theme": "Laïcité"
  },
  {
   "id": "q100",
@@ -760,11 +762,12 @@
  },
  {
   "id": "q99",
-  "axe": "societe",
+  "axe": null,
   "sens": 1,
   "enonce": "Le port du voile doit être interdit dans tout l'espace public.",
   "contexte": "Le voile est interdit à l'école publique et pour les agents publics, pas dans la rue.",
-  "serie": 12
+  "serie": 12,
+  "theme": "Laïcité"
  },
  {
   "id": "q101",
@@ -939,11 +942,12 @@
  },
  {
   "id": "q117",
-  "axe": "societe",
+  "axe": null,
   "sens": 1,
   "enonce": "Il faut interdire les organisations islamistes comme les Frères musulmans et fermer les mosquées radicales.",
   "contexte": "Une loi de 2021 contre le séparatisme permet déjà de dissoudre des associations et de fermer des lieux de culte.",
-  "serie": 16
+  "serie": 16,
+  "theme": "Laïcité"
  },
  {
   "id": "q118",
@@ -979,26 +983,29 @@
  },
  {
   "id": "q122",
-  "axe": "societe",
+  "axe": null,
   "sens": -1,
   "enonce": "Le Concordat d'Alsace-Moselle, qui finance certains cultes sur fonds publics, doit être abrogé.",
   "contexte": "En Alsace et en Moselle, la loi de 1905 ne s'applique pas : l'État rémunère les ministres de quatre cultes.",
-  "serie": 17
+  "serie": 17,
+  "theme": "Laïcité"
  },
  {
   "id": "q123",
-  "axe": "societe",
+  "axe": null,
   "sens": 1,
   "enonce": "Les parents qui accompagnent les sorties scolaires doivent être soumis à la neutralité religieuse.",
   "contexte": "La loi de 2004 interdit les signes religieux ostensibles aux élèves, pas aux parents accompagnateurs.",
-  "serie": 17
+  "serie": 17,
+  "theme": "Laïcité"
  },
  {
   "id": "q124",
-  "axe": "societe",
+  "axe": null,
   "sens": 1,
   "enonce": "L'ouverture d'un lieu de culte doit être conditionnée à un engagement écrit de respect des principes républicains.",
   "contexte": "La loi de 2021 contre le séparatisme a renforcé le contrôle des associations cultuelles.",
-  "serie": 17
+  "serie": 17,
+  "theme": "Laïcité"
  }
 ]
