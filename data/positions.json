@@ -846,19 +846,6 @@
  },
  {
   "question": "q10",
-  "candidat": "lisnard",
-  "score": 1,
-  "citation": "Supprimer l’Aide Médicale d’État (AME) et la remplacer par une aide d’urgence",
-  "niveau": "programme",
-  "source": {
-   "url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
-   "consulte": "2026-11-16"
-  },
-  "note": "Ne porte que sur l'aide médicale d'État.",
-  "statut": "propose"
- },
- {
-  "question": "q10",
   "candidat": "roussel",
   "score": -2,
   "citation": "un projet de révision constitutionnelle instaurant la “préférence nationale”, imposant au pays un système de ségrégation ethnique",
@@ -868,19 +855,6 @@
    "consulte": "2026-11-16"
   },
   "note": "Le texte décrit ainsi le projet prêté au Rassemblement national.",
-  "statut": "propose"
- },
- {
-  "question": "q10",
-  "candidat": "melenchon",
-  "score": -2,
-  "citation": "Garantir l’accès à l’aide médicale d’État (AME) et assurer un accès effectif au soutien psychosocial pour les demandeurs d’asile",
-  "niveau": "programme",
-  "source": {
-   "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre3",
-   "consulte": "2026-11-16"
-  },
-  "note": "",
   "statut": "propose"
  },
  {
@@ -2142,6 +2116,1392 @@
    "consulte": "2026-11-16"
   },
   "note": "Discours de Bayeux du 17 juin 2026, publié par le parti.",
+  "statut": "propose"
+ },
+ {
+  "question": "q03",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "puis progressivement on arrivera à 42 ans de cotisations et un âge légal de 62 ans",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qu-il-faut-retenir-du-premier-debat-entre-les-candidats-440670",
+   "consulte": "2026-11-16",
+   "media": "LCP, 27 août 2026"
+  },
+  "note": "Débat du Medef, rapporté par LCP.",
+  "statut": "propose"
+ },
+ {
+  "question": "q02",
+  "candidat": "lepen",
+  "score": 1,
+  "citation": "Nous présenterons notre trajectoire de rétablissement des finances publiques avec 125 milliards d'euros d'économies",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qu-il-faut-retenir-du-premier-debat-entre-les-candidats-440670",
+   "consulte": "2026-11-16",
+   "media": "LCP, 27 août 2026"
+  },
+  "note": "Débat du Medef ; pas de mention du nombre d'agents publics.",
+  "statut": "propose"
+ },
+ {
+  "question": "q03",
+  "candidat": "retailleau",
+  "score": -2,
+  "citation": "lier par une équation proportionnelle, l'âge de la retraite et l'espérance de vie",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qu-il-faut-retenir-du-premier-debat-entre-les-candidats-440670",
+   "consulte": "2026-11-16",
+   "media": "LCP, 27 août 2026"
+  },
+  "note": "Débat du Medef : âge de départ indexé sur l'espérance de vie.",
+  "statut": "propose"
+ },
+ {
+  "question": "q20",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "Édouard Philippe veut abaisser la durée d'indemnisation à douze mois maximum pour les moins de 50 ans",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qu-il-faut-retenir-du-premier-debat-entre-les-candidats-440670",
+   "consulte": "2026-11-16",
+   "media": "LCP, 27 août 2026"
+  },
+  "note": "Titre d'un article de LCP lié depuis cette page.",
+  "statut": "propose"
+ },
+ {
+  "question": "q18",
+  "candidat": "glucksmann",
+  "score": -2,
+  "citation": "on baisse la CSG sur les salaires pour les salariés et on trouve l'argent où ? Eh bien chez les grands, les méga-héritiers",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qu-il-faut-retenir-du-premier-debat-entre-les-candidats-440670",
+   "consulte": "2026-11-16",
+   "media": "LCP, 27 août 2026"
+  },
+  "note": "Financement par une hausse des droits de succession, selon LCP.",
+  "statut": "propose"
+ },
+ {
+  "question": "q04",
+  "candidat": "tondelier",
+  "score": 1,
+  "citation": "un Smic à 2.000 euros brut",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qu-il-faut-retenir-du-premier-debat-entre-les-candidats-440670",
+   "consulte": "2026-11-16",
+   "media": "LCP, 27 août 2026"
+  },
+  "note": "Montant exprimé en brut, soit un peu moins de 1 600 euros net.",
+  "statut": "propose"
+ },
+ {
+  "question": "q01",
+  "candidat": "tondelier",
+  "score": 2,
+  "citation": "un ISF climatique",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.lagazettefrance.fr/article/2027-les-ecologistes-veulent-instaurer-la-premiere-republique-ecologique-et-citoyenne",
+   "consulte": "2026-11-16",
+   "media": "AFP, via La Gazette France"
+  },
+  "note": "Projet des Écologistes, cité par l'AFP.",
+  "statut": "propose"
+ },
+ {
+  "question": "q25",
+  "candidat": "tondelier",
+  "score": 2,
+  "citation": "la restauration de la police de proximité ou encore la régularisation des travailleurs sans-papiers",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.lagazettefrance.fr/article/presidentielle-tondelier-propose-un-socle-programmatique-aux-autres-partis-de-gauche",
+   "consulte": "2026-11-16",
+   "media": "AFP, via La Gazette France"
+  },
+  "note": "« Socle » de propositions soumis aux partis de gauche, rapporté par l'AFP.",
+  "statut": "propose"
+ },
+ {
+  "question": "q03",
+  "candidat": "tondelier",
+  "score": 2,
+  "citation": "le retour de l’âge légal de départ à la retraite à 62 ans",
+  "niveau": "programme",
+  "source": {
+   "url": "https://entrevue.fr/elections/presidentielle-2027-marine-tondelier-veut-simposer-comme-la-candidate-de-lecologie-et-du-rassemblement/",
+   "consulte": "2026-11-16",
+   "media": "Entrevue"
+  },
+  "note": "Résumé du programme par le journaliste.",
+  "statut": "propose"
+ },
+ {
+  "question": "q05",
+  "candidat": "tondelier",
+  "score": -2,
+  "citation": "Son programme défend notamment la sortie du nucléaire",
+  "niveau": "programme",
+  "source": {
+   "url": "https://entrevue.fr/elections/presidentielle-2027-marine-tondelier-veut-simposer-comme-la-candidate-de-lecologie-et-du-rassemblement/",
+   "consulte": "2026-11-16",
+   "media": "Entrevue"
+  },
+  "note": "Résumé du programme par le journaliste.",
+  "statut": "propose"
+ },
+ {
+  "question": "q12",
+  "candidat": "tondelier",
+  "score": -1,
+  "citation": "Il y a des personnes qui sont en prison et qui n'ont rien à y faire",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-marine-tondelier-promet-l-ouverture-de-2-000-centres-de-sante-d-ici-2030-en-france_8279639.html",
+   "consulte": "2026-11-16",
+   "media": "franceinfo"
+  },
+  "note": "Veut plafonner le taux d'occupation des prisons à 100 %.",
+  "statut": "propose"
+ },
+ {
+  "question": "q03",
+  "candidat": "bertrand",
+  "score": -2,
+  "citation": "Si on vit plus longtemps, il faut accepter de travailler plus longtemps, de repousser l’âge légal",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.nousfrance.fr/2026/08/presidentielle-2027-xavier-bertrand-un-non-candidat-en-campagne-lopinion/",
+   "consulte": "2026-11-16",
+   "media": "L'Opinion, août 2026"
+  },
+  "note": "Article de L'Opinion repris sur le site de Nous France.",
+  "statut": "propose"
+ },
+ {
+  "question": "q02",
+  "candidat": "bertrand",
+  "score": 2,
+  "citation": "Xavier Bertrand veut réduire de 20 milliards d’euros par an les dépenses publiques pendant cinq ans, et baisser le nombre de fonctionnaires",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.nousfrance.fr/2026/08/presidentielle-2027-xavier-bertrand-un-non-candidat-en-campagne-lopinion/",
+   "consulte": "2026-11-16",
+   "media": "L'Opinion, août 2026"
+  },
+  "note": "Propos rapportés par L'Opinion, repris sur le site de Nous France.",
+  "statut": "propose"
+ },
+ {
+  "question": "q20",
+  "candidat": "bertrand",
+  "score": 1,
+  "citation": "Il convient qu’il faudra faire des économies sur les retraites et l’assurance chômage – mais pas sur la santé",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.nousfrance.fr/2026/08/presidentielle-2027-xavier-bertrand-un-non-candidat-en-campagne-lopinion/",
+   "consulte": "2026-11-16",
+   "media": "L'Opinion, août 2026"
+  },
+  "note": "Propos rapportés par L'Opinion, repris sur le site de Nous France.",
+  "statut": "propose"
+ },
+ {
+  "question": "q19",
+  "candidat": "bertrand",
+  "score": 2,
+  "citation": "La défense de la retraite par capitalisation",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.nousfrance.fr/2026/08/je-nai-pas-le-profil-dune-prise-de-guerre-je-trace-ma-route-le-pari-de-xavier-bertrand-pour-simposer-comme-candidat-de-la-droite-et-du-centre-le-figaro/",
+   "consulte": "2026-11-16",
+   "media": "Le Figaro, août 2026"
+  },
+  "note": "Résumé de ses priorités par Le Figaro, repris sur le site de Nous France.",
+  "statut": "propose"
+ },
+ {
+  "question": "q33",
+  "candidat": "roussel",
+  "score": 2,
+  "citation": "nationaliser les banques et nos industries stratégiques",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q33",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Renationaliser les autoroutes (qui réalisent des bénéfices de l’ordre de 4 milliards d’euros par an)",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/transport-automobilistes/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q33",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Renationaliser les autoroutes en revenant sur les hausses de prix passées, ainsi que les aéroports stratégiques",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q33",
+  "candidat": "ruffin",
+  "score": 1,
+  "citation": "quitte à nationaliser certaines entreprises stratégiques",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/separation-argent-etat/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Nationalisation envisagée en dernier recours.",
+  "statut": "propose"
+ },
+ {
+  "question": "q34",
+  "candidat": "ruffin",
+  "score": 2,
+  "citation": "Sur ces 100 produits, on met le paquet : des barrières douanières, des taxes aux frontières, des quotas d’importation.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/pour-proteger-notre-industrie-relocaliser-100-produits-strategiques/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q34",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Mettre en place des droits de douane élevés sur les importations de véhicules extra-européens",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/transport-automobilistes/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q34",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Refuser le libre-échange, instaurer un protectionnisme écologique et la coopération économique entre les États",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre3",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q34",
+  "candidat": "glucksmann",
+  "score": 1,
+  "citation": "bâtir un protectionnisme ciblé et intelligent",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q34",
+  "candidat": "tondelier",
+  "score": 1,
+  "citation": "Au salon du Made in France, Tondelier défend hausse des salaires et protectionnisme",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.lagazettefrance.fr/article/au-salon-du-made-in-france-tondelier-defend-hausse-des-salaires-et-protectionnisme",
+   "consulte": "2026-11-16",
+   "media": "AFP, via La Gazette France"
+  },
+  "note": "Titre de la dépêche.",
+  "statut": "propose"
+ },
+ {
+  "question": "q34",
+  "candidat": "arthaud",
+  "score": -2,
+  "citation": "Tous les partis politiques prétendent avoir la solution contre le chômage et les fermetures d’entreprises, dont ils rendent responsable la concurrence internationale",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Passage intitulé « Contre le protectionnisme ».",
+  "statut": "propose"
+ },
+ {
+  "question": "q35",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "Privatiser l’audiovisuel public",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q35",
+  "candidat": "zemmour",
+  "score": 2,
+  "citation": "Privatiser l’audiovisuel public : vous n’avez pas à financer la propagande contre vous.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.ericzemmour.fr/ressources/tracts/avenir-est-a-nous.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Tract de campagne d'octobre 2026.",
+  "statut": "propose"
+ },
+ {
+  "question": "q35",
+  "candidat": "nda",
+  "score": 1,
+  "citation": "Les 500 millions supplémentaires proviendront d’une réduction des crédits de l’audiovisuel public",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/culture-patrimoine/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Réduction des crédits, pas privatisation.",
+  "statut": "propose"
+ },
+ {
+  "question": "q35",
+  "candidat": "melenchon",
+  "score": -2,
+  "citation": "Garantir l’indépendance, le pluralisme et le financement de l’audiovisuel public en instaurant une contribution audiovisuelle dédiée, universelle et progressive",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q36",
+  "candidat": "tondelier",
+  "score": 2,
+  "citation": "s'il veut s'installer dans une zone surdotée, alors ce sera conditionné à un départ à la retraite",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-marine-tondelier-promet-l-ouverture-de-2-000-centres-de-sante-d-ici-2030-en-france_8279639.html",
+   "consulte": "2026-11-16",
+   "media": "franceinfo"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q36",
+  "candidat": "lisnard",
+  "score": -1,
+  "citation": "un conventionnement différencié : la Sécurité sociale rembourse mieux les actes dans les zones sous-dotées que dans les zones saturées",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/sante/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Incitation financière plutôt que contrainte.",
+  "statut": "propose"
+ },
+ {
+  "question": "q36",
+  "candidat": "nda",
+  "score": 0,
+  "citation": "Créer une bourse pour les étudiants en médecine, pour mettre fin aux déserts médicaux, en échange de laquelle, ils s’engageront à s’installer dans une zone sous-dotée pendant leurs trois premières années.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/equilibre-territoire-monde-rural/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Engagement contractuel en échange d'une bourse.",
+  "statut": "propose"
+ },
+ {
+  "question": "q37",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Rehausser le seuil de logements sociaux à 30 % dans les villes",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre3",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q37",
+  "candidat": "ruffin",
+  "score": 1,
+  "citation": "il souhaite abroger la loi SRU qui impose aux communes de plus de 3 500 habitants (ou 1 500 habitants en Île-de-France) d’atteindre un taux minimum de 25% de logements sociaux pour favoriser la mixité sociale",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/face-a-la-crise-du-logement-faire-sauter-le-verrou/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Critique d'un projet d'abrogation de la loi SRU.",
+  "statut": "propose"
+ },
+ {
+  "question": "q37",
+  "candidat": "lisnard",
+  "score": -2,
+  "citation": "la loi SRU, idéologique et dirigiste",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q37",
+  "candidat": "retailleau",
+  "score": -2,
+  "citation": "les quotas aveugles de la loi SRU, imposés depuis Paris, laisseront place à des contrats fondés sur les besoins réels des territoires",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/05/LR_Logement.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q37",
+  "candidat": "nda",
+  "score": -1,
+  "citation": "Adapter la loi Solidarité et renouvellement urbain (SRU) en incluant les logements en accession sociale dans le quota des logements sociaux.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/logement/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q38",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "Laisser les entreprises organiser leur temps de travail.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/travail",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q38",
+  "candidat": "retailleau",
+  "score": 1,
+  "citation": "libérer le temps de travail en supprimant toutes les cotisations sociales au-delà de 1 623 heures par an",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Incitation à travailler plus, sans modifier la durée légale.",
+  "statut": "propose"
+ },
+ {
+  "question": "q38",
+  "candidat": "roussel",
+  "score": -2,
+  "citation": "une nouvelle étape de réduction du temps de travail",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q38",
+  "candidat": "arthaud",
+  "score": -2,
+  "citation": "les progrès techniques permettraient de réduire à quelques heures par semaine le temps de travail de chacun",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q39",
+  "candidat": "retailleau",
+  "score": -2,
+  "citation": "Nous autoriserons de nouveau l’usage de certains néonicotinoïdes, dont l’acétamipride",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/03/LR_Agriculture.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q39",
+  "candidat": "melenchon",
+  "score": 1,
+  "citation": "Interdire l’exportation de pesticides interdits en Europe",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre3",
+   "consulte": "2026-11-16"
+  },
+  "note": "Limité aux exportations.",
+  "statut": "propose"
+ },
+ {
+  "question": "q39",
+  "candidat": "glucksmann",
+  "score": 1,
+  "citation": "d’un usage déraisonné des pesticides",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Critique du modèle agricole actuel.",
+  "statut": "propose"
+ },
+ {
+  "question": "q39",
+  "candidat": "ruffin",
+  "score": 1,
+  "citation": "les agriculteurs utilisant des pesticides sont les premiers exposés aux surrisques de cancer",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/travaillisme-ecologique/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Critique des effets sanitaires.",
+  "statut": "propose"
+ },
+ {
+  "question": "q39",
+  "candidat": "tondelier",
+  "score": 1,
+  "citation": "agir contre ce qui nous rend malade: pollutions, pesticides, malbouffe",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.lagazettefrance.fr/article/presidentielle-tondelier-propose-un-socle-programmatique-aux-autres-partis-de-gauche",
+   "consulte": "2026-11-16",
+   "media": "AFP, via La Gazette France"
+  },
+  "note": "Orientation générale, sans mesure précise.",
+  "statut": "propose"
+ },
+ {
+  "question": "q40",
+  "candidat": "lepen",
+  "score": -2,
+  "citation": "Abroger toutes les interdictions et obligations liées aux DPE (travaux, mise en location...)",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q40",
+  "candidat": "lisnard",
+  "score": -2,
+  "citation": "Supprimer l’interdiction de location des passoires thermiques et la remplacer par un bonus-malus incitatif.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/api/media/file/Nouvelle_energie_Livre_noir_pages_20_24_inversees.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q40",
+  "candidat": "nda",
+  "score": -2,
+  "citation": "les ZFE seront supprimées, tout comme le seuil minimal de DPE pour louer un logement",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/economie-travail/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q40",
+  "candidat": "melenchon",
+  "score": 1,
+  "citation": "conditionner toute mise en location en France à l’obtention d’un permis de louer et lancer un grand plan de rénovation des logements",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre3",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q40",
+  "candidat": "glucksmann",
+  "score": 1,
+  "citation": "accélérer la rénovation des passoires thermiques",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Priorité à la rénovation, sans mention de l'interdiction de louer.",
+  "statut": "propose"
+ },
+ {
+  "question": "q40",
+  "candidat": "ruffin",
+  "score": 1,
+  "citation": "rénover un tiers des passoires thermiques (1,3 million de logements)",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/travaillisme-ecologique/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Priorité à la rénovation, sans mention de l'interdiction de louer.",
+  "statut": "propose"
+ },
+ {
+  "question": "q41",
+  "candidat": "glucksmann",
+  "score": 2,
+  "citation": "suppression des exonérations de TVA et de taxe sur le kérosène, étendre l’interdiction des vols intérieurs avec alternative ferroviaire viable",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q41",
+  "candidat": "tondelier",
+  "score": 2,
+  "citation": "en augmentant le prix des billets d'avion et en réduisant le coût du ferroviaire",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.lagazettefrance.fr/article/2027-les-ecologistes-veulent-instaurer-la-premiere-republique-ecologique-et-citoyenne",
+   "consulte": "2026-11-16",
+   "media": "AFP, via La Gazette France"
+  },
+  "note": "Projet des Écologistes, cité par l'AFP.",
+  "statut": "propose"
+ },
+ {
+  "question": "q42",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "Sortir de la CEDH en dernier recours",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q42",
+  "candidat": "nda",
+  "score": 1,
+  "citation": "plusieurs arrêts de la CJUE ou de la CEDH empêchent l’expulsion de délinquants étrangers ou annulent des fichiers de police",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/justice/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Critique des décisions de ces cours.",
+  "statut": "propose"
+ },
+ {
+  "question": "q43",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "La France s’est imprudemment liée au système de Schengen de disparition des frontières nationales",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/immigration-et-assimilation/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q43",
+  "candidat": "lepen",
+  "score": 1,
+  "citation": "réserver la libre-circulation Schengen aux seuls ressortissants européens",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q44",
+  "candidat": "attal",
+  "score": 2,
+  "citation": "son opposition ferme au traité Mercosur",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme/mesures/clauses-miroir-systematiques",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q44",
+  "candidat": "glucksmann",
+  "score": 2,
+  "citation": "s’opposer aux traités comme le Mercosur qui placent nos éleveurs dans une situation injuste et intenable",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q44",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Rompre avec les accords internationaux qui augmentent la déforestation et industrialisent la forêt : Mercosur",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q44",
+  "candidat": "ruffin",
+  "score": 1,
+  "citation": "ils continuent de signer des accords de libre-échange, avec le Mercosur",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/pour-proteger-notre-industrie-relocaliser-100-produits-strategiques/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Critique des accords en cours.",
+  "statut": "propose"
+ },
+ {
+  "question": "q44",
+  "candidat": "nda",
+  "score": 1,
+  "citation": "renégocier tous les accords de libre-échange à l’occasion de la sortie de l’UE",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/economie-travail/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q45",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "Remplacement de l’Aide Médicale d’Etat par une Aide d’Urgence Vitale",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q45",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "Supprimer l’Aide Médicale d’État (AME) et la remplacer par une aide d’urgence",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q45",
+  "candidat": "zemmour",
+  "score": 2,
+  "citation": "Supprimer l’AME qui soigne les clandestins avec votre argent.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.ericzemmour.fr/ressources/tracts/avenir-est-a-nous.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Tract de campagne d'octobre 2026.",
+  "statut": "propose"
+ },
+ {
+  "question": "q45",
+  "candidat": "melenchon",
+  "score": -2,
+  "citation": "Garantir l’accès à l’aide médicale d’État (AME)",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre3",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q46",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "Construire plus de centres de rétention administrative et allonger la durée de la rétention administrative à 24 mois",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q46",
+  "candidat": "philippe",
+  "score": 1,
+  "citation": "L’utilisation de « centres de retour » à l’étranger pour éloigner effectivement ceux qui n’ont rien à faire en France.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/immigration",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q46",
+  "candidat": "melenchon",
+  "score": -2,
+  "citation": "Fermer les centres de rétention administrative (CRA)",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre3",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q46",
+  "candidat": "roussel",
+  "score": -2,
+  "citation": "s’opposent à toutes réglementations visant à expulser et à enfermer des migrants dans des centres de rétention",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Texte du 40e congrès du PCF.",
+  "statut": "propose"
+ },
+ {
+  "question": "q47",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "Instaurer l’obligation de dépôt des demandes d’asile dans les ambassades et consulats",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q47",
+  "candidat": "philippe",
+  "score": 1,
+  "citation": "La suspension des nouvelles demandes d’asile à Mayotte et en Guyane pendant le quinquennat.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/outre-mer",
+   "consulte": "2026-11-16"
+  },
+  "note": "Limité à Mayotte et à la Guyane.",
+  "statut": "propose"
+ },
+ {
+  "question": "q47",
+  "candidat": "lisnard",
+  "score": 1,
+  "citation": "Le droit d’asile doit être réservé aux situations le justifiant.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q47",
+  "candidat": "melenchon",
+  "score": -2,
+  "citation": "Assumer notre devoir d’humanité envers les réfugiés en garantissant sans concession le droit d’asile",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre3",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q47",
+  "candidat": "glucksmann",
+  "score": -1,
+  "citation": "ouvrir le droit au travail, sans autorisation spécifique, dès l’enregistrement de la demande d’asile",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q48",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "La saisie de l’argent des trafiquants et des amendes plus fortes pour les consommateurs",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/securite",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q48",
+  "candidat": "glucksmann",
+  "score": -1,
+  "citation": "une convention citoyenne sur la politique vis-à-vis des drogues, notamment la question de la légalisation du cannabis",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Ouvre le débat sur la légalisation.",
+  "statut": "propose"
+ },
+ {
+  "question": "q48",
+  "candidat": "melenchon",
+  "score": -1,
+  "citation": "C’est une affaire de santé publique ! L’heure est venue de changer de stratégie",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre4",
+   "consulte": "2026-11-16"
+  },
+  "note": "Approche de santé publique plutôt que répressive.",
+  "statut": "propose"
+ },
+ {
+  "question": "q49",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "L’utilisation de la vidéoprotection avec intelligence artificielle pour identifier les casseurs et les criminels.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/securite",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q49",
+  "candidat": "lisnard",
+  "score": 1,
+  "citation": "moderniser les outils (vidéoprotection, radios numériques, IA de prévention",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/securite/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q49",
+  "candidat": "retailleau",
+  "score": 0,
+  "citation": "interdiction de la reconnaissance faciale en temps réel dans l’espace public à des fins de surveillance de masse",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/07/LR_IA.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Garde-fous proposés, sans rejet de principe de ces technologies.",
+  "statut": "propose"
+ },
+ {
+  "question": "q49",
+  "candidat": "melenchon",
+  "score": -2,
+  "citation": "aux expérimentations sécuritaires comme la reconnaissance faciale",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre3",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q50",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "les lanceurs de balles de défense (LBD) pour la police du quotidien ou la gestion des rassemblements, de sorte à favoriser une stratégie de maintien de l’ordre basée sur la désescalade",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2",
+   "consulte": "2026-11-16"
+  },
+  "note": "Interdiction de ces armes pour ces usages.",
+  "statut": "propose"
+ },
+ {
+  "question": "q50",
+  "candidat": "glucksmann",
+  "score": 1,
+  "citation": "Revoir la doctrine française du maintien de l’ordre.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q50",
+  "candidat": "ruffin",
+  "score": 1,
+  "citation": "le Gouvernement répond par des LBD et des grenades lacrymogènes, des nasses et des gardes à vue",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/pour-une-democratie-en-continu-vive-les-etats-generaux/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Critique de l'usage de ces armes.",
+  "statut": "propose"
+ },
+ {
+  "question": "q51",
+  "candidat": "attal",
+  "score": 2,
+  "citation": "Rétablir le redoublement",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q51",
+  "candidat": "retailleau",
+  "score": 2,
+  "citation": "Il sera mis fin au collège unique, devenu au fil des décennies un collège uniforme.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/09/LR_Ecole_vF.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q51",
+  "candidat": "zemmour",
+  "score": 1,
+  "citation": "Rétablir l’exigence, le mérite et la transmission de notre histoire et de notre culture.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.ericzemmour.fr/ressources/tracts/avenir-est-a-nous.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Tract de campagne d'octobre 2026.",
+  "statut": "propose"
+ },
+ {
+  "question": "q52",
+  "candidat": "retailleau",
+  "score": 1,
+  "citation": "le port de l’uniforme encouragé",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/09/LR_Ecole_vF.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q52",
+  "candidat": "philippe",
+  "score": 0,
+  "citation": "Édouard Philippe veut laisser ce choix à chaque établissement.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/ecole",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q52",
+  "candidat": "melenchon",
+  "score": -2,
+  "citation": "Mettre fin à l’expérimentation de l’uniforme",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q53",
+  "candidat": "bertrand",
+  "score": 2,
+  "citation": "Nous la reconstruirons par une République des territoires.",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.nousfrance.fr/2026/03/lettre-aux-maires-de-xavier-bertrand/",
+   "consulte": "2026-11-16",
+   "media": "Nous France, mars 2026"
+  },
+  "note": "Lettre aux maires publiée par Nous France.",
+  "statut": "propose"
+ },
+ {
+  "question": "q53",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "doit être prise au niveau le plus proche de ceux qu’elle concerne et ne doit remonter à l’échelon supérieur que ce que l’échelon inférieur ne peut accomplir seul",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://nouvelle-energie-media-prod.s3.fr-par.scw.cloud/media/legacy/2026/06/Discours-de-David-Lisnard-a-Bayeux-17062026.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Discours de Bayeux du 17 juin 2026, publié par le parti.",
+  "statut": "propose"
+ },
+ {
+  "question": "q53",
+  "candidat": "glucksmann",
+  "score": 2,
+  "citation": "Porter une nouvelle loi de décentralisation",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q53",
+  "candidat": "roussel",
+  "score": -1,
+  "citation": "la République ne peut être morcelée, au nom d’une fausse décentralisation, par un fédéralisme source de concurrences, de fractures et d’inégalités",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q54",
+  "candidat": "attal",
+  "score": 2,
+  "citation": "Supprimer un échelon de collectivité pour lutter contre les doublons administratifs",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q54",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "Départements et régions seront réunis en une cinquantaine de provinces",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://nouvelle-energie-media-prod.s3.fr-par.scw.cloud/media/legacy/2026/06/Discours-de-David-Lisnard-a-Bayeux-17062026.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Discours de Bayeux du 17 juin 2026, publié par le parti.",
+  "statut": "propose"
+ },
+ {
+  "question": "q54",
+  "candidat": "lepen",
+  "score": 1,
+  "citation": "Simplifier drastiquement le millefeuille territorial pour réduire la dépense",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q54",
+  "candidat": "melenchon",
+  "score": 0,
+  "citation": "Affirmer les trois échelons de l’organisation décentralisée de l’État (communes, départements, éco-régions)",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "Réorganisation autour de trois échelons, départements maintenus.",
+  "statut": "propose"
+ },
+ {
+  "question": "q55",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "Le septennat sera rétabli.",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://nouvelle-energie-media-prod.s3.fr-par.scw.cloud/media/legacy/2026/06/Discours-de-David-Lisnard-a-Bayeux-17062026.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Discours de Bayeux du 17 juin 2026, publié par le parti.",
+  "statut": "propose"
+ },
+ {
+  "question": "q55",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Revenir au septennat avec la possibilité d’un référendum révocatoire d’initiative citoyenne à mi-mandat.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/refonder-et-moraliser-notre-democratie/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q55",
+  "candidat": "bertrand",
+  "score": 1,
+  "citation": "Il faut une République des territoires et un mandat unique",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.nousfrance.fr/2026/07/rencontres-economiques-daix-il-faut-une-republique-des-territoires-et-un-mandat-unique-pour-xavier-bertrand-la-provence/",
+   "consulte": "2026-11-16",
+   "media": "La Provence, juillet 2026"
+  },
+  "note": "Mandat unique, durée non précisée dans cet extrait.",
+  "statut": "propose"
+ },
+ {
+  "question": "q56",
+  "candidat": "attal",
+  "score": 2,
+  "citation": "Les réseaux sociaux interdits avant quinze ans",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q56",
+  "candidat": "glucksmann",
+  "score": 2,
+  "citation": "Interdire les réseaux sociaux pour les moins de 15 ans",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
   "statut": "propose"
  }
 ]

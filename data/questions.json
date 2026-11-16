@@ -254,5 +254,197 @@
   "enonce": "Toute révision de la Constitution doit être soumise à référendum.",
   "contexte": "Une révision peut aujourd'hui être adoptée par le Parlement réuni en Congrès, sans référendum.",
   "serie": 4
+ },
+ {
+  "id": "q33",
+  "axe": "eco",
+  "sens": -1,
+  "enonce": "L'État doit nationaliser certaines entreprises stratégiques (banques, énergie, autoroutes…).",
+  "contexte": "L'État est déjà actionnaire de plusieurs grandes entreprises ; les autoroutes sont exploitées par des sociétés privées sous concession.",
+  "serie": 5
+ },
+ {
+  "id": "q36",
+  "axe": "social",
+  "sens": -1,
+  "enonce": "L'installation des médecins doit être régulée là où ils sont déjà nombreux.",
+  "contexte": "Les médecins libéraux choisissent aujourd'hui librement leur lieu d'installation.",
+  "serie": 5
+ },
+ {
+  "id": "q39",
+  "axe": "ecologie",
+  "sens": -1,
+  "enonce": "L'usage des pesticides doit être davantage restreint, même si cela crée des contraintes pour les agriculteurs.",
+  "contexte": "Certaines substances sont interdites en France mais autorisées dans d'autres pays européens.",
+  "serie": 5
+ },
+ {
+  "id": "q44",
+  "axe": "europe",
+  "sens": 1,
+  "enonce": "La France doit s'opposer à l'accord de libre-échange entre l'Union européenne et le Mercosur.",
+  "contexte": "Cet accord concerne l'Argentine, le Brésil, le Paraguay et l'Uruguay.",
+  "serie": 5
+ },
+ {
+  "id": "q45",
+  "axe": "immigration",
+  "sens": 1,
+  "enonce": "L'aide médicale d'État (AME) doit être supprimée ou limitée aux soins urgents.",
+  "contexte": "L'AME prend en charge les soins des étrangers en situation irrégulière, sous conditions de ressources et de résidence.",
+  "serie": 5
+ },
+ {
+  "id": "q48",
+  "axe": "securite",
+  "sens": 1,
+  "enonce": "Les consommateurs de drogue doivent être sanctionnés plus sévèrement.",
+  "contexte": "L'usage de stupéfiants est un délit, souvent sanctionné par une amende forfaitaire.",
+  "serie": 5
+ },
+ {
+  "id": "q51",
+  "axe": "societe",
+  "sens": 1,
+  "enonce": "L'école doit redevenir plus sélective : redoublement, fin du collège unique, exigence renforcée.",
+  "contexte": "Le collège unique accueille tous les élèves dans un même cursus jusqu'à la troisième.",
+  "serie": 5
+ },
+ {
+  "id": "q53",
+  "axe": "institutions",
+  "sens": 1,
+  "enonce": "Il faut transférer davantage de compétences de l'État vers les collectivités locales.",
+  "contexte": "Communes, départements et régions exercent déjà des compétences définies par la loi.",
+  "serie": 5
+ },
+ {
+  "id": "q34",
+  "axe": "eco",
+  "sens": -1,
+  "enonce": "La France et l'Union européenne doivent relever leurs droits de douane pour protéger la production locale.",
+  "contexte": "Les droits de douane sont fixés au niveau européen.",
+  "serie": 6
+ },
+ {
+  "id": "q37",
+  "axe": "social",
+  "sens": -1,
+  "enonce": "Les obligations de logements sociaux imposées aux communes (loi SRU) doivent être maintenues ou renforcées.",
+  "contexte": "La loi SRU impose à certaines communes un taux minimal de logements sociaux, de 20 ou 25 %.",
+  "serie": 6
+ },
+ {
+  "id": "q40",
+  "axe": "ecologie",
+  "sens": -1,
+  "enonce": "L'interdiction progressive de louer les logements les plus énergivores (passoires thermiques) doit être maintenue.",
+  "contexte": "Elle s'appuie sur le diagnostic de performance énergétique (DPE).",
+  "serie": 6
+ },
+ {
+  "id": "q43",
+  "axe": "europe",
+  "sens": 1,
+  "enonce": "La France doit rétablir des contrôles permanents à toutes ses frontières, y compris avec ses voisins européens.",
+  "contexte": "Dans l'espace Schengen, les contrôles aux frontières intérieures ne sont en principe que temporaires.",
+  "serie": 6
+ },
+ {
+  "id": "q46",
+  "axe": "immigration",
+  "sens": 1,
+  "enonce": "Il faut construire plus de centres de rétention et allonger la durée de rétention des étrangers en situation irrégulière.",
+  "contexte": "La rétention permet de garder un étranger le temps d'organiser son éloignement, pour une durée limitée par la loi.",
+  "serie": 6
+ },
+ {
+  "id": "q49",
+  "axe": "securite",
+  "sens": 1,
+  "enonce": "La police doit pouvoir utiliser la vidéoprotection assistée par intelligence artificielle.",
+  "contexte": "Son usage est strictement encadré ; la reconnaissance faciale en temps réel dans l'espace public n'est pas autorisée.",
+  "serie": 6
+ },
+ {
+  "id": "q56",
+  "axe": "societe",
+  "sens": 1,
+  "enonce": "Les réseaux sociaux doivent être interdits aux moins de 15 ans.",
+  "contexte": "Une loi de 2023 a fixé une « majorité numérique » à 15 ans, mais son application reste incomplète.",
+  "serie": 6
+ },
+ {
+  "id": "q54",
+  "axe": "institutions",
+  "sens": 1,
+  "enonce": "Il faut supprimer un échelon de collectivités, par exemple en fusionnant départements et régions.",
+  "contexte": "La France compte des communes, des intercommunalités, des départements et des régions.",
+  "serie": 6
+ },
+ {
+  "id": "q35",
+  "axe": "eco",
+  "sens": 1,
+  "enonce": "L'audiovisuel public doit être privatisé.",
+  "contexte": "Il comprend notamment France Télévisions et Radio France, financés par l'État.",
+  "serie": 7
+ },
+ {
+  "id": "q38",
+  "axe": "social",
+  "sens": 1,
+  "enonce": "La durée légale du travail (35 heures) doit être allongée ou laissée à la négociation dans chaque entreprise.",
+  "contexte": "Les heures au-delà de 35 heures par semaine sont aujourd'hui des heures supplémentaires majorées.",
+  "serie": 7
+ },
+ {
+  "id": "q41",
+  "axe": "ecologie",
+  "sens": -1,
+  "enonce": "Le transport aérien doit être davantage taxé ou limité, par exemple pour les vols intérieurs.",
+  "contexte": "Le kérosène des vols commerciaux n'est pas taxé comme les carburants routiers.",
+  "serie": 7
+ },
+ {
+  "id": "q42",
+  "axe": "europe",
+  "sens": 1,
+  "enonce": "La France doit pouvoir s'affranchir des décisions de la Cour européenne des droits de l'homme, voire quitter cette convention.",
+  "contexte": "La CEDH relève du Conseil de l'Europe, et non de l'Union européenne.",
+  "serie": 7
+ },
+ {
+  "id": "q47",
+  "axe": "immigration",
+  "sens": 1,
+  "enonce": "L'accès à l'asile en France doit être nettement restreint.",
+  "contexte": "L'asile protège les personnes persécutées ; les conditions de dépôt et d'examen des demandes font débat.",
+  "serie": 7
+ },
+ {
+  "id": "q50",
+  "axe": "securite",
+  "sens": -1,
+  "enonce": "L'usage des lanceurs de balles de défense (LBD) et des grenades par la police doit être interdit ou fortement restreint.",
+  "contexte": "Ces armes sont utilisées notamment lors des manifestations.",
+  "serie": 7
+ },
+ {
+  "id": "q52",
+  "axe": "societe",
+  "sens": 1,
+  "enonce": "L'uniforme doit être instauré à l'école.",
+  "contexte": "Il a fait l'objet d'expérimentations dans certains établissements.",
+  "serie": 7
+ },
+ {
+  "id": "q55",
+  "axe": "institutions",
+  "sens": 1,
+  "enonce": "Le président doit être élu pour un mandat unique ou plus long, comme un septennat.",
+  "contexte": "Le président est élu pour cinq ans, renouvelable une fois.",
+  "serie": 7
  }
 ]

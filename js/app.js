@@ -167,7 +167,7 @@ function saysBlock(q) {
       <div class="body">
         <blockquote>« ${esc(it.citation)} »</blockquote>
         ${it.note ? `<p class="small muted">${esc(it.note)}</p>` : ''}
-        <p class="src"><span class="lvl">${NIVEAU_LABEL[it.niveau]}</span><a href="${esc(it.source.url)}" target="_blank" rel="noopener noreferrer">Source</a>, consultée le ${frDate(it.source.consulte)}</p>
+        <p class="src"><span class="lvl">${NIVEAU_LABEL[it.niveau]}</span><a href="${esc(it.source.url)}" target="_blank" rel="noopener noreferrer">${esc(it.source.media || new URL(it.source.url).hostname.replace(/^www\./, ''))}</a>, consultée le ${frDate(it.source.consulte)}</p>
       </div></details>`;
   }).join('');
   const noneNames = none.map(([c]) => esc(c.nom)).join(', ');
@@ -289,9 +289,9 @@ function viewMethod() {
   <h2>Limites de cette version</h2>
   <ul><li>Les programmes complets sont rares à ce stade de la campagne. Les textes utilisés sont ceux publiés sur les sites des candidats ou de leur parti.</li>
   <li>Le programme du Rassemblement national utilisé est celui des législatives de 2024 ; Marine Le Pen n'a pas publié de programme présidentiel à la date de cette version.</li>
-  <li>Le programme des Écologistes n'a pas pu être lu automatiquement (accès refusé par le site) : il reste à intégrer.</li>
+  <li>Le programme des Écologistes n'a pas pu être lu automatiquement (accès refusé par le site) : les positions de Marine Tondelier viennent de la presse, qui cite son programme ou ses déclarations.</li>
   <li>${nd.length} candidats déclarés n'ont pas encore de position sourcée : ${nd.map((c) => esc(c.nom)).join(', ')}.</li>
-  <li>Les positions prises à l'oral (interviews, meetings) ne sont pas encore intégrées.</li></ul>
+  <li>Quand le programme manque ou ne traite pas un sujet, l'outil utilise des déclarations rapportées par la presse (niveau « Déclaration du candidat »). Cette collecte est en cours : elle couvre pour l'instant une partie des candidats.</li></ul>
   <h2>Mises à jour</h2>
   <p>Les questions, la liste des candidats et les positions sont revues régulièrement. Une veille automatisée peut proposer des ajouts, mais rien n'est publié sans validation humaine. Chaque version est datée, car modifier les questions modifie la comparabilité des résultats.</p>
   <ul>${hist}</ul>

@@ -1,8 +1,13 @@
 {
- "version": "0.2",
+ "version": "0.3",
  "date": "2026-11-16",
  "statut": "Proposition en attente de validation",
  "historique": [
+  {
+   "version": "0.3",
+   "date": "2026-11-16",
+   "resume": "56 questions en 7 séries, 268 positions citées. Ajout de déclarations rapportées par la presse quand le programme manque (Tondelier, Bertrand, Le Pen, Retailleau, Philippe, Glucksmann)."
+  },
   {
    "version": "0.2",
    "date": "2026-11-16",

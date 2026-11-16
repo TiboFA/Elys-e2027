@@ -53,7 +53,11 @@
   "parti": "Nous France",
   "couleur": "#4A90D9",
   "declaration": "Candidature confirmée le 27 août 2026",
-  "sourceDeclaration": "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027"
+  "sourceDeclaration": "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027",
+  "programme": {
+   "titre": "Pas de programme publié ; articles de presse repris par Nous France",
+   "url": "https://www.nousfrance.fr/les-actualites/"
+  }
  },
  {
   "id": "billetdoux",
@@ -339,7 +343,7 @@
   "declaration": "Déclarée le 22 octobre 2025",
   "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
   "programme": {
-   "titre": "Programme des Écologistes (lecture automatique refusée par le site, à intégrer)",
+   "titre": "Programme des Écologistes (site inaccessible aux robots) ; positions tirées de la presse",
    "url": "https://lesecologistes.fr/"
   }
  },
