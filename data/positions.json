@@ -4530,5 +4530,75 @@
   },
   "note": "Programme de Solution démocratique.",
   "statut": "propose"
+ },
+ {
+  "question": "q38",
+  "candidat": "platret",
+  "score": 2,
+  "citation": "l’abrogation des 35 heures, le rétablissement des frontières nationales",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.lyoncapitale.fr/?p=521848",
+   "consulte": "2026-11-16",
+   "media": "Lyon Capitale"
+  },
+  "note": "Annonces de son meeting de candidature du 8 octobre 2026.",
+  "statut": "propose"
+ },
+ {
+  "question": "q43",
+  "candidat": "platret",
+  "score": 2,
+  "citation": "l’abrogation des 35 heures, le rétablissement des frontières nationales",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.lyoncapitale.fr/?p=521848",
+   "consulte": "2026-11-16",
+   "media": "Lyon Capitale"
+  },
+  "note": "Annonces de son meeting de candidature du 8 octobre 2026.",
+  "statut": "propose"
+ },
+ {
+  "question": "q14",
+  "candidat": "platret",
+  "score": 2,
+  "citation": "interdire le voile dans l’espace public",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+   "consulte": "2026-11-16",
+   "media": "franceinfo"
+  },
+  "note": "Interdiction dans tout l'espace public, au-delà de l'université.",
+  "statut": "propose"
+ },
+ {
+  "question": "q07",
+  "candidat": "becht",
+  "score": 1,
+  "citation": "Je défends également une nouvelle dynamique européenne, autour d’un noyau dur de six, sept ou peut-être huit États capables de peser",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.sudradio.fr/politique/olivier-becht-je-suis-candidat-a-lelection-presidentielle-et-jirai-jusquau-bout",
+   "consulte": "2026-11-16",
+   "media": "Sud Radio, octobre 2026"
+  },
+  "note": "Intégration renforcée entre quelques États.",
+  "statut": "propose"
+ },
+ {
+  "question": "q53",
+  "candidat": "becht",
+  "score": 1,
+  "citation": "En revanche, la gestion des enseignants doit être organisée au niveau local.",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.sudradio.fr/politique/olivier-becht-je-suis-candidat-a-lelection-presidentielle-et-jirai-jusquau-bout",
+   "consulte": "2026-11-16",
+   "media": "Sud Radio, octobre 2026"
+  },
+  "note": "Décentralisation de la gestion des enseignants, programmes nationaux maintenus.",
+  "statut": "propose"
  }
 ]

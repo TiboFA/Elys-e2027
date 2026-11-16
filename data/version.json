@@ -1,8 +1,13 @@
 {
- "version": "0.5",
+ "version": "0.6",
  "date": "2026-11-16",
  "statut": "Proposition en attente de validation",
  "historique": [
+  {
+   "version": "0.6",
+   "date": "2026-11-16",
+   "resume": "351 positions pour 27 candidats : premières positions de Gilles Platret et Olivier Becht, tirées de la presse."
+  },
   {
    "version": "0.5",
    "date": "2026-11-16",
