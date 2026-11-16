@@ -27,7 +27,7 @@ Règles de pondération des sources : `programme` > `candidat` > `proche`.
 
 1. Une veille (manuelle ou par IA) propose des ajouts : nouvelles déclarations, programmes, candidats.
 2. `tools/crawl.py` télécharge les pages d'un programme dans `corpus/<candidat>/` ; `tools/c.py` recherche des passages ; `tools/gen.py` vérifie chaque citation mot pour mot dans le corpus avant d'écrire `positions.json`.
-3. Un humain relit les propositions et passe leur `statut` de `propose` à `valide`.
+3. Un humain relit les propositions avec `tools/relecture.html`, puis `tools/apply_relecture.py` passe leur `statut` de `propose` à `valide` (voir « Relecture des positions »).
 4. Incrémenter `data/version.json` et ajouter une ligne d'historique : modifier les questions change la comparabilité des résultats.
 
 Le dossier `corpus/` n'est pas versionné.
