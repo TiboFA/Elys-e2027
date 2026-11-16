@@ -1,0 +1,1185 @@
+[
+ {
+  "question": "q01",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Rétablir et renforcer l’impôt de solidarité sur la fortune (ISF) incluant un volet climatique visant à taxer les gros pollueurs",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q01",
+  "candidat": "nda",
+  "score": 1,
+  "citation": "l’impôt sur les très grandes fortunes (que nous rétablirons en en excluant du calcul la résidence principale)",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/sport-associations/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Rétablissement annoncé, résidence principale exclue de l'assiette.",
+  "statut": "propose"
+ },
+ {
+  "question": "q01",
+  "candidat": "lepen",
+  "score": 1,
+  "citation": "Remplacer l’impôt sur la fortune immobilière (IFI) qui entrave la conservation et la transmission des patrimoines et épargne de tout effort contributif les fortunes exclusivement mobilières, par un impôt sur la fortune financière (IFF)",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme du RN pour les législatives de 2024, dernier programme publié par le parti.",
+  "statut": "propose"
+ },
+ {
+  "question": "q01",
+  "candidat": "attal",
+  "score": -2,
+  "citation": "la flat tax et la suppression de l'ISF, qui ont restauré l'attractivité du pays",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme/mesures/loi-de-stabilite-fiscale",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q01",
+  "candidat": "lisnard",
+  "score": -2,
+  "citation": "supprimer l’IFI et le remplacer par une fiscalité foncière assise sur des valeurs vénales actualisées",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/api/media/file/Nouvelle_energie_Livre_noir_pages_20_24_inversees.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q01",
+  "candidat": "philippe",
+  "score": -1,
+  "citation": "Ne créer aucun nouvel impôt pendant cinq ans.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/comptes-publics",
+   "consulte": "2026-11-16"
+  },
+  "note": "Engagement général, sans mention explicite de l'impôt sur la fortune.",
+  "statut": "propose"
+ },
+ {
+  "question": "q02",
+  "candidat": "attal",
+  "score": 2,
+  "citation": "Gabriel Attal demande au pays un effort de 150 milliards d'euros d'économies.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme/mesures/cent-mille-postes-en-moins",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q02",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "Ne pas remplacer 1 fonctionnaire sur 3",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/comptes-publics",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q02",
+  "candidat": "nda",
+  "score": 1,
+  "citation": "Sur les 1 700 milliards d’euros formant la dépense publique, il est possible d’économiser 40 milliards par an au terme de 5 ans",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/economie-travail/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q02",
+  "candidat": "zemmour",
+  "score": 2,
+  "citation": "S’attaquer aux gabegies de l’État qui gaspille votre argent.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.ericzemmour.fr/ressources/tracts/avenir-est-a-nous.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Tract de campagne d'octobre 2026, seul document programmatique publié.",
+  "statut": "propose"
+ },
+ {
+  "question": "q02",
+  "candidat": "retailleau",
+  "score": 1,
+  "citation": "générant environ 13 milliards d’euros d’économies par an",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Chiffre portant sur la seule réforme de l'assurance chômage proposée par LR.",
+  "statut": "propose"
+ },
+ {
+  "question": "q02",
+  "candidat": "arthaud",
+  "score": -2,
+  "citation": "veut tailler à la hache dans tous les budgets utiles à la population et imposer des plans d’austérité drastiques",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q02",
+  "candidat": "melenchon",
+  "score": -2,
+  "citation": "les coupes budgétaires et la marchandisation l’ont méthodiquement sacrifié sur l’autel de l’austérité",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre4",
+   "consulte": "2026-11-16"
+  },
+  "note": "Passage consacré au système de santé.",
+  "statut": "propose"
+ },
+ {
+  "question": "q03",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Abroger la réforme Macron passant l’âge de départ à la retraite à 64 ans, puis abaisser l’âge de départ jusqu’à restaurer le droit à la retraite à 60 ans à taux plein pour 40 annuités de cotisations",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q03",
+  "candidat": "ruffin",
+  "score": 2,
+  "citation": "Des mesures fortes, concrètes, comme le SMIC à 1 600€ ou la retraite à 60 ans, qui revalorisent le travail.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/statut-travailleurs-essentiels/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q03",
+  "candidat": "roussel",
+  "score": 2,
+  "citation": "financer une bonne retraite à 60 ans à taux plein",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q03",
+  "candidat": "nda",
+  "score": 1,
+  "citation": "Nous maintiendrons l’âge minimum de départ à la retraite et la durée de cotisations actuelle (issue de la réforme de 2010).",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/retraites/",
+   "consulte": "2026-11-16"
+  },
+  "note": "La réforme de 2010 a fixé l'âge légal à 62 ans. Page signalée comme en cours d'actualisation pour 2027.",
+  "statut": "propose"
+ },
+ {
+  "question": "q03",
+  "candidat": "glucksmann",
+  "score": 0,
+  "citation": "certains doivent pouvoir partir à la retraite à 60 ans, d’autres devront travailler davantage",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Refuse de raisonner sur le seul âge légal.",
+  "statut": "propose"
+ },
+ {
+  "question": "q03",
+  "candidat": "attal",
+  "score": 0,
+  "citation": "l'âge légal remplacé par la durée de cotisation",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Propose de supprimer la notion d'âge légal.",
+  "statut": "propose"
+ },
+ {
+  "question": "q03",
+  "candidat": "philippe",
+  "score": -2,
+  "citation": "Édouard Philippe propose de porter l’âge de départ à 65 ans en moins de dix ans.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/retraites",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q03",
+  "candidat": "lisnard",
+  "score": -2,
+  "citation": "la norme de l’âge légal de 65 ans est un impératif national urgent pour des raisons d’équilibre financier",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q04",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Augmenter immédiatement le SMIC à 1 700 euros net mensuel et les minima sociaux",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q04",
+  "candidat": "glucksmann",
+  "score": 2,
+  "citation": "Augmenter le SMIC à 1600 euros net dans les deux ans qui suivent notre accession au pouvoir.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q04",
+  "candidat": "ruffin",
+  "score": 2,
+  "citation": "Des mesures fortes, concrètes, comme le SMIC à 1 600€ ou la retraite à 60 ans, qui revalorisent le travail.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/statut-travailleurs-essentiels/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q04",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Augmenter le SMIC à 1600 euros net (98 euros supplémentaires par mois) en compensant cette hausse par une baisse proportionnelle des cotisations salariales pour ne pas pénaliser les entreprises.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/economie-travail/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q04",
+  "candidat": "lepen",
+  "score": 0,
+  "citation": "permettre aux entreprises d’augmenter les salaires de 10 % jusqu’à trois fois le SMIC, en les exonérant de l’augmentation des cotisations patronales pendant trois à cinq ans",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Autre voie : incitation aux hausses de salaires, sans montant de SMIC. Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q04",
+  "candidat": "philippe",
+  "score": 0,
+  "citation": "Pour un salarié au SMIC, le passage à 37h constitue un gain de pouvoir d’achat de plus de 1 000 € par an.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/travail",
+   "consulte": "2026-11-16"
+  },
+  "note": "Autre voie : hausse du temps de travail, sans montant de SMIC.",
+  "statut": "propose"
+ },
+ {
+  "question": "q05",
+  "candidat": "attal",
+  "score": 2,
+  "citation": "Gabriel Attal veut sécuriser le programme de 14 EPR, avec une vraie capacité de construction en série et l'objectif d'atteindre un réacteur construit par an.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme/mesures/plan-messmer-2",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q05",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "Lancer le plan Marie Curie de relance du nucléaire (EPR, SMR, réacteurs à neutrons rapides)",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q05",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "prolongation de la durée de vie des réacteurs jusqu’à 60 ans, construction d’EPR de nouvelle génération, déploiement de mini-réacteurs nucléaires",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/generer-un-renouveau-civique/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q05",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Les programmes de construction des EPR2 et de déploiement des petits réacteurs modulaires français pour remplacer nos centrales en fin de vie seront accélérés.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/economie-travail/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q05",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "Relancer le nucléaire et développer les renouvelables là où elles sont efficaces.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/energie",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q05",
+  "candidat": "retailleau",
+  "score": 2,
+  "citation": "en assurant un pilotage rigoureux de la construction des nouveaux EPR2 dans le respect des délais et des coûts",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/05/LR_Electricite_vFF070626.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q05",
+  "candidat": "ruffin",
+  "score": 1,
+  "citation": "Nous poursuivrons aussi la construction des six réacteurs EPR2",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/travaillisme-ecologique/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Limité aux six réacteurs déjà programmés.",
+  "statut": "propose"
+ },
+ {
+  "question": "q05",
+  "candidat": "roussel",
+  "score": 1,
+  "citation": "une production massive d’électricité grâce à un mix décarboné alliant nucléaire et renouvelables",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Soutien au nucléaire, sans mention explicite de nouveaux réacteurs dans ce passage.",
+  "statut": "propose"
+ },
+ {
+  "question": "q05",
+  "candidat": "melenchon",
+  "score": -2,
+  "citation": "Le nucléaire n’est pas non plus une solution d’avenir.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q06",
+  "candidat": "attal",
+  "score": 2,
+  "citation": "L'hydraulique, le solaire, l'éolien, les gaz renouvelables et la géoénergie doivent accélérer aussi.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme/mesures/plan-messmer-2",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q06",
+  "candidat": "ruffin",
+  "score": 2,
+  "citation": "nous poursuivrons le développement de l’énergie éolienne, car elle produit davantage en hiver, lorsque nous en avons besoin",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/travaillisme-ecologique/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q06",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Organiser le 100 % d’énergies renouvelables",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q06",
+  "candidat": "roussel",
+  "score": 1,
+  "citation": "Une politique démocratique et publique d’implantation des ENR préservera les terres agricoles.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q06",
+  "candidat": "philippe",
+  "score": 1,
+  "citation": "Relancer le nucléaire et développer les renouvelables là où elles sont efficaces.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/energie",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q06",
+  "candidat": "retailleau",
+  "score": -2,
+  "citation": "en stoppant le subventionnement de nouvelles capacités éoliennes et photovoltaïques",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/05/LR_Electricite_vFF070626.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q06",
+  "candidat": "nda",
+  "score": -2,
+  "citation": "Stopper les projets éoliens qui produisent une énergie intermittente pour un coût faramineux",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/equilibre-territoire-monde-rural/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q07",
+  "candidat": "glucksmann",
+  "score": 2,
+  "citation": "passant à la majorité qualifiée au Conseil européen, donnant le pouvoir d’initiative législative au Parlement européen",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q07",
+  "candidat": "attal",
+  "score": 1,
+  "citation": "Renforcer la souveraineté européenne sur les équipements militaires",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Limité au domaine de la défense.",
+  "statut": "propose"
+ },
+ {
+  "question": "q07",
+  "candidat": "philippe",
+  "score": 1,
+  "citation": "Édouard Philippe veut une France capable de se défendre au sein d’une Europe plus forte.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/defense",
+   "consulte": "2026-11-16"
+  },
+  "note": "Formulation générale, sans transfert de compétence précisé.",
+  "statut": "propose"
+ },
+ {
+  "question": "q07",
+  "candidat": "melenchon",
+  "score": -1,
+  "citation": "Cela veut dire aussi la désobéissance aux règles bloquantes, chaque fois que cela sera nécessaire.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q07",
+  "candidat": "roussel",
+  "score": -1,
+  "citation": "La construction capitaliste européenne, telle qu’elle est définie depuis sa création, depuis l’acte unique européen et dans les traités européens, est dans une situation de crise structurelle et d’impasse historique.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q07",
+  "candidat": "lisnard",
+  "score": -2,
+  "citation": "la primauté du droit national en matière migratoire dans la Constitution afin de rendre inapplicables les décisions de la CJUE et de la CEDH contraires à l’intérêt national",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Limité à la matière migratoire.",
+  "statut": "propose"
+ },
+ {
+  "question": "q07",
+  "candidat": "nda",
+  "score": -2,
+  "citation": "En finir avec cette Union Européenne technocratique et autoritaire pour reconstruire avec les États volontaires, une Europe des Nations libres",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/affaires-etrangeres/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q08",
+  "candidat": "glucksmann",
+  "score": 2,
+  "citation": "Augmenter drastiquement l’aide militaire à l’Ukraine qui est notre première ligne de défense",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q08",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "Un soutien plein à l’Ukraine.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/defense",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q08",
+  "candidat": "nda",
+  "score": -2,
+  "citation": "Mettre fin aux aides à l’Ukraine (7 milliards d’euros par an en comptant les aides de la France et la quote-part des aides de l’UE dues par la France).",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/economie-travail/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q09",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "il propose de diviser l’immigration par deux et d’instaurer une politique de quotas, pour que la France choisisse elle-même son immigration",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/outre-mer",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q09",
+  "candidat": "attal",
+  "score": 1,
+  "citation": "L'immigration familiale doit être réduite au profit de l'immigration professionnelle, avec une « préférence travail » inscrite dans la Constitution et des quotas votés tous les deux ans par le Parlement.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme/mesures/durcir-regroupement-familial",
+   "consulte": "2026-11-16"
+  },
+  "note": "Réduction de l'immigration familiale, priorité à l'immigration de travail.",
+  "statut": "propose"
+ },
+ {
+  "question": "q09",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "Restriction du regroupement familial par le durcissement des conditions (emploi stable, ressources précisément définies, etc.)",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q09",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "Pour l’immigration légale des quotas d’immigration doivent désormais être instaurés en fonction des stricts besoins économiques des secteurs « sous tension » limitativement définis",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q09",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Nous proposons, par conséquent, la suppression du droit du sol, la suspension du regroupement familial",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/immigration-et-assimilation/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q09",
+  "candidat": "zemmour",
+  "score": 2,
+  "citation": "Arrêter l’immigration pour que la France retrouve la maîtrise de ses frontières, sa sécurité et sa souveraineté.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.ericzemmour.fr/ressources/tracts/avenir-est-a-nous.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Tract de campagne d'octobre 2026.",
+  "statut": "propose"
+ },
+ {
+  "question": "q09",
+  "candidat": "roussel",
+  "score": -2,
+  "citation": "un accueil digne et sécurisé des personnes migrantes, reposant sur des voies internationales sécurisées",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q09",
+  "candidat": "melenchon",
+  "score": -1,
+  "citation": "Régulariser les travailleurs, étudiants, parents d’enfants scolarisés sans papiers",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre3",
+   "consulte": "2026-11-16"
+  },
+  "note": "Porte sur les régularisations, pas sur le volume d'immigration légale.",
+  "statut": "propose"
+ },
+ {
+  "question": "q09",
+  "candidat": "glucksmann",
+  "score": -1,
+  "citation": "Porter un plan pour accroître le nombre de cotisants avec une meilleure insertion des seniors, l’immigration légale de travail ou la facilitation de la primo-entrée dans le monde du travail.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "L'immigration de travail est citée comme levier de financement des retraites.",
+  "statut": "propose"
+ },
+ {
+  "question": "q10",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "Réserver les allocations familiales aux Français et conditionner à 5 années de travail en France l’accès aux prestations sociales non-contributives comme le RSA",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q10",
+  "candidat": "zemmour",
+  "score": 2,
+  "citation": "Réserver les aides sociales non-contributives, les allocations familiales et le logement social aux Français.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.ericzemmour.fr/ressources/tracts/avenir-est-a-nous.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Tract de campagne d'octobre 2026.",
+  "statut": "propose"
+ },
+ {
+  "question": "q10",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "la fin des aides sociales non contributives aux étrangers",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/immigration-et-assimilation/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q10",
+  "candidat": "lisnard",
+  "score": 1,
+  "citation": "Supprimer l’Aide Médicale d’État (AME) et la remplacer par une aide d’urgence",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Ne porte que sur l'aide médicale d'État.",
+  "statut": "propose"
+ },
+ {
+  "question": "q10",
+  "candidat": "roussel",
+  "score": -2,
+  "citation": "un projet de révision constitutionnelle instaurant la “préférence nationale”, imposant au pays un système de ségrégation ethnique",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Le texte décrit ainsi le projet prêté au Rassemblement national.",
+  "statut": "propose"
+ },
+ {
+  "question": "q10",
+  "candidat": "melenchon",
+  "score": -2,
+  "citation": "Garantir l’accès à l’aide médicale d’État (AME) et assurer un accès effectif au soutien psychosocial pour les demandeurs d’asile",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre3",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q11",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "Mise en place des peines planchers pour les récidivistes, les atteintes aux personnes dépositaires d’une mission de services publics et le trafic de drogue",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q11",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "rétablir les peines planchers pour les récidivistes",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/securite/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q11",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "Le rétablissement des peines planchers.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/justice",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q11",
+  "candidat": "nda",
+  "score": 1,
+  "citation": "Instaurer des peines planchers d’une implacable sévérité pour ceux qui violent les lois de la République et pratiquent des violences psychologiques, comme le mariage forcé ou la polygamie.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/immigration-et-assimilation/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Champ limité à certaines infractions.",
+  "statut": "propose"
+ },
+ {
+  "question": "q12",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "Lancer enfin la construction effective des places de prison dont la France a besoin",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q12",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "par l’augmentation des places de prison et par le recours plus effectif des peines alternatives à la prison",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q12",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "Une loi d’accélération de la construction de prisons.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/justice",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q12",
+  "candidat": "melenchon",
+  "score": -2,
+  "citation": "Sortir de la logique du tout carcéral, respecter la dignité et les droits des personnes privées de liberté",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q12",
+  "candidat": "glucksmann",
+  "score": -1,
+  "citation": "Lutter contre la surpopulation carcérale en adaptant les peines aux profils des détenus, en investissant dans des prisons rénovées et dignes",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q12",
+  "candidat": "roussel",
+  "score": -1,
+  "citation": "construire des alternatives à un système carcéral aujourd’hui marqué par l’inhumanité et l’inefficacité",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q13",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Ajouter dans la Constitution le droit de mourir dans la dignité (y compris avec assistance) et l’accès garanti à des soins palliatifs",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre2",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q14",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "interdiction du voile à l’université",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/securite/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q14",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Interdire tous les signes religieux visibles dans le service public, notamment dans les universités et les hôpitaux, et refuser tout accommodement.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/immigration-et-assimilation/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q14",
+  "candidat": "melenchon",
+  "score": -1,
+  "citation": "nous en tenir aux principes très clairs énoncés par la loi de 1905 de séparation des Églises et de l’État",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "Position de principe, sans mention de l'université.",
+  "statut": "propose"
+ },
+ {
+  "question": "q15",
+  "candidat": "glucksmann",
+  "score": 2,
+  "citation": "Instaurer immédiatement la proportionnelle, de préférence par circonscriptions régionales avec un fléchage départemental des candidats.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q15",
+  "candidat": "roussel",
+  "score": 2,
+  "citation": "L’instauration d’une proportionnelle réelle, assurant à tous les courants une représentation correspondant à leur influence électorale",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q15",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Élire l’Assemblée nationale au scrutin proportionnel",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q16",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "Instaurer dans la Constitution un RIC législatif",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q16",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "Le référendum d’initiative populaire sera vraiment institué et rendu praticable, avec un seuil de signatures atteignable et, au terme du délai, un vote garanti.",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://nouvelle-energie-media-prod.s3.fr-par.scw.cloud/media/legacy/2026/06/Discours-de-David-Lisnard-a-Bayeux-17062026.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Discours de Bayeux du 17 juin 2026, publié par le parti.",
+  "statut": "propose"
+ },
+ {
+  "question": "q16",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Instaurer le référendum d’initiative citoyenne (RIC), par lequel les citoyens qui réunissent suffisamment de signatures peuvent révoquer des élus, proposer ou abroger une loi",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q16",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "en instaurant un référendum d’initiative citoyenne pour la loi et la Constitution",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/refonder-et-moraliser-notre-democratie/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q16",
+  "candidat": "roussel",
+  "score": 1,
+  "citation": "référendum d’initiative citoyenne encadré et droit de pétition effectif",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q16",
+  "candidat": "ruffin",
+  "score": 2,
+  "citation": "Les idées de référendum devront aussi et surtout venir des citoyens, avec le Référendum d’initiative citoyenne (RIC), enfin.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/travaillisme-ecologique/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ }
+]

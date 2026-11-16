@@ -1,0 +1,18 @@
+[
+ {"id":"q01","axe":"eco","sens":-1,"enonce":"Il faut rétablir un impôt sur la fortune ou créer un impôt plancher sur les très hauts patrimoines.","contexte":"L'ISF a été remplacé en 2018 par un impôt limité au patrimoine immobilier (IFI)."},
+ {"id":"q02","axe":"eco","sens":1,"enonce":"Il faut réduire fortement la dépense publique, y compris le nombre d'agents publics.","contexte":"La question porte sur le niveau global de dépense de l'État, des collectivités et de la protection sociale."},
+ {"id":"q03","axe":"social","sens":-1,"enonce":"L'âge légal de départ à la retraite doit être ramené à 62 ans ou moins.","contexte":"La réforme de 2023 prévoit un relèvement progressif de l'âge légal à 64 ans."},
+ {"id":"q04","axe":"social","sens":-1,"enonce":"Le SMIC doit être porté à au moins 1 600 euros net par mois.","contexte":"La question porte sur une hausse décidée par l'État, et non sur les augmentations négociées en entreprise."},
+ {"id":"q05","axe":"ecologie","sens":1,"enonce":"La France doit construire de nouveaux réacteurs nucléaires.","contexte":"Un programme de nouveaux réacteurs EPR2 est engagé ; son ampleur et son principe font débat."},
+ {"id":"q06","axe":"ecologie","sens":-1,"enonce":"Il faut accélérer le développement de l'éolien et du solaire.","contexte":"La question porte sur le rythme d'installation et sur le soutien public à ces filières."},
+ {"id":"q07","axe":"europe","sens":-1,"enonce":"La France doit accepter de nouveaux transferts de compétences vers l'Union européenne.","contexte":"Par exemple en matière de défense, de budget ou de vote à la majorité qualifiée."},
+ {"id":"q08","axe":"europe","sens":-1,"enonce":"La France doit maintenir ou accroître son aide militaire à l'Ukraine.","contexte":"La question porte sur les livraisons d'armes et leur financement."},
+ {"id":"q09","axe":"immigration","sens":1,"enonce":"Il faut réduire fortement l'immigration légale.","contexte":"Immigration de travail, familiale et étudiante ; l'asile relève d'un droit distinct."},
+ {"id":"q10","axe":"immigration","sens":1,"enonce":"Certaines prestations sociales doivent être réservées aux Français.","contexte":"Mesure souvent désignée sous le nom de priorité ou préférence nationale."},
+ {"id":"q11","axe":"securite","sens":1,"enonce":"Il faut rétablir des peines planchers pour les récidivistes.","contexte":"Une peine plancher est une peine minimale que le juge doit en principe prononcer."},
+ {"id":"q12","axe":"securite","sens":1,"enonce":"Il faut construire davantage de places de prison.","contexte":"Le nombre de détenus dépasse la capacité des établissements pénitentiaires."},
+ {"id":"q13","axe":"societe","sens":-1,"enonce":"La loi doit autoriser une aide active à mourir.","contexte":"La question porte sur le suicide assisté et l'euthanasie, au-delà des soins palliatifs."},
+ {"id":"q14","axe":"societe","sens":1,"enonce":"Le port de signes religieux visibles doit être interdit à l'université.","contexte":"L'interdiction s'applique aujourd'hui à l'école, au collège et au lycée publics, pas à l'université."},
+ {"id":"q15","axe":"institutions","sens":1,"enonce":"Les députés doivent être élus à la proportionnelle.","contexte":"Ils sont aujourd'hui élus au scrutin majoritaire à deux tours, par circonscription."},
+ {"id":"q16","axe":"institutions","sens":1,"enonce":"Les citoyens doivent pouvoir déclencher eux-mêmes un référendum (RIC).","contexte":"Le référendum d'initiative citoyenne permettrait à un nombre donné de signataires d'imposer un vote."}
+]
