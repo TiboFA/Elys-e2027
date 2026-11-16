@@ -586,6 +586,11 @@ P=[
 ("q121","branco",1,"Une légalisation de la prostitution adulte, la recréation de maisons closes sur le modèle allemand","programme","Option soumise à une assemblée constituante, parmi d'autres."),
 ("q121","melenchon",-2,"Abolir la prostitution, garantir la dignité de la personne","programme",""),
 ("q121","roussel",-2,"pour l’abolition de la prostitution","programme","Texte du 40e congrès du PCF."),
+("q122","melenchon",2,"Abroger le concordat d’Alsace-Moselle et les divers statuts spécifiques en vigueur dans les Outre-mer","programme",""),
+("q122","roussel",2,"l’extinction progressive du Concordat en Alsace-Moselle pour mettre fin au financement de certains cultes par l’argent public","programme","Texte du 40e congrès du PCF."),
+("q122","branco",0,"Confirmation de la loi sur la laïcité ou établissement d’un régime concordataire.","programme","Choix renvoyé à un référendum d'une assemblée constituante."),
+("q123","retailleau",2,"La neutralité de la loi de 2004 sera étendue aux accompagnateurs des sorties scolaires","programme","Livret École des Républicains."),
+("q124","nda",2,"Conditionner l’ouverture d’une mosquée à la signature du Serment de fidélité à la République Française par l’imam et le président de l’association cultuelle.","programme",""),
 ]
 # Candidats retirés tant que leur candidature n'est pas clairement déclarée (positions conservées ici pour un retour éventuel)
 EXCLUS={'bertrand','lassalle'}

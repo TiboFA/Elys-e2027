@@ -114,6 +114,9 @@ new = [
     ("q119", "societe", 1, "L'école doit transmettre en priorité l'histoire de France et un récit national commun.", "Les programmes d'histoire combinent histoire de France, de l'Europe et du monde."),
     ("q120", "societe", 1, "L'écriture inclusive doit être interdite dans les documents officiels et à l'école.", "Une circulaire de 2021 la proscrit déjà dans l'enseignement, sans valeur législative."),
     ("q121", "societe", -1, "La prostitution doit être légalisée et encadrée.", "Depuis 2016, l'achat d'actes sexuels est sanctionné en France, pas leur vente."),
+    ("q122", "societe", -1, "Le Concordat d'Alsace-Moselle, qui finance certains cultes sur fonds publics, doit être abrogé.", "En Alsace et en Moselle, la loi de 1905 ne s'applique pas : l'État rémunère les ministres de quatre cultes."),
+    ("q123", "societe", 1, "Les parents qui accompagnent les sorties scolaires doivent être soumis à la neutralité religieuse.", "La loi de 2004 interdit les signes religieux ostensibles aux élèves, pas aux parents accompagnateurs."),
+    ("q124", "societe", 1, "L'ouverture d'un lieu de culte doit être conditionnée à un engagement écrit de respect des principes républicains.", "La loi de 2021 contre le séparatisme a renforcé le contrôle des associations cultuelles."),
 ]
 for i, a, s, e, c in new:
     Q.setdefault(i, {"id": i, "axe": a, "sens": s, "enonce": e, "contexte": c})
@@ -148,6 +151,7 @@ waves = [
     ["q104", "q105", "q106", "q107", "q108"],
     ["q109", "q110", "q111", "q112", "q113", "q114"],
     ["q115", "q116", "q117", "q118", "q119", "q120", "q121"],
+    ["q122", "q123", "q124"],
 ]
 out = []
 for k, w in enumerate(waves, 1):

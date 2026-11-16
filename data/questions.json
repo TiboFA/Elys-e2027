@@ -976,5 +976,29 @@
   "enonce": "La prostitution doit être légalisée et encadrée.",
   "contexte": "Depuis 2016, l'achat d'actes sexuels est sanctionné en France, pas leur vente.",
   "serie": 16
+ },
+ {
+  "id": "q122",
+  "axe": "societe",
+  "sens": -1,
+  "enonce": "Le Concordat d'Alsace-Moselle, qui finance certains cultes sur fonds publics, doit être abrogé.",
+  "contexte": "En Alsace et en Moselle, la loi de 1905 ne s'applique pas : l'État rémunère les ministres de quatre cultes.",
+  "serie": 17
+ },
+ {
+  "id": "q123",
+  "axe": "societe",
+  "sens": 1,
+  "enonce": "Les parents qui accompagnent les sorties scolaires doivent être soumis à la neutralité religieuse.",
+  "contexte": "La loi de 2004 interdit les signes religieux ostensibles aux élèves, pas aux parents accompagnateurs.",
+  "serie": 17
+ },
+ {
+  "id": "q124",
+  "axe": "societe",
+  "sens": 1,
+  "enonce": "L'ouverture d'un lieu de culte doit être conditionnée à un engagement écrit de respect des principes républicains.",
+  "contexte": "La loi de 2021 contre le séparatisme a renforcé le contrôle des associations cultuelles.",
+  "serie": 17
  }
 ]

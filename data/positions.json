@@ -7411,5 +7411,70 @@
   },
   "note": "Texte du 40e congrès du PCF.",
   "statut": "propose"
+ },
+ {
+  "question": "q122",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Abroger le concordat d’Alsace-Moselle et les divers statuts spécifiques en vigueur dans les Outre-mer",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q122",
+  "candidat": "roussel",
+  "score": 2,
+  "citation": "l’extinction progressive du Concordat en Alsace-Moselle pour mettre fin au financement de certains cultes par l’argent public",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Texte du 40e congrès du PCF.",
+  "statut": "propose"
+ },
+ {
+  "question": "q122",
+  "candidat": "branco",
+  "score": 0,
+  "citation": "Confirmation de la loi sur la laïcité ou établissement d’un régime concordataire.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "Choix renvoyé à un référendum d'une assemblée constituante.",
+  "statut": "propose"
+ },
+ {
+  "question": "q123",
+  "candidat": "retailleau",
+  "score": 2,
+  "citation": "La neutralité de la loi de 2004 sera étendue aux accompagnateurs des sorties scolaires",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/09/LR_Ecole_vF.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Livret École des Républicains.",
+  "statut": "propose"
+ },
+ {
+  "question": "q124",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Conditionner l’ouverture d’une mosquée à la signature du Serment de fidélité à la République Française par l’imam et le président de l’association cultuelle.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/immigration-et-assimilation/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
  }
 ]
