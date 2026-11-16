@@ -14,8 +14,8 @@ Puis ouvrir http://localhost:8765. Un serveur est nécessaire, car les données 
 
 | Fichier | Contenu |
 |---|---|
-| `axes.json` | 8 axes du radar et leurs deux pôles |
-| `questions.json` | affirmations neutres ; `sens` indique vers quel pôle pousse un accord (+1 : second pôle) |
+| `axes.json` | 9 axes du radar et leurs deux pôles |
+| `questions.json` | affirmations neutres ; `sens` indique vers quel pôle pousse un accord (+1 : second pôle). `axe: null` + `theme` = question hors radar (comptée dans la proximité, sans effet sur le graphe) ; l'ordre de présentation est calculé par l'application |
 | `candidats.json` | candidats clairement déclarés, parti, couleur, date et source de déclaration |
 | `candidats_en_attente.json` | personnes retirées tant que leur candidature n'est pas clairement déclarée (leurs positions restent dans `tools/gen.py`, liste `EXCLUS`) |
 | `positions.json` | une citation sourcée par couple question/candidat, avec note de -2 à +2, niveau de source et statut |

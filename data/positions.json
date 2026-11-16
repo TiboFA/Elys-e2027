@@ -6617,5 +6617,240 @@
   },
   "note": "Discours de Bayeux du 17 juin 2026 : Sénat maintenu et recentré sur l'évaluation.",
   "statut": "propose"
+ },
+ {
+  "question": "q104",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "Loi de massification de nos armées",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q104",
+  "candidat": "glucksmann",
+  "score": 1,
+  "citation": "L’effort de défense ne peut plus être strictement national et la France doit devenir le pilier et le moteur d’une défense européenne",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Effort de défense pensé au niveau européen.",
+  "statut": "propose"
+ },
+ {
+  "question": "q104",
+  "candidat": "nda",
+  "score": 1,
+  "citation": "des dépenses militaires importantes",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/defense/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Pour la défense des outre-mer, dans une logique nationale.",
+  "statut": "propose"
+ },
+ {
+  "question": "q104",
+  "candidat": "melenchon",
+  "score": -2,
+  "citation": "Rejeter le tribut, exigé par les États-Unis, de 5 % du PIB consacré aux dépenses de défense",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre2",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q104",
+  "candidat": "labib",
+  "score": -2,
+  "citation": "c’est un record de dépenses militaires pour préparer des guerres impérialistes",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026",
+   "consulte": "2026-11-16",
+   "media": "NPA-Révolutionnaires, 12 septembre 2026"
+  },
+  "note": "Discours à la fête de l'Humanité, publié par le NPA-Révolutionnaires.",
+  "statut": "propose"
+ },
+ {
+  "question": "q104",
+  "candidat": "kazib",
+  "score": -2,
+  "citation": "Pas un euro pour la guerre",
+  "niveau": "programme",
+  "source": {
+   "url": "https://anasse2027.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Premières mesures de campagne.",
+  "statut": "propose"
+ },
+ {
+  "question": "q105",
+  "candidat": "kazib",
+  "score": 2,
+  "citation": "Retrait des troupes françaises à l’étranger.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://anasse2027.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Premières mesures de campagne.",
+  "statut": "propose"
+ },
+ {
+  "question": "q105",
+  "candidat": "roussel",
+  "score": 2,
+  "citation": "Le PCF défend le retrait des bases militaires",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Texte du 40e congrès du PCF.",
+  "statut": "propose"
+ },
+ {
+  "question": "q105",
+  "candidat": "branco",
+  "score": 1,
+  "citation": "Achèvement du redéploiement de la présence militaire française sur le continent Africain.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "Redéploiement en Afrique plutôt que retrait général.",
+  "statut": "propose"
+ },
+ {
+  "question": "q106",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "les sanctions contre la Russie, qui se sont retournées contre nous",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q106",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "nous réautoriserons les importations de gaz russe parce qu’il est bon marché",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/economie-travail/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q106",
+  "candidat": "glucksmann",
+  "score": -1,
+  "citation": "la guerre hybride que Vladimir Poutine et d’autres dictateurs mènent contre nos démocraties",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Position de fermeté face à la Russie.",
+  "statut": "propose"
+ },
+ {
+  "question": "q106",
+  "candidat": "batho",
+  "score": -1,
+  "citation": "la Russie de Poutine nous livre une guerre de l’ombre",
+  "niveau": "programme",
+  "source": {
+   "url": "https://delphinebatho.fr/priorites/la-securite-climatique-et-la-paix/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Priorités publiées sur le site de campagne.",
+  "statut": "propose"
+ },
+ {
+  "question": "q107",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "La suspension de l’accord d’association UE-Israël",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q107",
+  "candidat": "roussel",
+  "score": 2,
+  "citation": "notamment en mettant un terme aux relations commerciales et à la vente d’armes",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Texte du 40e congrès du PCF, à propos d'Israël.",
+  "statut": "propose"
+ },
+ {
+  "question": "q108",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Instaurer un contrôle parlementaire effectif des exportations d’armes",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre2",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q108",
+  "candidat": "kazib",
+  "score": 2,
+  "citation": "démantèlement de la machine de guerre française, 2ème exportateur d'armes mondial",
+  "niveau": "programme",
+  "source": {
+   "url": "https://anasse2027.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Premières mesures de campagne.",
+  "statut": "propose"
+ },
+ {
+  "question": "q108",
+  "candidat": "roussel",
+  "score": 1,
+  "citation": "notamment en mettant un terme aux relations commerciales et à la vente d’armes",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Texte du 40e congrès du PCF, à propos d'Israël.",
+  "statut": "propose"
  }
 ]

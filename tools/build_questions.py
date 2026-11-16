@@ -96,9 +96,26 @@ new = [
     ("q101", "institutions", 1, "Les citoyens doivent pouvoir révoquer un élu en cours de mandat.", "Un élu ne peut aujourd'hui être démis qu'en cas de condamnation ou de procédure exceptionnelle."),
     ("q102", "institutions", 1, "Le droit de vote doit être abaissé à 16 ans.", "On vote aujourd'hui à partir de 18 ans."),
     ("q103", "institutions", 1, "Le Sénat doit être supprimé ou profondément transformé.", "Le Sénat, élu au suffrage indirect, partage le pouvoir législatif avec l'Assemblée nationale."),
+    ("q104", "defense", -1, "La France doit augmenter fortement ses dépenses militaires.", "Le budget des armées est en hausse ; les alliés de l'OTAN se sont engagés à porter leur effort de défense bien au-delà de 2 % du PIB."),
+    ("q105", "defense", 1, "La France doit retirer ses troupes et ses bases militaires stationnées à l'étranger.", "La France maintient des forces prépositionnées dans plusieurs pays, notamment en Afrique et au Moyen-Orient."),
+    ("q106", "defense", 1, "Les sanctions contre la Russie doivent être levées.", "L'Union européenne applique des sanctions contre la Russie depuis l'invasion de l'Ukraine en 2022."),
+    ("q107", None, 1, "L'Union européenne doit suspendre son accord d'association avec Israël.", "Cet accord encadre les relations commerciales et politiques entre l'UE et Israël depuis 2000."),
+    ("q108", None, 1, "Les exportations d'armes françaises doivent être restreintes et contrôlées par le Parlement.", "La France est l'un des premiers exportateurs d'armes au monde ; les autorisations relèvent aujourd'hui du gouvernement."),
 ]
 for i, a, s, e, c in new:
     Q.setdefault(i, {"id": i, "axe": a, "sens": s, "enonce": e, "contexte": c})
+
+# Version 1.1 : 9 axes. Défense séparée de l'Union européenne ; certaines questions passent hors radar
+# (posées et comptées dans la proximité, mais sans effet sur le graphe).
+AXE_V11 = {"q08": "defense", "q23": "defense", "q24": "defense", "q67": "defense"}
+HORS = {"q05": "Énergie", "q63": "Énergie", "q53": "Territoires et pouvoirs", "q54": "Territoires et pouvoirs",
+        "q55": "Territoires et pouvoirs", "q56": "Enfance et numérique", "q75": "Enfance et numérique",
+        "q107": "International", "q108": "International"}
+for qid, ax in AXE_V11.items():
+    Q[qid]["axe"] = ax
+for qid, th in HORS.items():
+    Q[qid]["axe"] = None
+    Q[qid]["theme"] = th
 
 # Série 1 = une question par thème : le graphe devient lisible dès la fin de la série 1.
 waves = [
@@ -115,6 +132,7 @@ waves = [
     ["q81", "q84", "q87", "q90", "q92", "q95", "q98", "q100"],
     ["q82", "q85", "q88", "q91", "q93", "q96", "q99", "q101"],
     ["q83", "q86", "q89", "q94", "q97", "q102", "q103"],
+    ["q104", "q105", "q106", "q107", "q108"],
 ]
 out = []
 for k, w in enumerate(waves, 1):

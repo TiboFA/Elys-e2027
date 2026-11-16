@@ -17,11 +17,12 @@
  },
  {
   "id": "q05",
-  "axe": "ecologie",
+  "axe": null,
   "sens": 1,
   "enonce": "La France doit construire de nouveaux réacteurs nucléaires.",
   "contexte": "Un programme de nouveaux réacteurs EPR2 est engagé ; son ampleur et son principe font débat.",
-  "serie": 1
+  "serie": 1,
+  "theme": "Énergie"
  },
  {
   "id": "q07",
@@ -89,7 +90,7 @@
  },
  {
   "id": "q08",
-  "axe": "europe",
+  "axe": "defense",
   "sens": -1,
   "enonce": "La France doit maintenir ou accroître son aide militaire à l'Ukraine.",
   "contexte": "La question porte sur les livraisons d'armes et leur financement.",
@@ -153,7 +154,7 @@
  },
  {
   "id": "q23",
-  "axe": "europe",
+  "axe": "defense",
   "sens": 1,
   "enonce": "La France doit sortir du commandement intégré de l'OTAN.",
   "contexte": "La France l'avait quitté en 1966 et y est revenue en 2009.",
@@ -217,7 +218,7 @@
  },
  {
   "id": "q24",
-  "axe": "europe",
+  "axe": "defense",
   "sens": -1,
   "enonce": "La défense de la France doit être davantage organisée avec ses partenaires européens.",
   "contexte": "Par exemple : achats d'armement communs, protection antimissile ou dissuasion nucléaire.",
@@ -313,11 +314,12 @@
  },
  {
   "id": "q53",
-  "axe": "institutions",
+  "axe": null,
   "sens": 1,
   "enonce": "Il faut transférer davantage de compétences de l'État vers les collectivités locales.",
   "contexte": "Communes, départements et régions exercent déjà des compétences définies par la loi.",
-  "serie": 5
+  "serie": 5,
+  "theme": "Territoires et pouvoirs"
  },
  {
   "id": "q34",
@@ -369,19 +371,21 @@
  },
  {
   "id": "q56",
-  "axe": "societe",
+  "axe": null,
   "sens": 1,
   "enonce": "Les réseaux sociaux doivent être interdits aux moins de 15 ans.",
   "contexte": "Une loi de 2023 a fixé une « majorité numérique » à 15 ans, mais son application reste incomplète.",
-  "serie": 6
+  "serie": 6,
+  "theme": "Enfance et numérique"
  },
  {
   "id": "q54",
-  "axe": "institutions",
+  "axe": null,
   "sens": 1,
   "enonce": "Il faut supprimer un échelon de collectivités, par exemple en fusionnant départements et régions.",
   "contexte": "La France compte des communes, des intercommunalités, des départements et des régions.",
-  "serie": 6
+  "serie": 6,
+  "theme": "Territoires et pouvoirs"
  },
  {
   "id": "q35",
@@ -441,11 +445,12 @@
  },
  {
   "id": "q55",
-  "axe": "institutions",
+  "axe": null,
   "sens": 1,
   "enonce": "Le président doit être élu pour un mandat unique ou plus long, comme un septennat.",
   "contexte": "Le président est élu pour cinq ans, renouvelable une fois.",
-  "serie": 7
+  "serie": 7,
+  "theme": "Territoires et pouvoirs"
  },
  {
   "id": "q57",
@@ -465,11 +470,12 @@
  },
  {
   "id": "q63",
-  "axe": "ecologie",
+  "axe": null,
   "sens": 1,
   "enonce": "Il faut prolonger la durée de vie des réacteurs nucléaires existants.",
   "contexte": "Les réacteurs actuels ont été conçus pour environ 40 ans ; leur prolongation est examinée par l'Autorité de sûreté nucléaire.",
-  "serie": 8
+  "serie": 8,
+  "theme": "Énergie"
  },
  {
   "id": "q66",
@@ -497,11 +503,12 @@
  },
  {
   "id": "q75",
-  "axe": "societe",
+  "axe": null,
   "sens": 1,
   "enonce": "Le téléphone portable doit être interdit dans tous les établissements scolaires, jusqu'au lycée.",
   "contexte": "Il est interdit à l'école et au collège depuis 2018 ; la règle varie au lycée.",
-  "serie": 8
+  "serie": 8,
+  "theme": "Enfance et numérique"
  },
  {
   "id": "q78",
@@ -537,7 +544,7 @@
  },
  {
   "id": "q67",
-  "axe": "europe",
+  "axe": "defense",
   "sens": -1,
   "enonce": "La dissuasion nucléaire française doit aussi contribuer à protéger nos partenaires européens.",
   "contexte": "La décision d'emploi de l'arme nucléaire relève du seul président de la République.",
@@ -822,5 +829,47 @@
   "enonce": "Le Sénat doit être supprimé ou profondément transformé.",
   "contexte": "Le Sénat, élu au suffrage indirect, partage le pouvoir législatif avec l'Assemblée nationale.",
   "serie": 13
+ },
+ {
+  "id": "q104",
+  "axe": "defense",
+  "sens": -1,
+  "enonce": "La France doit augmenter fortement ses dépenses militaires.",
+  "contexte": "Le budget des armées est en hausse ; les alliés de l'OTAN se sont engagés à porter leur effort de défense bien au-delà de 2 % du PIB.",
+  "serie": 14
+ },
+ {
+  "id": "q105",
+  "axe": "defense",
+  "sens": 1,
+  "enonce": "La France doit retirer ses troupes et ses bases militaires stationnées à l'étranger.",
+  "contexte": "La France maintient des forces prépositionnées dans plusieurs pays, notamment en Afrique et au Moyen-Orient.",
+  "serie": 14
+ },
+ {
+  "id": "q106",
+  "axe": "defense",
+  "sens": 1,
+  "enonce": "Les sanctions contre la Russie doivent être levées.",
+  "contexte": "L'Union européenne applique des sanctions contre la Russie depuis l'invasion de l'Ukraine en 2022.",
+  "serie": 14
+ },
+ {
+  "id": "q107",
+  "axe": null,
+  "sens": 1,
+  "enonce": "L'Union européenne doit suspendre son accord d'association avec Israël.",
+  "contexte": "Cet accord encadre les relations commerciales et politiques entre l'UE et Israël depuis 2000.",
+  "theme": "International",
+  "serie": 14
+ },
+ {
+  "id": "q108",
+  "axe": null,
+  "sens": 1,
+  "enonce": "Les exportations d'armes françaises doivent être restreintes et contrôlées par le Parlement.",
+  "contexte": "La France est l'un des premiers exportateurs d'armes au monde ; les autorisations relèvent aujourd'hui du gouvernement.",
+  "theme": "International",
+  "serie": 14
  }
 ]

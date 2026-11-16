@@ -17,8 +17,7 @@ const NIVEAU_LABEL = { programme: 'Programme', candidat: 'Déclaration du candid
 const MIN_COMMON = 6;    // questions comparables minimales pour une proximité non « indicative »
 const MAX_SEL = 3;       // candidats superposés au radar
 const PRESEL = 2;        // présélection : les plus proches sur une base suffisante
-const PER = 8;           // questions par série
-const MIN_RESULTS = 8;   // réponses avec un avis nécessaires pour afficher le graphe
+const MIN_RESULTS = 9;   // réponses avec un avis sur les axes du radar nécessaires pour afficher le graphe
 const GOLD = '#D8B45A';
 
 let D = {};
@@ -49,23 +48,28 @@ function shuffled(arr, salt = 0) { const r = rng(state.seed + salt), a = [...arr
 function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch { mem = state; } }
 function reset() { state = { answers: {}, counted: false, seed: (Math.random() * 2 ** 31) | 0 }; save(); resSel = null; D.questions = orderQuestions(D.baseQuestions); }
 
-// Ordre semi-aléatoire, propre à chaque appareil : chaque série de 8 contient une question par thème
-// (ordre des thèmes tiré au sort dans la série), de sorte que les axes restent équilibrés quel que
-// soit le nombre de réponses. Dans chaque thème, les questions les mieux documentées sortent en
-// premier (tirées au sort entre elles), puis les autres.
+// Ordre semi-aléatoire, propre à chaque appareil. Chaque série (« tour ») contient une question par axe
+// du radar, dans un ordre tiré au sort, plus une question hors radar tant qu'il en reste : les axes restent
+// équilibrés quel que soit le nombre de réponses. Dans chaque axe, les questions les mieux documentées
+// sortent en premier (tirées au sort entre elles), puis les autres.
 function orderQuestions(qs) {
   const cover = (id) => new Set(D.positions.filter((p) => p.question === id).map((p) => p.candidat)).size;
+  const pick = (list, salt) => { const l = [...list].sort((x, y) => cover(y.id) - cover(x.id)), h = Math.ceil(l.length / 2); return [...shuffled(l.slice(0, h), salt), ...shuffled(l.slice(h), salt + 50)]; };
   const byAxe = {};
-  D.axes.forEach((a, ai) => {
-    const list = qs.filter((q) => q.axe === a.id).sort((x, y) => cover(y.id) - cover(x.id));
-    const half = Math.ceil(list.length / 2);
-    byAxe[a.id] = [...shuffled(list.slice(0, half), 101 + ai), ...shuffled(list.slice(half), 211 + ai)];
-  });
-  const rounds = Math.max(...Object.values(byAxe).map((l) => l.length));
-  const out = [];
-  for (let r = 0; r < rounds; r++) out.push(...shuffled(D.axes.map((a) => a.id), 1009 + r).map((id) => byAxe[id][r]).filter(Boolean));
+  D.axes.forEach((a, ai) => { byAxe[a.id] = pick(qs.filter((q) => q.axe === a.id), 101 + ai); });
+  const hors = pick(qs.filter((q) => !q.axe), 777);
+  const rounds = Math.max(...Object.values(byAxe).map((l) => l.length), hors.length);
+  const out = [], series = [];
+  for (let r = 0; r < rounds; r++) {
+    const round = shuffled([...D.axes.map((a) => byAxe[a.id][r]), hors[r]].filter(Boolean), 1009 + r);
+    if (!round.length) continue;
+    series.push([out.length + 1, out.length + round.length]);
+    out.push(...round);
+  }
+  D.series = series;
   return out;
 }
+const seriesOf = (n) => D.series.findIndex(([a, b]) => n >= a && n <= b) + 1;
 
 // ---------- calculs ----------
 function posFor(qid, cid) {
@@ -79,9 +83,10 @@ const answered = (qid) => state.answers[qid] && 'v' in state.answers[qid];
 const valued = (qid) => answered(qid) && state.answers[qid].v !== null && state.answers[qid].v !== undefined;
 const countAnswered = () => D.questions.filter((q) => answered(q.id)).length;
 const countValued = () => D.questions.filter((q) => valued(q.id)).length;
-const nbSeries = () => Math.ceil(D.questions.length / PER);
+const countRadar = () => D.questions.filter((q) => q.axe && valued(q.id)).length;
+const nbSeries = () => D.series.length;
 const firstUnanswered = () => { const i = D.questions.findIndex((q) => !answered(q.id)); return i < 0 ? D.questions.length : i + 1; };
-const unlocked = () => countValued() >= MIN_RESULTS;
+const unlocked = () => countRadar() >= MIN_RESULTS;
 function weight(a) {
   if (a.imp === true) return 2;                    // ancien format (case à cocher)
   const f = IMPORTANCE.find((x) => x[0] === a.imp); return f ? f[2] : 1;
@@ -148,8 +153,8 @@ function miniRadar(idx) {
   const pt = (i, k) => [c + Math.cos(-Math.PI / 2 + (i * 2 * Math.PI) / n) * r * k, c + Math.sin(-Math.PI / 2 + (i * 2 * Math.PI) / n) * r * k];
   const ring = D.axes.map((_, i) => pt(i, 1).map((v) => v.toFixed(1)).join(',')).join(' ');
   const spokes = D.axes.map((_, i) => { const [x, y] = pt(i, 1); return `<line x1="${c}" y1="${c}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="${i === idx ? GOLD : '#26344F'}" stroke-width="${i === idx ? 2 : 1}"/>`; }).join('');
-  const [hx, hy] = pt(idx, 1);
-  return `<svg viewBox="0 0 40 40" aria-hidden="true"><polygon points="${ring}" fill="none" stroke="#26344F"/>${spokes}<circle cx="${hx.toFixed(1)}" cy="${hy.toFixed(1)}" r="3" fill="${GOLD}"/></svg>`;
+  const [hx, hy] = pt(Math.max(idx, 0), 1);
+  return `<svg viewBox="0 0 40 40" aria-hidden="true"><polygon points="${ring}" fill="none" stroke="#26344F"/>${spokes}${idx >= 0 ? `<circle cx="${hx.toFixed(1)}" cy="${hy.toFixed(1)}" r="3" fill="${GOLD}"/>` : `<circle cx="20" cy="20" r="4" fill="none" stroke="${GOLD}" stroke-width="1.5"/>`}</svg>`;
 }
 // Couleurs du graphe : la couleur du parti est conservée tant qu'elle se distingue nettement
 // de l'or (« vous ») et des autres candidats affichés ; sinon une couleur de remplacement est prise.
@@ -182,20 +187,20 @@ const legendLine = (color, dash, shape) => `<svg viewBox="0 0 30 10" aria-hidden
 // ---------- vues ----------
 function viewHome() {
   const tot = D.questions.length, done = countAnswered(), nxt = firstUnanswered();
-  const hero = radarSVG([{ vals: [0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0], color: GOLD, me: true }], { labels: false, cls: 'hero', aria: 'Illustration : un radar à huit axes' });
+  const hero = radarSVG([{ vals: D.axes.map((_, i) => [0.55, 0.1, 0.35][i % 3]), color: GOLD, me: true }], { labels: false, cls: 'hero', aria: `Illustration : un radar à ${D.axes.length} axes` });
   let cta = `<a class="btn primary block" href="#/quiz/1">Commencer</a>`;
   if (done > 0 && done < tot) cta = `<a class="btn primary block" href="#/quiz/${nxt}">Reprendre · question ${nxt} sur ${tot}</a>${unlocked() ? '<a class="btn block" href="#/resultats">Voir mon graphe</a>' : ''}<button class="btn quiet block" data-act="reset">Recommencer</button>`;
   if (done === tot) cta = `<a class="btn primary block" href="#/resultats">Voir mon résultat</a><button class="btn quiet block" data-act="reset">Recommencer</button>`;
   return `${hero}
   <p class="eyebrow">Présidentielle 2027</p>
   <h1>Situez-vous face aux candidats déclarés</h1>
-  <p class="lead">Réagissez à des affirmations sur 8 thèmes, puis comparez vos positions aux programmes publiés, axe par axe.</p>
+  <p class="lead">Réagissez à des affirmations sur ${D.axes.length} thèmes, puis comparez vos positions aux programmes publiés, axe par axe.</p>
   <div class="stats">
-    <div><b>8</b><span>thèmes</span></div>
+    <div><b>${D.axes.length}</b><span>thèmes</span></div>
     <div><b>${tot}</b><span>affirmations</span></div>
     <div><b>~${Math.max(5, Math.round(tot * 0.2))}</b><span>minutes</span></div>
   </div>
-  <p class="small muted">Votre graphe s'affiche dès ${MIN_RESULTS} réponses. Chaque série de ${PER} questions l'affine ; vous pouvez vous arrêter et reprendre plus tard.</p>
+  <p class="small muted">Votre graphe s'affiche dès ${MIN_RESULTS} réponses. Chaque série d'une dizaine de questions l'affine ; vous pouvez vous arrêter et reprendre plus tard.</p>
   <div class="stack">${cta}</div>
   <a class="link-under" href="#/methode">Méthodologie et sources</a>
   <div class="banner" style="margin-top:20px">Version de travail : les positions des candidats sont extraites de leurs textes et déclarations publiés, et attendent une validation humaine.</div>`;
@@ -206,7 +211,7 @@ function viewQuiz(n) {
   n = Math.min(Math.max(n, 1), tot);
   const q = D.questions[n - 1], a = state.answers[q.id];
   const ai = D.axes.findIndex((x) => x.id === q.axe), axe = D.axes[ai];
-  const serie = Math.ceil(n / PER), endSerie = n % PER === 0 || n === tot;
+  const serie = seriesOf(n), endSerie = n === D.series[serie - 1][1] || n === tot;
   const nextHref = n === tot ? '#/resultats' : endSerie ? '#/serie/' + serie : '#/quiz/' + (n + 1);
   const opts = OPTIONS.map((o) => `<button class="opt${o.na ? ' na' : ''}" data-v="${o.v}" aria-pressed="${!!a && a.v === o.v}"><span class="dot"></span>${o.t}</button>`).join('');
   const imp = a && a.v !== null && a.v !== undefined ? (a.imp === true ? 'forte' : a.imp || 'moyenne') : null;
@@ -217,7 +222,8 @@ function viewQuiz(n) {
     <a class="textbtn" href="#/">Quitter</a>
   </div>
   <div class="track-progress" role="progressbar" aria-valuemin="0" aria-valuemax="${tot}" aria-valuenow="${n}" aria-label="Progression"><i style="width:${((n - 1) / tot) * 100}%"></i></div>
-  <div class="theme">${miniRadar(ai)}<div><p class="eyebrow">Thème ${ai + 1} sur ${D.axes.length} · série ${serie}/${nbSeries()}</p><b>${esc(axe.nom)}</b></div></div>
+  <div class="theme">${miniRadar(ai)}<div><p class="eyebrow">${axe ? `Thème ${ai + 1} sur ${D.axes.length}` : 'Hors radar'} · série ${serie}/${nbSeries()}</p><b>${esc(axe ? axe.nom : q.theme)}</b></div></div>
+  ${axe ? '' : '<p class="small muted" style="margin:-6px 0 12px">Cette question compte dans la proximité avec les candidats, mais ne déplace pas votre radar : elle ne se range sur aucun des axes.</p>'}
   <div class="card affirm"><p class="eyebrow">Affirmation</p><p class="statement">« ${esc(q.enonce)} »</p><p class="context">${esc(q.contexte)}</p></div>
   <div class="opts" role="group" aria-label="Votre position">${opts}</div>
   ${imp ? `<div class="importance"><p>Importance de ce sujet pour vous</p><div class="seg" role="group" aria-label="Importance">${IMPORTANCE.map(([k, t]) => `<button data-imp="${k}" aria-pressed="${imp === k}">${t}</button>`).join('')}</div></div>` : ''}
@@ -255,14 +261,14 @@ function viewSeries(k) {
   const tot = D.questions.length, done = countAnswered(), val = countValued(), K = nbSeries();
   if (k >= K) { location.hash = '#/resultats'; return ''; }
   const ok = unlocked();
-  return `<div class="topbar"><a class="iconbtn" href="#/quiz/${k * PER}" aria-label="Question précédente">${ICON.back}</a><span class="title">Série ${k} sur ${K}</span><a class="textbtn" href="#/">Quitter</a></div>
+  return `<div class="topbar"><a class="iconbtn" href="#/quiz/${D.series[k - 1][1]}" aria-label="Question précédente">${ICON.back}</a><span class="title">Série ${k} sur ${K}</span><a class="textbtn" href="#/">Quitter</a></div>
   <div class="track-progress"><i style="width:${(done / tot) * 100}%"></i></div>
   <p class="eyebrow or">Série terminée</p>
   <h1>${done} question${done > 1 ? 's' : ''} sur ${tot}</h1>
-  <p class="lead">${ok ? `Votre graphe est disponible. Il repose sur ${val} réponse${val > 1 ? 's' : ''} avec un avis ; chaque série supplémentaire le rend plus précis.` : `Il faut au moins ${MIN_RESULTS} réponses avec un avis pour afficher le graphe. Il vous en manque ${MIN_RESULTS - val}.`}</p>
+  <p class="lead">${ok ? `Votre graphe est disponible. Il repose sur ${val} réponse${val > 1 ? 's' : ''} avec un avis ; chaque série supplémentaire le rend plus précis.` : `Il faut au moins ${MIN_RESULTS} réponses avec un avis sur les thèmes du radar pour afficher le graphe. Il vous en manque ${MIN_RESULTS - countRadar()}.`}</p>
   <div class="stack">
     ${ok ? '<a class="btn primary block" href="#/resultats">Voir mon graphe</a>' : ''}
-    <a class="btn ${ok ? '' : 'primary'} block" href="#/quiz/${k * PER + 1}">Continuer : série ${k + 1} (${Math.min(PER, tot - k * PER)} questions)</a>
+    <a class="btn ${ok ? '' : 'primary'} block" href="#/quiz/${D.series[k][0]}">Continuer : série ${k + 1} (${D.series[k][1] - D.series[k][0] + 1} questions)</a>
   </div>
   <p class="small muted">Vous pouvez vous arrêter ici : vos réponses sont gardées sur cet appareil.</p>`;
 }
@@ -271,8 +277,8 @@ function viewResults() {
   const done = countAnswered(), tot = D.questions.length, back = `#/quiz/${Math.min(firstUnanswered(), tot)}`;
   const head = `<div class="topbar"><a class="iconbtn" href="${done < tot ? back : '#/'}" aria-label="Retour">${ICON.back}</a><span class="title">Votre position</span><button class="iconbtn" data-act="share" aria-label="Partager l'outil">${ICON.share}</button></div>`;
   if (!unlocked()) {
-    const need = MIN_RESULTS - countValued();
-    return `${head}<p class="eyebrow">Résultat · 8 axes</p><h1>Graphe verrouillé</h1><p class="lead">Il faut au moins ${MIN_RESULTS} réponses avec un avis pour dessiner vos positions. Il vous en manque ${need}.</p><div class="stack"><a class="btn primary block" href="#/quiz/${firstUnanswered()}">${done ? 'Continuer le questionnaire' : 'Commencer'}</a></div>`;
+    const need = MIN_RESULTS - countRadar();
+    return `${head}<p class="eyebrow">Résultat · ${D.axes.length} axes</p><h1>Graphe verrouillé</h1><p class="lead">Il faut au moins ${MIN_RESULTS} réponses avec un avis pour dessiner vos positions. Il vous en manque ${need}.</p><div class="stack"><a class="btn primary block" href="#/quiz/${firstUnanswered()}">${done ? 'Continuer le questionnaire' : 'Commencer'}</a></div>`;
   }
   counterBump();
   const prox = withData().map((c) => ({ c, ...proximity(c.id) })).filter((x) => x.pct !== null).sort((a, b) => b.pct - a.pct || b.n - a.n);
@@ -300,7 +306,7 @@ function viewResults() {
   const solid = prox.filter((x) => x.n >= MIN_COMMON), thin = prox.filter((x) => x.n < MIN_COMMON);
   const nodata = D.candidats.length - withData().length;
   return `${head}
-  <p class="eyebrow">Résultat · 8 axes · ${countValued()} réponses</p>
+  <p class="eyebrow">Résultat · ${D.axes.length} axes · ${countValued()} réponses</p>
   ${radarSVG(series)}
   <div class="legend">${legend}</div>
   ${done < tot ? `<div class="card" style="margin-top:14px"><b>Il reste ${tot - done} question${tot - done > 1 ? 's' : ''}.</b><p class="small muted" style="margin:4px 0 12px">Chaque réponse affine la carte, surtout sur les thèmes où vous avez peu répondu.</p><a class="btn primary block" href="#/quiz/${firstUnanswered()}">Affiner mon graphe</a></div>` : ''}
@@ -346,16 +352,18 @@ function viewMethod() {
   <ul><li>Une affirmation neutre, formulée dans le même sens pour tous, accompagnée d'un court rappel factuel.</li>
   <li>Les réponses possibles sont identiques pour toutes les questions : « neutre » compte comme une position médiane, « sans avis » n'est pas pris en compte.</li>
   <li>Les positions des candidats ne sont visibles qu'après votre réponse.</li></ul>
-  <h2>Les huit axes</h2>
+  <h2>Les ${D.axes.length} axes</h2>
   <div class="tablewrap"><table><thead><tr><th>Axe</th><th>Centre du radar</th><th>Bord du radar</th></tr></thead><tbody>${axes}</tbody></table></div>
   <p class="small muted">Les deux pôles décrivent des positions, pas un jugement. Il n'y a pas de « bon » côté.</p>
+  <h2>Questions hors radar</h2>
+  <p>Certaines questions ne se rangent sur aucun axe sans fausser son sens : le choix du nucléaire (on peut être pro-nucléaire et très exigeant sur le climat), l'organisation territoriale, la protection des enfants face aux écrans, certains sujets internationaux. Elles restent posées et comptent dans la proximité avec les candidats, mais ne déplacent pas le radar. Thèmes concernés : ${[...new Set(D.questions.filter((q) => !q.axe).map((q) => q.theme))].join(', ')}.</p>
   <h2>Comment une position est établie</h2>
   <ul><li>Chaque position repose sur une citation exacte, vérifiée mot pour mot dans le document source, avec lien et date de consultation.</li>
   <li>Hiérarchie des sources : un programme publié pèse plus qu'une déclaration du candidat, qui pèse plus que celle d'un proche. Si plusieurs sources existent, la plus haute est retenue.</li>
   <li>Le passage de la citation à une note de -2 à +2 est une lecture d'analyste, affichée à côté de la citation et validée par un humain avant publication.</li>
   <li>Quand aucune source ne traite le sujet, l'outil l'écrit : cela signifie « non trouvé dans les sources consultées ».</li></ul>
   <h2>Séries et précision du graphe</h2>
-  <p>Les questions sont groupées en séries de ${PER}, chacune comportant une question par thème : quel que soit le nombre de réponses, les huit axes restent équilibrés. L'ordre est tiré au sort pour chaque appareil, dans l'ordre des thèmes comme dans le choix des questions ; les questions où le plus de candidats ont une position documentée sont proposées en premier. Le graphe s'affiche à partir de ${MIN_RESULTS} réponses avec un avis. Un thème où vous n'avez répondu qu'à une question est signalé comme indicatif.</p>
+  <p>Les questions sont groupées en séries d'une dizaine : chacune comporte une question par axe du radar, plus une question hors radar tant qu'il en reste. Quel que soit le nombre de réponses, les ${D.axes.length} axes restent équilibrés. L'ordre est tiré au sort pour chaque appareil, dans l'ordre des thèmes comme dans le choix des questions ; les questions où le plus de candidats ont une position documentée sont proposées en premier. Le graphe s'affiche à partir de ${MIN_RESULTS} réponses avec un avis sur les thèmes du radar. Un thème où vous n'avez répondu qu'à une question est signalé comme indicatif.</p>
   <h2>Calcul de la proximité</h2>
   <p>Pour chaque candidat, on compare uniquement les questions où vous avez répondu et où une position est documentée. L'écart moyen est converti en pourcentage ; l'importance indiquée pondère chaque question (faible ×0,5, moyenne ×1, forte ×2). Le nombre de questions comparables est toujours indiqué. En dessous de ${MIN_COMMON}, le résultat est signalé comme indicatif. Les candidats sont classés par proximité ; ceux qui ont trop peu de questions comparables sont présentés à part, sans classement. Le radar présélectionne les deux plus proches sur une base suffisante.</p>
   <h2>Limites de cette version</h2>
