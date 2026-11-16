@@ -139,6 +139,9 @@ main{flex:1;width:100%;max-width:720px;margin:0 auto;padding:12px var(--pad) 32p
 .legend svg{width:22px;height:6px}
 .rowhead{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:22px 0 10px}
 .rowhead h2{margin:0;font-size:16px;line-height:22px;font-weight:600}
+.segs{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:-2px 0 10px}
+.seg{min-height:44px;padding:0 14px;border:1px solid var(--trait);border-radius:999px;background:transparent;color:var(--muted);font:inherit;font-size:14px;cursor:pointer}
+.seg[aria-pressed="true"]{border-color:var(--or);color:var(--or);background:rgba(216,180,90,.12)}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
 .chip{min-height:40px;padding:8px 14px;border-radius:999px;border:1px solid var(--trait);background:transparent;color:var(--muted);font:inherit;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
 .chip[aria-pressed=true]{border-color:var(--c,var(--or));color:var(--txt);border-width:1.5px}

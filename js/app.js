@@ -25,6 +25,7 @@ let state = { answers: {}, counted: false, seed: 0 };
 let mem = null;
 const KEY = 'e2027.v1';
 let resSel = null;
+let chipSort = 'random'; // 'random' (au chargement) | 'alpha' | 'prox'
 let showAllAxes = false;
 
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -46,7 +47,7 @@ function load() {
 function rng(seed) { let a = seed >>> 0; return () => { a = (a + 0x6d2b79f5) >>> 0; let t = a; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
 function shuffled(arr, salt = 0) { const r = rng(state.seed + salt), a = [...arr]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch { mem = state; } }
-function reset() { state = { answers: {}, counted: false, seed: (Math.random() * 2 ** 31) | 0, statsConsent: state.statsConsent }; save(); resSel = null; D.questions = orderQuestions(D.baseQuestions); }
+function reset() { state = { answers: {}, counted: false, seed: (Math.random() * 2 ** 31) | 0, statsConsent: state.statsConsent }; save(); resSel = null; chipSort = 'random'; D.questions = orderQuestions(D.baseQuestions); }
 
 // Ordre semi-aléatoire, propre à chaque appareil. Chaque série (« tour ») contient une question par axe
 // du radar, dans un ordre tiré au sort, plus une question hors radar tant qu'il en reste : les axes restent
@@ -325,7 +326,11 @@ function viewResults() {
   const series = resSel.map((id) => ({ vals: D.axes.map((a) => candPos(a.id, id)), ...ds[id] }));
   series.push({ vals: D.axes.map((a) => userPos(a.id)), color: GOLD, me: true });
   const legend = `<span>${legendLine(GOLD)}Vous</span>` + resSel.map((id) => `<span>${legendLine(ds[id].color, ds[id].dash, ds[id].shape)}${esc(byId(id).nom)}${ds[id].adjusted ? ' <small class="muted">(couleur ajustée)</small>' : ''}</span>`).join('');
-  const chips = shuffled(withData(), 7).map((c) => `<button class="chip" style="--c:${ds[c.id] ? ds[c.id].color : c.couleur}" data-sel="${c.id}" aria-pressed="${resSel.includes(c.id)}"><span class="pdot" style="--c:${ds[c.id] ? ds[c.id].color : c.couleur}"></span>${esc(c.nom)}</button>`).join('');
+  const solidC = prox.filter((x) => x.n >= MIN_COMMON).map((x) => x.c), thinC = prox.filter((x) => x.n < MIN_COMMON).map((x) => x.c);
+  const noProx = withData().filter((c) => !prox.some((x) => x.c.id === c.id)).sort(alpha);
+  const chipList = chipSort === 'alpha' ? [...withData()].sort(alpha) : chipSort === 'prox' ? [...solidC, ...thinC, ...noProx] : shuffled(withData(), 7);
+  const sortBtn = (k, label) => `<button type="button" class="seg" data-act="chipsort" data-sort="${k}" aria-pressed="${chipSort === k}">${label}</button>`;
+  const chips = chipList.map((c) => `<button class="chip" style="--c:${ds[c.id] ? ds[c.id].color : c.couleur}" data-sel="${c.id}" aria-pressed="${resSel.includes(c.id)}"><span class="pdot" style="--c:${ds[c.id] ? ds[c.id].color : c.couleur}"></span>${esc(c.nom)}</button>`).join('');
   const axes = showAllAxes ? D.axes : D.axes.slice(0, 3);
   const rows = axes.map((a) => {
     const u = userPos(a.id), x = (v) => ((v + 1) * 50).toFixed(1);
@@ -348,7 +353,8 @@ function viewResults() {
   ${radarSVG(series)}
   <div class="legend">${legend}</div>
   ${done < tot ? `<div class="card" style="margin-top:14px"><b>Il reste ${tot - done} question${tot - done > 1 ? 's' : ''}.</b><p class="small muted" style="margin:4px 0 12px">Chaque réponse affine la carte, surtout sur les thèmes où vous avez peu répondu.</p><a class="btn primary block" href="#/quiz/${firstUnanswered()}">Affiner mon graphe</a></div>` : ''}
-  <div class="rowhead"><h2>Comparer avec</h2><span class="small muted">Ordre tiré au sort</span></div>
+  <div class="rowhead"><h2>Comparer avec</h2></div>
+  <div class="segs" role="group" aria-label="Ordre de la liste"><span class="small muted">Ordre</span>${sortBtn('random', 'Tiré au sort')}${sortBtn('alpha', 'Alphabétique')}${sortBtn('prox', 'Proximité')}</div>
   <div class="chips">${chips}</div>
   <div class="card">
     <p class="eyebrow">Écart par thème</p>
@@ -386,7 +392,7 @@ function viewMethod() {
   return `<div class="prose"><p class="eyebrow">Méthodologie et sources</p><h1>Méthode</h1>
   <div class="banner">${esc(D.version.statut)}. Version ${esc(D.version.version)} du ${frDate(D.version.date)}.</div>
   <h2>Qui figure dans l'outil</h2>
-  <p>Toute personne ayant officiellement et publiquement annoncé sa candidature, sans filtre de notoriété ni de sondage. Les personnes seulement pressenties ne sont pas incluses. Dès publication de la liste du Conseil constitutionnel, l'outil bascule sur cette liste. Quand l'ordre d'affichage pourrait suggérer une préférence (positions des candidats, choix des candidats à comparer), il est tiré au sort à chaque session ; les listes de référence sont alphabétiques.</p>
+  <p>Toute personne ayant officiellement et publiquement annoncé sa candidature, sans filtre de notoriété ni de sondage. Les personnes seulement pressenties ne sont pas incluses. Dès publication de la liste du Conseil constitutionnel, l'outil bascule sur cette liste. Quand l'ordre d'affichage pourrait suggérer une préférence (positions des candidats, choix des candidats à comparer), il est tiré au sort à chaque session ; les listes de référence sont alphabétiques. La liste « Comparer avec » s'ouvre dans un ordre tiré au sort et peut ensuite être triée par ordre alphabétique ou par proximité avec vos réponses.</p>
   <h2>Comment les questions sont rédigées</h2>
   <ul><li>Une affirmation neutre, formulée dans le même sens pour tous, accompagnée d'un court rappel factuel.</li>
   <li>Les réponses possibles sont identiques pour toutes les questions : « neutre » compte comme une position médiane, « sans avis » n'est pas pris en compte.</li>
@@ -550,6 +556,7 @@ document.addEventListener('click', (e) => {
     const id = t.dataset.sel, i = resSel.indexOf(id);
     if (i >= 0) resSel.splice(i, 1); else { if (resSel.length >= MAX_SEL) resSel.shift(); resSel.push(id); }
     rerender(viewResults);
+  } else if (t.dataset.act === 'chipsort') { chipSort = t.dataset.sort; rerender(viewResults);
   } else if (t.dataset.act === 'axes') { showAllAxes = !showAllAxes; rerender(viewResults); }
   else if (t.dataset.act === 'share') share();
   else if (t.dataset.act === 'reset') {
