@@ -4516,5 +4516,1165 @@
   },
   "note": "Décentralisation de la gestion des enseignants, programmes nationaux maintenus.",
   "statut": "propose"
+ },
+ {
+  "question": "q57",
+  "candidat": "tondelier",
+  "score": 2,
+  "citation": "conditionner toutes les exonérations, toutes les aides d'état",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.lagazettefrance.fr/article/au-salon-du-made-in-france-tondelier-defend-hausse-des-salaires-et-protectionnisme",
+   "consulte": "2026-11-16",
+   "media": "AFP, via La Gazette France"
+  },
+  "note": "Conditionnées à une hausse des salaires.",
+  "statut": "propose"
+ },
+ {
+  "question": "q57",
+  "candidat": "ruffin",
+  "score": 2,
+  "citation": "le conditionnement des aides et commandes publiques à des empreintes écologiques minimales",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/travaillisme-ecologique/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q57",
+  "candidat": "glucksmann",
+  "score": 1,
+  "citation": "de l’absence de conditionnement des aides publiques aux entreprises",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Critique de l'absence de conditions.",
+  "statut": "propose"
+ },
+ {
+  "question": "q57",
+  "candidat": "kazib",
+  "score": 2,
+  "citation": "Suppression des aides publiques aux grandes entreprises.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://anasse2027.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Va au-delà : suppression pour les grandes entreprises.",
+  "statut": "propose"
+ },
+ {
+  "question": "q57",
+  "candidat": "mikolajczak",
+  "score": 1,
+  "citation": "ne sont pas suffisamment efficaces ni fléchés vers la robustesse de notre économie",
+  "niveau": "programme",
+  "source": {
+   "url": "https://parti-equinoxe.fr/wp-content/uploads/2026/11/Equinoxe-Lessentiel-Programme-synthetique-pour-lelection-presidentielle-1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme synthétique d'Équinoxe.",
+  "statut": "propose"
+ },
+ {
+  "question": "q58",
+  "candidat": "glucksmann",
+  "score": 2,
+  "citation": "Mise en place d’un mécanisme automatique de taxation des superprofits des multinationales et des profiteurs de guerre.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q58",
+  "candidat": "ruffin",
+  "score": 2,
+  "citation": "Mise en place d’une taxe de 4% sur les dividendes des entreprises pour financer la transition écologique",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/travaillisme-ecologique/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q58",
+  "candidat": "melenchon",
+  "score": 1,
+  "citation": "Interdire aux entreprises de distribuer un montant de dividendes supérieur à leurs bénéfices de l’année",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre3",
+   "consulte": "2026-11-16"
+  },
+  "note": "Plafonnement des dividendes plutôt que taxation.",
+  "statut": "propose"
+ },
+ {
+  "question": "q59",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "Inscrire dans la Constitution une « règle d’or » budgétaire adoptée par référendum dès le début du quinquennat.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/comptes-publics",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q60",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Geler les loyers le temps de déployer un encadrement des loyers partout sur le territoire",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre3",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q60",
+  "candidat": "kazib",
+  "score": 2,
+  "citation": "Expropriation des logements vides, plafonnement et gel des loyers.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://anasse2027.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q60",
+  "candidat": "ruffin",
+  "score": 2,
+  "citation": "Avec le plafonnement des loyers partout",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/face-a-la-crise-du-logement-faire-sauter-le-verrou/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q60",
+  "candidat": "retailleau",
+  "score": -2,
+  "citation": "Nous supprimerons l’encadrement des loyers.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/05/LR_Logement.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q61",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "Trois jours de carence pour tous, dans le privé comme dans le public.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/travail",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q61",
+  "candidat": "melenchon",
+  "score": -2,
+  "citation": "la suppression des jours de carence",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q61",
+  "candidat": "arthaud",
+  "score": -1,
+  "citation": "restreindre les arrêts-maladie en ajoutant de nouveaux jours de carence",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Mesure citée parmi les attaques contre les travailleurs.",
+  "statut": "propose"
+ },
+ {
+  "question": "q62",
+  "candidat": "melenchon",
+  "score": 1,
+  "citation": "explosion du coût des complémentaires santé et des dépassements d’honoraires, franchises médicales, déremboursement des soins",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "Critique, sans mesure précise dans cet extrait.",
+  "statut": "propose"
+ },
+ {
+  "question": "q62",
+  "candidat": "tondelier",
+  "score": 1,
+  "citation": "ce sont des prestations sans dépassements d'honoraires",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-marine-tondelier-promet-l-ouverture-de-2-000-centres-de-sante-d-ici-2030-en-france_8279639.html",
+   "consulte": "2026-11-16",
+   "media": "franceinfo"
+  },
+  "note": "Argument en faveur des centres de santé.",
+  "statut": "propose"
+ },
+ {
+  "question": "q62",
+  "candidat": "branco",
+  "score": 1,
+  "citation": "les dépassements d’honoraires se généralisent",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "Constat critique.",
+  "statut": "propose"
+ },
+ {
+  "question": "q63",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "prolongation de la durée de vie des réacteurs jusqu’à 60 ans",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/generer-un-renouveau-civique/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q63",
+  "candidat": "retailleau",
+  "score": 2,
+  "citation": "Si la prolongation du parc nucléaire actuel - associée au renforcement de notre patrimoine hydraulique - constitue le socle de notre production électrique",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/05/LR_Electricite_vFF070626.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Trajectoire d'exploitation jusqu'à 80 ans, selon le même livret.",
+  "statut": "propose"
+ },
+ {
+  "question": "q63",
+  "candidat": "ruffin",
+  "score": 2,
+  "citation": "nous prolongerons la durée de vie des centrales existantes, tant que l’Autorité de sûreté nucléaire et de radioprotection validera leur niveau de sûreté",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/travaillisme-ecologique/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q64",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "Loi ZAN (Zéro Artificialisation Nette): paralyse la construction, renchérit le foncier sans tenir compte des réalités locales.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/api/media/file/Nouvelle_energie_Livre_noir_pages_20_24_inversees.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q64",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "en instituant un moratoire sur les dispositions ZAN",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/equilibre-territoire-monde-rural/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q64",
+  "candidat": "retailleau",
+  "score": 2,
+  "citation": "Le ZAN a figé des territoires entiers.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/05/LR_Logement.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q64",
+  "candidat": "glucksmann",
+  "score": -2,
+  "citation": "Défendre résolument les objectifs du Zéro Artificialisation Nette des sols (ZAN)",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q64",
+  "candidat": "melenchon",
+  "score": -2,
+  "citation": "en vue de mettre en œuvre le « zéro artificialisation nette » (ZAN) des sols",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q64",
+  "candidat": "branco",
+  "score": -2,
+  "citation": "durcissant les ZAN",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q65",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "il veut accélérer le stockage de l’eau agricole",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/adaptation-climatique",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q65",
+  "candidat": "retailleau",
+  "score": 2,
+  "citation": "Nous reconnaîtrons explicitement les projets de stockage d’eau à usage agricole comme relevant de l’intérêt général majeur",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/03/LR_Agriculture.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q65",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "En refusant systématiquement la création de retenues d'eau",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouvelle-energie-media-prod.s3.fr-par.scw.cloud/media/legacy/2026/06/AGRICULTURE.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Critique du refus des retenues d'eau.",
+  "statut": "propose"
+ },
+ {
+  "question": "q65",
+  "candidat": "glucksmann",
+  "score": -2,
+  "citation": "Refuser les méga-bassines au profit de solutions locales",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q65",
+  "candidat": "melenchon",
+  "score": -2,
+  "citation": "en instaurant un moratoire immédiat sur les méga-bassines",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q66",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "La sortie de l’euro et l’instauration d’une nouvelle monnaie nationale est une condition absolue de notre bonne santé économique.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q66",
+  "candidat": "branco",
+  "score": 1,
+  "citation": "Sortie de l’Union Européenne, de l’euro, du Conseil de l’Europe et/ou de l’espace Schengen.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "Proposé par référendum.",
+  "statut": "propose"
+ },
+ {
+  "question": "q66",
+  "candidat": "lisnard",
+  "score": -1,
+  "citation": "Nous n’avons pas vocation à sortir de l’Europe.",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://nouvelle-energie-media-prod.s3.fr-par.scw.cloud/media/legacy/2026/06/Discours-de-David-Lisnard-a-Bayeux-17062026.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Discours de Bayeux du 17 juin 2026 ; vise l'Union européenne en général.",
+  "statut": "propose"
+ },
+ {
+  "question": "q67",
+  "candidat": "glucksmann",
+  "score": 2,
+  "citation": "Proposer à nos partenaires de l’UE d’étendre la dissuasion nucléaire française aux autres pays de l’Union européenne",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q67",
+  "candidat": "lepen",
+  "score": -2,
+  "citation": "Préserver la souveraineté pleine et entière sur notre dissuasion nucléaire",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q67",
+  "candidat": "philippot",
+  "score": -2,
+  "citation": "Conserver notre dissuasion nucléaire. L’Union européenne lorgne sur l’arsenal nucléaire français",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q68",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Sortir de l’UE et économiser ainsi les 15 milliards d’euros de notre solde contributeur.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/economie-travail/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q68",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "Sortir de l’UE, c’est donc réaliser immédiatement des économies budgétaires considérables.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q68",
+  "candidat": "melenchon",
+  "score": 1,
+  "citation": "conditionnement de la contribution française au budget européen",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q68",
+  "candidat": "attal",
+  "score": -1,
+  "citation": "par une politique IA commune adossée au budget européen et à un endettement commun",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme/mesures/puissance-de-calcul-europeenne",
+   "consulte": "2026-11-16"
+  },
+  "note": "Favorable à un budget européen commun sur l'IA.",
+  "statut": "propose"
+ },
+ {
+  "question": "q69",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "Moratoire sur le regroupement familial",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q69",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "la suspension du regroupement familial",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/immigration-et-assimilation/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q69",
+  "candidat": "attal",
+  "score": 1,
+  "citation": "Gabriel Attal veut durcir les exigences de revenus, de logement et de durée de résidence pour demander le regroupement familial.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme/mesures/durcir-regroupement-familial",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q69",
+  "candidat": "lepen",
+  "score": 1,
+  "citation": "Restriction du regroupement familial par le durcissement des conditions",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q69",
+  "candidat": "lisnard",
+  "score": 1,
+  "citation": "conditionner le regroupement familial à des critères de ressources et des tests d’intégration",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q69",
+  "candidat": "branco",
+  "score": 1,
+  "citation": "Conditionnalisation du regroupement familial",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q70",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Tout étranger condamné à une prison ferme sera expulsé dès sa sortie",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/immigration-et-assimilation/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q70",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "Le retour de la double peine pour les étrangers délinquants.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/immigration",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q70",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "Expulser systématiquement les étrangers condamnés pour délits graves et les fichés S étrangers",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q70",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "Suppression de toutes les dérogations qui empêchent les expulsions d’étrangers",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q70",
+  "candidat": "zemmour",
+  "score": 2,
+  "citation": "Remigrer les étrangers en situation irrégulière, délinquants et chômeurs de longue durée.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.ericzemmour.fr/priorites",
+   "consulte": "2026-11-16"
+  },
+  "note": "Priorités publiées sur le site du candidat.",
+  "statut": "propose"
+ },
+ {
+  "question": "q70",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "expulser les prisonniers étrangers",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q71",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "La dénonciation de l’accord franco-algérien de 1968.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/immigration",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q71",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "Revenir sur l’accord franco-algérien de 1968",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q72",
+  "candidat": "attal",
+  "score": 2,
+  "citation": "Instaurer la comparution immédiate pour les mineurs",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q72",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "étendre la comparution immédiate dès 13 ans pour les cas graves",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/securite/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q72",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "possibilité de comparution immédiate",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024, réforme de la justice des mineurs.",
+  "statut": "propose"
+ },
+ {
+  "question": "q72",
+  "candidat": "philippe",
+  "score": 1,
+  "citation": "créer la comparution immédiate des mineurs pour ces infractions",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/justice",
+   "consulte": "2026-11-16"
+  },
+  "note": "Limité au narcotrafic.",
+  "statut": "propose"
+ },
+ {
+  "question": "q73",
+  "candidat": "glucksmann",
+  "score": 2,
+  "citation": "Faire renaître une police de proximité moderne, ancrée localement, centrée sur la prévention, la médiation et la résolution de conflits.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q73",
+  "candidat": "branco",
+  "score": 2,
+  "citation": "Suppression des brigades anticriminalité (BAC) au profit d’une police de proximité.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q73",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Une police de proximité au service de la sûreté des citoyens",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q73",
+  "candidat": "tondelier",
+  "score": 2,
+  "citation": "la restauration de la police de proximité ou encore la régularisation des travailleurs sans-papiers",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.lagazettefrance.fr/article/presidentielle-tondelier-propose-un-socle-programmatique-aux-autres-partis-de-gauche",
+   "consulte": "2026-11-16",
+   "media": "AFP, via La Gazette France"
+  },
+  "note": "« Socle » de propositions soumis aux partis de gauche, rapporté par l'AFP.",
+  "statut": "propose"
+ },
+ {
+  "question": "q73",
+  "candidat": "philippot",
+  "score": 1,
+  "citation": "Recréer une police de proximité visible et permanente.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Police de proximité conçue comme présence visible, plus que comme prévention.",
+  "statut": "propose"
+ },
+ {
+  "question": "q74",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "Rendre obligatoire la création d’une police municipale pour les communes de plus de 10 000 habitants",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q74",
+  "candidat": "lisnard",
+  "score": 1,
+  "citation": "permettre aux communes volontaires d’armer leur police municipale",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/securite/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Sur la base du volontariat.",
+  "statut": "propose"
+ },
+ {
+  "question": "q74",
+  "candidat": "glucksmann",
+  "score": 0,
+  "citation": "Réaffirmer le rôle de la police municipale, centré sur la proximité et la prévention.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q74",
+  "candidat": "roussel",
+  "score": -1,
+  "citation": "La police municipale ne doit pas devenir le supplétif de la police nationale.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Texte du 40e congrès du PCF.",
+  "statut": "propose"
+ },
+ {
+  "question": "q75",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "Édouard Philippe veut interdire strictement le téléphone portable à l’école",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/ecole",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q75",
+  "candidat": "retailleau",
+  "score": 2,
+  "citation": "le téléphone interdit dans l’enceinte des établissements jusqu’à la fin du lycée",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/09/LR_Ecole_vF.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q76",
+  "candidat": "markovic",
+  "score": 2,
+  "citation": "Interdire les corridas et combats de coqs",
+  "niveau": "programme",
+  "source": {
+   "url": "https://parti-animaliste.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme publié par le Parti animaliste, rédigé pour le quinquennat 2022-2027.",
+  "statut": "propose"
+ },
+ {
+  "question": "q76",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "dès lors qu’elles sont cruelles pour les animaux (déterrage, chasse à courre, pêche au vif, corrida",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q77",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "l’interruption volontaire de grossesse (IVG) et à la contraception, ainsi que leur accès gratuit pour toutes les personnes menstruées",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre2",
+   "consulte": "2026-11-16"
+  },
+  "note": "Inscription dans la Charte européenne des droits fondamentaux.",
+  "statut": "propose"
+ },
+ {
+  "question": "q77",
+  "candidat": "glucksmann",
+  "score": 1,
+  "citation": "De la remise en cause de l’accès à l’avortement à la précarité économique",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Dénonce les menaces sur l'accès à l'avortement.",
+  "statut": "propose"
+ },
+ {
+  "question": "q77",
+  "candidat": "lisnard",
+  "score": 0,
+  "citation": "La constitutionnalisation du recours à l’IVG, en 2024, a inscrit dans le texte suprême un droit que la loi garantissait depuis 1975 et qu’aucune majorité n’a jamais contesté.",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://nouvelle-energie-media-prod.s3.fr-par.scw.cloud/media/legacy/2026/06/Discours-de-David-Lisnard-a-Bayeux-17062026.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Critique de l'inscription dans la Constitution, pas du droit lui-même. Discours de Bayeux.",
+  "statut": "propose"
+ },
+ {
+  "question": "q78",
+  "candidat": "glucksmann",
+  "score": 2,
+  "citation": "Créer une Assemblée citoyenne du futur, composée de citoyens tirés au sort",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q78",
+  "candidat": "mikolajczak",
+  "score": 2,
+  "citation": "À leurs côtés, des citoyens tirés au sort délibèrent sur les questions de long terme",
+  "niveau": "programme",
+  "source": {
+   "url": "https://parti-equinoxe.fr/wp-content/uploads/2026/11/Equinoxe-Lessentiel-Programme-synthetique-pour-lelection-presidentielle-1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme synthétique d'Équinoxe.",
+  "statut": "propose"
+ },
+ {
+  "question": "q78",
+  "candidat": "branco",
+  "score": 1,
+  "citation": "intégrant par tiers les présidents de commissions parlementaires, des citoyens tirés au sort et un tiers de nominations",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q78",
+  "candidat": "ruffin",
+  "score": 1,
+  "citation": "en intégrant des collèges de citoyens tirés au sort",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/travaillisme-ecologique/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Appliqué à la gouvernance de l'eau.",
+  "statut": "propose"
+ },
+ {
+  "question": "q78",
+  "candidat": "roussel",
+  "score": 1,
+  "citation": "convention citoyenne suivi d’un projet de loi débattu au Parlement",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q79",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Reconnaître le vote blanc, mettre en place le vote obligatoire",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q79",
+  "candidat": "branco",
+  "score": 2,
+  "citation": "vote obligatoire, prise en compte du vote nul et blanc",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q79",
+  "candidat": "mikolajczak",
+  "score": 2,
+  "citation": "Le vote blanc est reconnu et pris en compte dans la composition de l’Assemblée nationale",
+  "niveau": "programme",
+  "source": {
+   "url": "https://parti-equinoxe.fr/wp-content/uploads/2026/11/Equinoxe-Lessentiel-Programme-synthetique-pour-lelection-presidentielle-1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q79",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Prendre en compte le vote blanc dans les résultats des élections pour respecter le sentiment populaire.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/refonder-et-moraliser-notre-democratie/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q79",
+  "candidat": "markovic",
+  "score": 2,
+  "citation": "Reconnaître le vote blanc comme suffrage exprimé.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://parti-animaliste.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme publié par le Parti animaliste, rédigé pour le quinquennat 2022-2027.",
+  "statut": "propose"
+ },
+ {
+  "question": "q80",
+  "candidat": "glucksmann",
+  "score": 2,
+  "citation": "Ouvrir le droit de vote à 16 ans et pour les étrangers extra-communautaires aux élections locales",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q80",
+  "candidat": "nda",
+  "score": -2,
+  "citation": "Limiter le droit de vote aux seules personnes ayant la nationalité française",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/immigration-et-assimilation/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
  }
 ]

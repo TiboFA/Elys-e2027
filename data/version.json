@@ -1,8 +1,13 @@
 {
- "version": "0.7",
+ "version": "0.8",
  "date": "2026-11-16",
  "statut": "Proposition en attente de validation",
  "historique": [
+  {
+   "version": "0.8",
+   "date": "2026-11-16",
+   "resume": "80 questions en 10 séries, 434 positions. Couleurs du graphe toujours distinctes : couleur de remplacement si deux couleurs sont trop proches, tracés et marqueurs différents par candidat."
+  },
   {
    "version": "0.7",
    "date": "2026-11-16",

@@ -446,5 +446,197 @@
   "enonce": "Le président doit être élu pour un mandat unique ou plus long, comme un septennat.",
   "contexte": "Le président est élu pour cinq ans, renouvelable une fois.",
   "serie": 7
+ },
+ {
+  "id": "q57",
+  "axe": "eco",
+  "sens": -1,
+  "enonce": "Les aides publiques aux entreprises doivent être conditionnées à des engagements (emploi, salaires, climat).",
+  "contexte": "Subventions, exonérations et crédits d'impôt aux entreprises représentent des dizaines de milliards d'euros par an.",
+  "serie": 8
+ },
+ {
+  "id": "q60",
+  "axe": "social",
+  "sens": -1,
+  "enonce": "Les loyers doivent être encadrés, voire gelés, dans les zones où le logement est cher.",
+  "contexte": "L'encadrement des loyers s'applique aujourd'hui dans certaines villes volontaires, à titre expérimental.",
+  "serie": 8
+ },
+ {
+  "id": "q63",
+  "axe": "ecologie",
+  "sens": 1,
+  "enonce": "Il faut prolonger la durée de vie des réacteurs nucléaires existants.",
+  "contexte": "Les réacteurs actuels ont été conçus pour environ 40 ans ; leur prolongation est examinée par l'Autorité de sûreté nucléaire.",
+  "serie": 8
+ },
+ {
+  "id": "q66",
+  "axe": "europe",
+  "sens": 1,
+  "enonce": "La France doit sortir de l'euro.",
+  "contexte": "La France partage l'euro avec une vingtaine d'autres pays de l'Union européenne depuis 2002.",
+  "serie": 8
+ },
+ {
+  "id": "q69",
+  "axe": "immigration",
+  "sens": 1,
+  "enonce": "Le regroupement familial doit être suspendu ou fortement restreint.",
+  "contexte": "Il permet à un étranger installé régulièrement de faire venir sa famille, sous conditions de ressources et de logement.",
+  "serie": 8
+ },
+ {
+  "id": "q72",
+  "axe": "securite",
+  "sens": 1,
+  "enonce": "Les mineurs doivent pouvoir être jugés en comparution immédiate.",
+  "contexte": "La justice des mineurs prévoit aujourd'hui des procédures spécifiques.",
+  "serie": 8
+ },
+ {
+  "id": "q75",
+  "axe": "societe",
+  "sens": 1,
+  "enonce": "Le téléphone portable doit être interdit dans tous les établissements scolaires, jusqu'au lycée.",
+  "contexte": "Il est interdit à l'école et au collège depuis 2018 ; la règle varie au lycée.",
+  "serie": 8
+ },
+ {
+  "id": "q78",
+  "axe": "institutions",
+  "sens": 1,
+  "enonce": "Des citoyens tirés au sort doivent participer à la décision publique.",
+  "contexte": "Des conventions citoyennes tirées au sort ont déjà été réunies, à titre consultatif.",
+  "serie": 8
+ },
+ {
+  "id": "q58",
+  "axe": "eco",
+  "sens": -1,
+  "enonce": "Il faut taxer davantage les dividendes et les superprofits des grandes entreprises.",
+  "contexte": "Pour les particuliers, les dividendes sont aujourd'hui soumis à un prélèvement forfaitaire unique (« flat tax »).",
+  "serie": 9
+ },
+ {
+  "id": "q61",
+  "axe": "social",
+  "sens": 1,
+  "enonce": "Des jours de carence doivent s'appliquer à tous les arrêts maladie, dans le privé comme dans le public.",
+  "contexte": "Les jours de carence sont des jours d'arrêt maladie non indemnisés ; leur nombre diffère entre public et privé.",
+  "serie": 9
+ },
+ {
+  "id": "q64",
+  "axe": "ecologie",
+  "sens": 1,
+  "enonce": "L'objectif de « zéro artificialisation nette » des sols (ZAN) doit être assoupli ou supprimé.",
+  "contexte": "La loi Climat et résilience de 2021 vise à ne plus consommer, en net, d'espaces naturels d'ici 2050.",
+  "serie": 9
+ },
+ {
+  "id": "q67",
+  "axe": "europe",
+  "sens": -1,
+  "enonce": "La dissuasion nucléaire française doit aussi contribuer à protéger nos partenaires européens.",
+  "contexte": "La décision d'emploi de l'arme nucléaire relève du seul président de la République.",
+  "serie": 9
+ },
+ {
+  "id": "q70",
+  "axe": "immigration",
+  "sens": 1,
+  "enonce": "Les étrangers condamnés pour des délits graves doivent être expulsés systématiquement.",
+  "contexte": "L'expulsion est aujourd'hui décidée au cas par cas, avec des protections pour certaines situations familiales.",
+  "serie": 9
+ },
+ {
+  "id": "q73",
+  "axe": "securite",
+  "sens": -1,
+  "enonce": "Il faut rétablir une police de proximité, centrée sur la prévention et le lien avec les habitants.",
+  "contexte": "Une police de proximité avait été créée en 1998, puis abandonnée au début des années 2000.",
+  "serie": 9
+ },
+ {
+  "id": "q76",
+  "axe": "societe",
+  "sens": -1,
+  "enonce": "La corrida et la chasse à courre doivent être interdites.",
+  "contexte": "Elles restent autorisées, la corrida dans les régions de tradition.",
+  "serie": 9
+ },
+ {
+  "id": "q79",
+  "axe": "institutions",
+  "sens": 1,
+  "enonce": "Le vote blanc doit être reconnu comme suffrage exprimé, voire le vote rendu obligatoire.",
+  "contexte": "Les votes blancs sont comptés mais n'entrent pas dans le calcul des résultats.",
+  "serie": 9
+ },
+ {
+  "id": "q59",
+  "axe": "eco",
+  "sens": 1,
+  "enonce": "Une « règle d'or » limitant le déficit public doit être inscrite dans la Constitution.",
+  "contexte": "Les règles budgétaires européennes fixent déjà des plafonds de déficit et de dette.",
+  "serie": 10
+ },
+ {
+  "id": "q62",
+  "axe": "social",
+  "sens": -1,
+  "enonce": "Les dépassements d'honoraires des médecins doivent être fortement encadrés.",
+  "contexte": "Certains médecins sont autorisés à facturer au-delà du tarif de la Sécurité sociale.",
+  "serie": 10
+ },
+ {
+  "id": "q65",
+  "axe": "ecologie",
+  "sens": 1,
+  "enonce": "Il faut développer les réserves d'eau pour l'irrigation agricole, y compris les « méga-bassines ».",
+  "contexte": "Ces retenues stockent de l'eau prélevée en hiver pour l'irrigation estivale ; elles sont contestées.",
+  "serie": 10
+ },
+ {
+  "id": "q68",
+  "axe": "europe",
+  "sens": 1,
+  "enonce": "La contribution de la France au budget de l'Union européenne doit être réduite ou conditionnée.",
+  "contexte": "La France verse au budget européen plus qu'elle n'en reçoit.",
+  "serie": 10
+ },
+ {
+  "id": "q71",
+  "axe": "immigration",
+  "sens": 1,
+  "enonce": "La France doit dénoncer l'accord franco-algérien de 1968 sur l'immigration.",
+  "contexte": "Cet accord fixe des règles d'entrée et de séjour spécifiques pour les ressortissants algériens.",
+  "serie": 10
+ },
+ {
+  "id": "q74",
+  "axe": "securite",
+  "sens": 1,
+  "enonce": "Les polices municipales doivent être renforcées et armées, voire rendues obligatoires dans les grandes communes.",
+  "contexte": "La création et l'armement d'une police municipale relèvent aujourd'hui du choix du maire.",
+  "serie": 10
+ },
+ {
+  "id": "q77",
+  "axe": "societe",
+  "sens": -1,
+  "enonce": "Le droit à l'IVG doit être encore renforcé, y compris au niveau européen.",
+  "contexte": "La liberté de recourir à l'IVG est inscrite dans la Constitution depuis 2024.",
+  "serie": 10
+ },
+ {
+  "id": "q80",
+  "axe": "institutions",
+  "sens": 1,
+  "enonce": "Les étrangers non européens résidant en France doivent pouvoir voter aux élections locales.",
+  "contexte": "Seuls les citoyens de l'Union européenne peuvent aujourd'hui voter aux élections municipales.",
+  "serie": 10
  }
 ]

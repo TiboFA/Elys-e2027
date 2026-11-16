@@ -49,6 +49,30 @@ new = [
     ("q54", "institutions", 1, "Il faut supprimer un échelon de collectivités, par exemple en fusionnant départements et régions.", "La France compte des communes, des intercommunalités, des départements et des régions."),
     ("q55", "institutions", 1, "Le président doit être élu pour un mandat unique ou plus long, comme un septennat.", "Le président est élu pour cinq ans, renouvelable une fois."),
     ("q56", "societe", 1, "Les réseaux sociaux doivent être interdits aux moins de 15 ans.", "Une loi de 2023 a fixé une « majorité numérique » à 15 ans, mais son application reste incomplète."),
+    ("q57", "eco", -1, "Les aides publiques aux entreprises doivent être conditionnées à des engagements (emploi, salaires, climat).", "Subventions, exonérations et crédits d'impôt aux entreprises représentent des dizaines de milliards d'euros par an."),
+    ("q58", "eco", -1, "Il faut taxer davantage les dividendes et les superprofits des grandes entreprises.", "Pour les particuliers, les dividendes sont aujourd'hui soumis à un prélèvement forfaitaire unique (« flat tax »)."),
+    ("q59", "eco", 1, "Une « règle d'or » limitant le déficit public doit être inscrite dans la Constitution.", "Les règles budgétaires européennes fixent déjà des plafonds de déficit et de dette."),
+    ("q60", "social", -1, "Les loyers doivent être encadrés, voire gelés, dans les zones où le logement est cher.", "L'encadrement des loyers s'applique aujourd'hui dans certaines villes volontaires, à titre expérimental."),
+    ("q61", "social", 1, "Des jours de carence doivent s'appliquer à tous les arrêts maladie, dans le privé comme dans le public.", "Les jours de carence sont des jours d'arrêt maladie non indemnisés ; leur nombre diffère entre public et privé."),
+    ("q62", "social", -1, "Les dépassements d'honoraires des médecins doivent être fortement encadrés.", "Certains médecins sont autorisés à facturer au-delà du tarif de la Sécurité sociale."),
+    ("q63", "ecologie", 1, "Il faut prolonger la durée de vie des réacteurs nucléaires existants.", "Les réacteurs actuels ont été conçus pour environ 40 ans ; leur prolongation est examinée par l'Autorité de sûreté nucléaire."),
+    ("q64", "ecologie", 1, "L'objectif de « zéro artificialisation nette » des sols (ZAN) doit être assoupli ou supprimé.", "La loi Climat et résilience de 2021 vise à ne plus consommer, en net, d'espaces naturels d'ici 2050."),
+    ("q65", "ecologie", 1, "Il faut développer les réserves d'eau pour l'irrigation agricole, y compris les « méga-bassines ».", "Ces retenues stockent de l'eau prélevée en hiver pour l'irrigation estivale ; elles sont contestées."),
+    ("q66", "europe", 1, "La France doit sortir de l'euro.", "La France partage l'euro avec une vingtaine d'autres pays de l'Union européenne depuis 2002."),
+    ("q67", "europe", -1, "La dissuasion nucléaire française doit aussi contribuer à protéger nos partenaires européens.", "La décision d'emploi de l'arme nucléaire relève du seul président de la République."),
+    ("q68", "europe", 1, "La contribution de la France au budget de l'Union européenne doit être réduite ou conditionnée.", "La France verse au budget européen plus qu'elle n'en reçoit."),
+    ("q69", "immigration", 1, "Le regroupement familial doit être suspendu ou fortement restreint.", "Il permet à un étranger installé régulièrement de faire venir sa famille, sous conditions de ressources et de logement."),
+    ("q70", "immigration", 1, "Les étrangers condamnés pour des délits graves doivent être expulsés systématiquement.", "L'expulsion est aujourd'hui décidée au cas par cas, avec des protections pour certaines situations familiales."),
+    ("q71", "immigration", 1, "La France doit dénoncer l'accord franco-algérien de 1968 sur l'immigration.", "Cet accord fixe des règles d'entrée et de séjour spécifiques pour les ressortissants algériens."),
+    ("q72", "securite", 1, "Les mineurs doivent pouvoir être jugés en comparution immédiate.", "La justice des mineurs prévoit aujourd'hui des procédures spécifiques."),
+    ("q73", "securite", -1, "Il faut rétablir une police de proximité, centrée sur la prévention et le lien avec les habitants.", "Une police de proximité avait été créée en 1998, puis abandonnée au début des années 2000."),
+    ("q74", "securite", 1, "Les polices municipales doivent être renforcées et armées, voire rendues obligatoires dans les grandes communes.", "La création et l'armement d'une police municipale relèvent aujourd'hui du choix du maire."),
+    ("q75", "societe", 1, "Le téléphone portable doit être interdit dans tous les établissements scolaires, jusqu'au lycée.", "Il est interdit à l'école et au collège depuis 2018 ; la règle varie au lycée."),
+    ("q76", "societe", -1, "La corrida et la chasse à courre doivent être interdites.", "Elles restent autorisées, la corrida dans les régions de tradition."),
+    ("q77", "societe", -1, "Le droit à l'IVG doit être encore renforcé, y compris au niveau européen.", "La liberté de recourir à l'IVG est inscrite dans la Constitution depuis 2024."),
+    ("q78", "institutions", 1, "Des citoyens tirés au sort doivent participer à la décision publique.", "Des conventions citoyennes tirées au sort ont déjà été réunies, à titre consultatif."),
+    ("q79", "institutions", 1, "Le vote blanc doit être reconnu comme suffrage exprimé, voire le vote rendu obligatoire.", "Les votes blancs sont comptés mais n'entrent pas dans le calcul des résultats."),
+    ("q80", "institutions", 1, "Les étrangers non européens résidant en France doivent pouvoir voter aux élections locales.", "Seuls les citoyens de l'Union européenne peuvent aujourd'hui voter aux élections municipales."),
 ]
 for i, a, s, e, c in new:
     Q.setdefault(i, {"id": i, "axe": a, "sens": s, "enonce": e, "contexte": c})
@@ -62,6 +86,9 @@ waves = [
     ["q33", "q36", "q39", "q44", "q45", "q48", "q51", "q53"],
     ["q34", "q37", "q40", "q43", "q46", "q49", "q56", "q54"],
     ["q35", "q38", "q41", "q42", "q47", "q50", "q52", "q55"],
+    ["q57", "q60", "q63", "q66", "q69", "q72", "q75", "q78"],
+    ["q58", "q61", "q64", "q67", "q70", "q73", "q76", "q79"],
+    ["q59", "q62", "q65", "q68", "q71", "q74", "q77", "q80"],
 ]
 out = []
 for k, w in enumerate(waves, 1):

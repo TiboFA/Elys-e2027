@@ -115,9 +115,9 @@ function radarSVG(series, opt = {}) {
     const pts = s.vals.map((v, i) => (v === null ? null : pt(i, (v + 1) / 2))).filter(Boolean);
     if (!pts.length) continue;
     const str = pts.map((p) => p.map((v) => v.toFixed(1)).join(',')).join(' ');
-    if (pts.length >= 3) g += `<polygon points="${str}" fill="${s.color}" fill-opacity="${s.me ? 0.16 : 0.05}" stroke="${s.color}" stroke-width="${s.me ? 3 : 2}" ${s.me ? '' : 'stroke-dasharray="6 5"'} stroke-linejoin="round"/>`;
+    if (pts.length >= 3) g += `<polygon points="${str}" fill="${s.color}" fill-opacity="${s.me ? 0.16 : 0.05}" stroke="${s.color}" stroke-width="${s.me ? 3 : 2}" ${s.me ? '' : `stroke-dasharray="${s.dash || '6 5'}"`} stroke-linejoin="round"/>`;
     else if (pts.length === 2) g += `<polyline points="${str}" fill="none" stroke="${s.color}" stroke-width="2"/>`;
-    g += pts.map((p) => `<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="${s.me ? 4.5 : 3.5}" fill="${s.color}"/>`).join('');
+    g += pts.map((p) => marker(p[0], p[1], s.me ? 'circle' : s.shape, s.color, s.me ? 4.5 : 4)).join('');
   }
   if (opt.labels !== false) g += D.axes.map((a, i) => {
     const [x, y] = pt(i, 1.2), c = Math.cos(ang(i));
@@ -133,7 +133,33 @@ function miniRadar(idx) {
   const [hx, hy] = pt(idx, 1);
   return `<svg viewBox="0 0 40 40" aria-hidden="true"><polygon points="${ring}" fill="none" stroke="#26344F"/>${spokes}<circle cx="${hx.toFixed(1)}" cy="${hy.toFixed(1)}" r="3" fill="${GOLD}"/></svg>`;
 }
-const legendLine = (color, dashed) => `<svg viewBox="0 0 22 6" aria-hidden="true"><line x1="0" y1="3" x2="22" y2="3" stroke="${color}" stroke-width="${dashed ? 2 : 3}" ${dashed ? 'stroke-dasharray="4 3"' : ''}/></svg>`;
+// Couleurs du graphe : la couleur du parti est conservée tant qu'elle se distingue nettement
+// de l'or (« vous ») et des autres candidats affichés ; sinon une couleur de remplacement est prise.
+const ALT = ['#4CC9F0', '#F72585', '#B8E986', '#FF9F1C', '#B388FF', '#F1F3F5', '#2EC4B6'];
+const SLOTS = [{ dash: '7 5', shape: 'circle' }, { dash: '2 4', shape: 'square' }, { dash: '12 4 2 4', shape: 'triangle' }];
+function lab(hex) {
+  const c = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255).map((v) => (v > 0.04045 ? ((v + 0.055) / 1.055) ** 2.4 : v / 12.92));
+  const [x, y, z] = [(c[0] * 0.4124 + c[1] * 0.3576 + c[2] * 0.1805) / 0.95047, c[0] * 0.2126 + c[1] * 0.7152 + c[2] * 0.0722, (c[0] * 0.0193 + c[1] * 0.1192 + c[2] * 0.9505) / 1.08883];
+  const f = (t) => (t > 0.008856 ? Math.cbrt(t) : 7.787 * t + 16 / 116);
+  return [116 * f(y) - 16, 500 * (f(x) - f(y)), 200 * (f(y) - f(z))];
+}
+const dE = (a, b) => { const p = lab(a), q = lab(b); return Math.hypot(p[0] - q[0], p[1] - q[1], p[2] - q[2]); };
+const MIN_DE = 32;
+function displayStyles(ids) {
+  const used = [GOLD, '#121B2E'], out = {};
+  ids.forEach((id, k) => {
+    let color = byId(id).couleur, adjusted = false;
+    if (used.some((u) => dE(u, color) < MIN_DE)) { color = ALT.find((a) => used.every((u) => dE(u, a) >= MIN_DE)) || ALT[k % ALT.length]; adjusted = true; }
+    used.push(color); out[id] = { color, adjusted, ...SLOTS[k % SLOTS.length] };
+  });
+  return out;
+}
+function marker(x, y, shape, color, r) {
+  if (shape === 'square') return `<rect x="${(x - r).toFixed(1)}" y="${(y - r).toFixed(1)}" width="${(2 * r).toFixed(1)}" height="${(2 * r).toFixed(1)}" fill="${color}"/>`;
+  if (shape === 'triangle') return `<polygon points="${x.toFixed(1)},${(y - r * 1.25).toFixed(1)} ${(x + r * 1.15).toFixed(1)},${(y + r * 0.85).toFixed(1)} ${(x - r * 1.15).toFixed(1)},${(y + r * 0.85).toFixed(1)}" fill="${color}"/>`;
+  return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r}" fill="${color}"/>`;
+}
+const legendLine = (color, dash, shape) => `<svg viewBox="0 0 30 10" aria-hidden="true" style="width:30px;height:10px"><line x1="0" y1="5" x2="30" y2="5" stroke="${color}" stroke-width="${dash ? 2 : 3}" ${dash ? `stroke-dasharray="${dash}"` : ''}/>${shape ? marker(15, 5, shape, color, 3.5) : ''}</svg>`;
 
 // ---------- vues ----------
 function viewHome() {
@@ -233,10 +259,11 @@ function viewResults() {
   counterBump();
   const prox = withData().map((c) => ({ c, ...proximity(c.id) })).filter((x) => x.pct !== null).sort((a, b) => b.pct - a.pct || b.n - a.n);
   if (!resSel) resSel = prox.filter((x) => x.n >= MIN_COMMON).slice(0, PRESEL).map((x) => x.c.id);
-  const series = resSel.map((id) => ({ vals: D.axes.map((a) => candPos(a.id, id)), color: byId(id).couleur }));
+  const ds = displayStyles(resSel);
+  const series = resSel.map((id) => ({ vals: D.axes.map((a) => candPos(a.id, id)), ...ds[id] }));
   series.push({ vals: D.axes.map((a) => userPos(a.id)), color: GOLD, me: true });
-  const legend = `<span>${legendLine(GOLD)}Vous</span>` + resSel.map((id) => `<span>${legendLine(byId(id).couleur, true)}${esc(byId(id).nom)}</span>`).join('');
-  const chips = shuffled(withData(), 7).map((c) => `<button class="chip" style="--c:${c.couleur}" data-sel="${c.id}" aria-pressed="${resSel.includes(c.id)}"><span class="pdot" style="--c:${c.couleur}"></span>${esc(c.nom)}</button>`).join('');
+  const legend = `<span>${legendLine(GOLD)}Vous</span>` + resSel.map((id) => `<span>${legendLine(ds[id].color, ds[id].dash, ds[id].shape)}${esc(byId(id).nom)}${ds[id].adjusted ? ' <small class="muted">(couleur ajustée)</small>' : ''}</span>`).join('');
+  const chips = shuffled(withData(), 7).map((c) => `<button class="chip" style="--c:${ds[c.id] ? ds[c.id].color : c.couleur}" data-sel="${c.id}" aria-pressed="${resSel.includes(c.id)}"><span class="pdot" style="--c:${ds[c.id] ? ds[c.id].color : c.couleur}"></span>${esc(c.nom)}</button>`).join('');
   const axes = showAllAxes ? D.axes : D.axes.slice(0, 3);
   const rows = axes.map((a) => {
     const u = userPos(a.id), x = (v) => ((v + 1) * 50).toFixed(1);
@@ -244,7 +271,7 @@ function viewResults() {
     let marks = '';
     const c0 = resSel.length ? candPos(a.id, resSel[0]) : null;
     if (u !== null && c0 !== null) marks += `<span class="gap-line" style="left:${Math.min(x(u), x(c0))}%;width:${Math.abs(x(u) - x(c0))}%"></span>`;
-    marks += resSel.map((id) => { const v = candPos(a.id, id); return v === null ? '' : `<span class="mk" style="left:${x(v)}%;--c:${byId(id).couleur}" title="${esc(byId(id).nom)}"></span>`; }).join('');
+    marks += resSel.map((id) => { const v = candPos(a.id, id); return v === null ? '' : `<span class="mk ${ds[id].shape}" style="left:${x(v)}%;--c:${ds[id].color}" title="${esc(byId(id).nom)}"></span>`; }).join('');
     if (u !== null) marks += `<span class="mk me" style="left:${x(u)}%" title="Vous"></span>`;
     const nd = resSel.filter((id) => candPos(a.id, id) === null).map((id) => byId(id).nom);
     return `<div class="gap-row"><span class="lbl">${esc(a.court)}<small>${na}/${nt} réponse${na > 1 ? 's' : ''}${na === 1 ? ' · indicatif' : ''}</small></span><div class="gap-track">${marks}</div></div>
