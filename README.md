@@ -47,3 +47,7 @@ Quelques questions hors radar portent sur un sujet récent qui a fait réagir de
 ## Relecture des positions
 
 Ouvrir `tools/relecture.html` (serveur local : `python3 -m http.server`, puis `/tools/relecture.html`). La page présente les questions une à une : énoncé et contexte à valider ou reformuler, puis chaque position citée (citation, niveau de source, lien) à valider, corriger (nouveau score) ou rejeter. Les décisions restent dans le navigateur ; « Exporter » produit `relecture.json`, à placer dans `data/`. Ensuite : `python3 tools/apply_relecture.py` (option `--dry` pour simuler) passe les positions en `valide`, applique les corrections, archive les rejets dans `data/positions_rejetees.json` et liste les questions à reformuler (à reporter dans `tools/build_questions.py`). Le script est idempotent : le relancer après tout `tools/gen.py`.
+
+## Skill de mise à jour
+
+`.claude/skills/maj-elysee/SKILL.md` décrit la procédure de veille et de mise à jour (candidats déclarés, programmes, positions citées, questions d'actualité) pour Claude Code : règles de sourcing, étapes, tests, compte rendu. On l'invoque avec `/maj-elysee`.
