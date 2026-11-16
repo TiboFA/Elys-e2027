@@ -825,7 +825,7 @@
   "citation": "Réserver les aides sociales non-contributives, les allocations familiales et le logement social aux Français.",
   "niveau": "programme",
   "source": {
-   "url": "https://assets.ericzemmour.fr/ressources/tracts/avenir-est-a-nous.pdf",
+   "url": "https://www.ericzemmour.fr/priorites",
    "consulte": "2026-11-16"
   },
   "note": "Tract de campagne d'octobre 2026.",
@@ -2989,7 +2989,7 @@
   "citation": "Supprimer l’AME qui soigne les clandestins avec votre argent.",
   "niveau": "programme",
   "source": {
-   "url": "https://assets.ericzemmour.fr/ressources/tracts/avenir-est-a-nous.pdf",
+   "url": "https://www.ericzemmour.fr/priorites",
    "consulte": "2026-11-16"
   },
   "note": "Tract de campagne d'octobre 2026.",
@@ -3282,19 +3282,6 @@
   "statut": "propose"
  },
  {
-  "question": "q51",
-  "candidat": "zemmour",
-  "score": 1,
-  "citation": "Rétablir l’exigence, le mérite et la transmission de notre histoire et de notre culture.",
-  "niveau": "programme",
-  "source": {
-   "url": "https://assets.ericzemmour.fr/ressources/tracts/avenir-est-a-nous.pdf",
-   "consulte": "2026-11-16"
-  },
-  "note": "Tract de campagne d'octobre 2026.",
-  "statut": "propose"
- },
- {
   "question": "q52",
   "candidat": "retailleau",
   "score": 1,
@@ -3502,6 +3489,195 @@
    "consulte": "2026-11-16"
   },
   "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q11",
+  "candidat": "zemmour",
+  "score": 2,
+  "citation": "Peines plancher et loi anti-casseurs.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.ericzemmour.fr/priorites",
+   "consulte": "2026-11-16"
+  },
+  "note": "Priorités publiées sur le site du candidat.",
+  "statut": "propose"
+ },
+ {
+  "question": "q28",
+  "candidat": "zemmour",
+  "score": 2,
+  "citation": "Fin des aménagements de peine et de l’excuse de minorité.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.ericzemmour.fr/priorites",
+   "consulte": "2026-11-16"
+  },
+  "note": "Priorités publiées sur le site du candidat.",
+  "statut": "propose"
+ },
+ {
+  "question": "q27",
+  "candidat": "zemmour",
+  "score": 1,
+  "citation": "Fin des aménagements de peine et de l’excuse de minorité.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.ericzemmour.fr/priorites",
+   "consulte": "2026-11-16"
+  },
+  "note": "Fin de l'excuse de minorité, sans âge de majorité pénale précisé.",
+  "statut": "propose"
+ },
+ {
+  "question": "q12",
+  "candidat": "zemmour",
+  "score": 2,
+  "citation": "construction de 100 000 places de prison en 24 mois",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.ericzemmour.fr/priorites",
+   "consulte": "2026-11-16"
+  },
+  "note": "Priorités publiées sur le site du candidat.",
+  "statut": "propose"
+ },
+ {
+  "question": "q01",
+  "candidat": "zemmour",
+  "score": -2,
+  "citation": "la fin des droits de succession et de l’impôt sur la fortune",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.ericzemmour.fr/priorites",
+   "consulte": "2026-11-16"
+  },
+  "note": "Priorités publiées sur le site du candidat.",
+  "statut": "propose"
+ },
+ {
+  "question": "q51",
+  "candidat": "zemmour",
+  "score": 2,
+  "citation": "fin du collège unique, examens exigeants à chaque cycle",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.ericzemmour.fr/priorites",
+   "consulte": "2026-11-16"
+  },
+  "note": "Priorités publiées sur le site du candidat.",
+  "statut": "propose"
+ },
+ {
+  "question": "q43",
+  "candidat": "zemmour",
+  "score": 1,
+  "citation": "Arrêter l’immigration légale et illégale en reprenant le contrôle de nos frontières.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.ericzemmour.fr/priorites",
+   "consulte": "2026-11-16"
+  },
+  "note": "Contrôle des frontières, sans mention explicite de Schengen.",
+  "statut": "propose"
+ },
+ {
+  "question": "q02",
+  "candidat": "riner",
+  "score": 1,
+  "citation": "savoir dépenser moins et réinjecter mieux",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://lcp.fr/actualites/retraites-salaires-securite-que-propose-teddy-riner-pour-la-presidentielle-444935",
+   "consulte": "2026-11-16",
+   "media": "LCP, 10 novembre 2026"
+  },
+  "note": "Entretien au Parisien, rapporté par LCP.",
+  "statut": "propose"
+ },
+ {
+  "question": "q38",
+  "candidat": "riner",
+  "score": 1,
+  "citation": "sortir du carcan figé des 35 heures, mais sans le remettre en question",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://lcp.fr/actualites/retraites-salaires-securite-que-propose-teddy-riner-pour-la-presidentielle-444935",
+   "consulte": "2026-11-16",
+   "media": "LCP, 10 novembre 2026"
+  },
+  "note": "Entretien au Parisien, rapporté par LCP.",
+  "statut": "propose"
+ },
+ {
+  "question": "q19",
+  "candidat": "riner",
+  "score": 1,
+  "citation": "Le judoka promet de garder le \"système solidaire par répartition\", même s'il n'écarte pas la possibilité de recourir à \"une part de capitalisation\"",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://lcp.fr/actualites/retraites-salaires-securite-que-propose-teddy-riner-pour-la-presidentielle-444935",
+   "consulte": "2026-11-16",
+   "media": "LCP, 10 novembre 2026"
+  },
+  "note": "N'exclut pas une part de capitalisation.",
+  "statut": "propose"
+ },
+ {
+  "question": "q03",
+  "candidat": "bouamrane",
+  "score": -1,
+  "citation": "Il faut déconnecter le travail subi du travail voulu",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://oumma.com/karim-bouamrane-defie-melenchon-et-vise-le-second-tour-de-la-presidentielle-2027/amp/",
+   "consulte": "2026-11-16",
+   "media": "Oumma"
+  },
+  "note": "Selon l'article, certains pourraient travailler jusqu'à 67, 68 ou 69 ans, les métiers pénibles partant beaucoup plus tôt.",
+  "statut": "propose"
+ },
+ {
+  "question": "q51",
+  "candidat": "bouamrane",
+  "score": -1,
+  "citation": "Le tronc commun, c’est l’école républicaine",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.sudradio.fr/linvite-politique/karim-bouamrane-il-faut-arreter-de-regarder-melenchon-comme-le-superman-de-la-gauche",
+   "consulte": "2026-11-16",
+   "media": "Sud Radio"
+  },
+  "note": "Entretien sur Sud Radio.",
+  "statut": "propose"
+ },
+ {
+  "question": "q34",
+  "candidat": "polony",
+  "score": 1,
+  "citation": "Ils affrontent les prix imposés, les traités de libre-échange et la concurrence internationale déloyale qui va avec",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://natachapolony2027.fr/natacha-polony/ma-vision",
+   "consulte": "2026-11-16",
+   "media": "Site de campagne"
+  },
+  "note": "Texte « Ma vision pour la France » sur le site de campagne.",
+  "statut": "propose"
+ },
+ {
+  "question": "q16",
+  "candidat": "polony",
+  "score": 1,
+  "citation": "Une France où le peuple est consulté et où le résultat d’un référendum est respecté.",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://natachapolony2027.fr/natacha-polony/ma-vision",
+   "consulte": "2026-11-16",
+   "media": "Site de campagne"
+  },
+  "note": "Texte « Ma vision pour la France » ; pas de mention explicite du RIC.",
   "statut": "propose"
  }
 ]
