@@ -1,8 +1,13 @@
 {
- "version": "0.6",
+ "version": "0.7",
  "date": "2026-11-16",
  "statut": "Proposition en attente de validation",
  "historique": [
+  {
+   "version": "0.7",
+   "date": "2026-11-16",
+   "resume": "Retrait de Xavier Bertrand et Jean Lassalle, dont la candidature n'est pas clairement déclarée (conservés dans data/candidats_en_attente.json). 36 candidats, 345 positions."
+  },
   {
    "version": "0.6",
    "date": "2026-11-16",

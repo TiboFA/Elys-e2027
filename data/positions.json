@@ -2273,62 +2273,6 @@
   "statut": "propose"
  },
  {
-  "question": "q03",
-  "candidat": "bertrand",
-  "score": -2,
-  "citation": "Si on vit plus longtemps, il faut accepter de travailler plus longtemps, de repousser l’âge légal",
-  "niveau": "candidat",
-  "source": {
-   "url": "https://www.nousfrance.fr/2026/08/presidentielle-2027-xavier-bertrand-un-non-candidat-en-campagne-lopinion/",
-   "consulte": "2026-11-16",
-   "media": "L'Opinion, août 2026"
-  },
-  "note": "Article de L'Opinion repris sur le site de Nous France.",
-  "statut": "propose"
- },
- {
-  "question": "q02",
-  "candidat": "bertrand",
-  "score": 2,
-  "citation": "Xavier Bertrand veut réduire de 20 milliards d’euros par an les dépenses publiques pendant cinq ans, et baisser le nombre de fonctionnaires",
-  "niveau": "candidat",
-  "source": {
-   "url": "https://www.nousfrance.fr/2026/08/presidentielle-2027-xavier-bertrand-un-non-candidat-en-campagne-lopinion/",
-   "consulte": "2026-11-16",
-   "media": "L'Opinion, août 2026"
-  },
-  "note": "Propos rapportés par L'Opinion, repris sur le site de Nous France.",
-  "statut": "propose"
- },
- {
-  "question": "q20",
-  "candidat": "bertrand",
-  "score": 1,
-  "citation": "Il convient qu’il faudra faire des économies sur les retraites et l’assurance chômage – mais pas sur la santé",
-  "niveau": "candidat",
-  "source": {
-   "url": "https://www.nousfrance.fr/2026/08/presidentielle-2027-xavier-bertrand-un-non-candidat-en-campagne-lopinion/",
-   "consulte": "2026-11-16",
-   "media": "L'Opinion, août 2026"
-  },
-  "note": "Propos rapportés par L'Opinion, repris sur le site de Nous France.",
-  "statut": "propose"
- },
- {
-  "question": "q19",
-  "candidat": "bertrand",
-  "score": 2,
-  "citation": "La défense de la retraite par capitalisation",
-  "niveau": "candidat",
-  "source": {
-   "url": "https://www.nousfrance.fr/2026/08/je-nai-pas-le-profil-dune-prise-de-guerre-je-trace-ma-route-le-pari-de-xavier-bertrand-pour-simposer-comme-candidat-de-la-droite-et-du-centre-le-figaro/",
-   "consulte": "2026-11-16",
-   "media": "Le Figaro, août 2026"
-  },
-  "note": "Résumé de ses priorités par Le Figaro, repris sur le site de Nous France.",
-  "statut": "propose"
- },
- {
   "question": "q33",
   "candidat": "roussel",
   "score": 2,
@@ -3322,20 +3266,6 @@
  },
  {
   "question": "q53",
-  "candidat": "bertrand",
-  "score": 2,
-  "citation": "Nous la reconstruirons par une République des territoires.",
-  "niveau": "candidat",
-  "source": {
-   "url": "https://www.nousfrance.fr/2026/03/lettre-aux-maires-de-xavier-bertrand/",
-   "consulte": "2026-11-16",
-   "media": "Nous France, mars 2026"
-  },
-  "note": "Lettre aux maires publiée par Nous France.",
-  "statut": "propose"
- },
- {
-  "question": "q53",
   "candidat": "lisnard",
   "score": 2,
   "citation": "doit être prise au niveau le plus proche de ceux qu’elle concerne et ne doit remonter à l’échelon supérieur que ce que l’échelon inférieur ne peut accomplir seul",
@@ -3449,20 +3379,6 @@
    "consulte": "2026-11-16"
   },
   "note": "",
-  "statut": "propose"
- },
- {
-  "question": "q55",
-  "candidat": "bertrand",
-  "score": 1,
-  "citation": "Il faut une République des territoires et un mandat unique",
-  "niveau": "candidat",
-  "source": {
-   "url": "https://www.nousfrance.fr/2026/07/rencontres-economiques-daix-il-faut-une-republique-des-territoires-et-un-mandat-unique-pour-xavier-bertrand-la-provence/",
-   "consulte": "2026-11-16",
-   "media": "La Provence, juillet 2026"
-  },
-  "note": "Mandat unique, durée non précisée dans cet extrait.",
   "statut": "propose"
  },
  {
