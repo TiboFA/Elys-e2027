@@ -203,6 +203,7 @@ function viewHome() {
   <p class="small muted">Votre graphe s'affiche dès ${MIN_RESULTS} réponses. Chaque série d'une dizaine de questions l'affine ; vous pouvez vous arrêter et reprendre plus tard.</p>
   <div class="stack">${cta}</div>
   <a class="link-under" href="#/methode">Méthodologie et sources</a>
+  <a class="link-under" href="#/avertissement" style="margin-top:8px">Avertissement : ce n'est pas une consigne de vote</a>
   <div class="banner" style="margin-top:20px">Version de travail : les positions des candidats sont extraites de leurs textes et déclarations publiés, et attendent une validation humaine.</div>`;
 }
 
@@ -247,6 +248,7 @@ function saysBlock(q) {
         <blockquote>« ${esc(it.citation)} »</blockquote>
         ${it.note ? `<p class="small muted">${esc(it.note)}</p>` : ''}
         <p class="src"><span class="lvl">${NIVEAU_LABEL[it.niveau]}</span><a href="${esc(it.source.url)}" target="_blank" rel="noopener noreferrer">${esc(media)}</a>, consultée le ${frDate(it.source.consulte)}</p>
+        <a class="report" href="#/contact?q=${q.id}&c=${c.id}">Signaler une erreur sur cette position</a>
       </div></details>`;
   }).join('');
   return `<div class="says">
@@ -378,15 +380,102 @@ function viewMethod() {
   <p>Il n'y a ni compte ni suivi. Vos réponses sont enregistrées uniquement dans le navigateur de cet appareil et ne sont envoyées nulle part. Seul un compteur global du nombre de simulations peut exister, sans aucune information sur les réponses.</p></div>`;
 }
 
+
+// ---------- pages d'information ----------
+function viewDisclaimer() {
+  return `<div class="prose"><p class="eyebrow">À lire avant d'utiliser l'outil</p><h1>Avertissement</h1>
+  <div class="notice">Élysée 2027 est un outil d'information indépendant. Il ne donne aucune consigne de vote et ne remplace ni la lecture des programmes, ni le débat.</div>
+  <h2>Indépendance</h2>
+  <p>L'outil n'est lié à aucun parti, candidat, équipe de campagne, média, institution publique ou entreprise de sondage. Il ne reçoit aucun financement politique. Il ne contient ni publicité ni traceur.</p>
+  <h2>Ce que mesure l'outil, et ce qu'il ne mesure pas</h2>
+  <ul>
+    <li>Le radar et les pourcentages de proximité reflètent uniquement les questions posées et les positions qu'il a été possible de documenter. Ils simplifient des positions politiques souvent plus nuancées.</li>
+    <li>Un candidat sans position documentée sur un sujet n'est pas « neutre » sur ce sujet : il ne s'est simplement pas exprimé, ou l'outil n'a pas trouvé la source.</li>
+    <li>La proximité avec un candidat n'est pas une recommandation. Un score élevé sur peu de questions dit peu de chose ; l'outil l'indique.</li>
+    <li>Ce n'est pas un sondage : aucun résultat agrégé des utilisateurs n'est collecté ni publié.</li>
+  </ul>
+  <h2>Sources et lecture des positions</h2>
+  <ul>
+    <li>Chaque position repose sur une citation exacte d'un programme, d'un site officiel ou d'un article de presse, avec le lien et la date de consultation. Les citations sont courtes et reproduites à des fins d'information, conformément au droit de courte citation.</li>
+    <li>Le classement d'une citation (« favorable », « opposé »…) est une lecture d'analyste. Il peut être discuté : la citation et sa source sont toujours affichées pour que chacun juge par lui-même.</li>
+    <li>Les programmes évoluent pendant la campagne. Une position peut être dépassée entre deux mises à jour ; la date de chaque version est indiquée.</li>
+  </ul>
+  <h2>Erreurs et droit de réponse</h2>
+  <p>Malgré le soin apporté, des erreurs sont possibles. Tout candidat, toute équipe de campagne et tout utilisateur peut signaler une citation erronée, mal attribuée, dépassée ou mal classée via le <a href="#/contact">formulaire de contact</a>. Les demandes fondées sont corrigées dans la version suivante, avec mention dans l'historique.</p>
+  <h2>Responsabilité</h2>
+  <p>L'outil est fourni en l'état, à titre informatif. L'éditeur ne saurait être tenu responsable de l'usage qui en est fait ni des décisions prises sur son fondement. Les liens vers des sites tiers sont fournis pour vérification ; leur contenu relève de leurs éditeurs.</p></div>`;
+}
+
+function viewLegal() {
+  return `<div class="prose"><p class="eyebrow">Informations légales</p><h1>Mentions légales et confidentialité</h1>
+  <h2>Éditeur</h2>
+  <p>Ce site est édité à titre non professionnel par un particulier, qui a choisi de ne pas rendre public son nom, comme le permet l'article 6, III, 2 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique. Ses éléments d'identification ont été communiqués à l'hébergeur. Pour toute demande, utilisez le <a href="#/contact">formulaire de contact</a>.</p>
+  <h2>Hébergeur</h2>
+  <p>${esc(CFG.HOST_INFO || "GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis — https://github.com")}</p>
+  <h2>Données personnelles</h2>
+  <ul>
+    <li><b>Questionnaire :</b> aucune donnée n'est envoyée. Vos réponses, l'ordre des questions et vos préférences sont enregistrés uniquement dans le stockage local de votre navigateur. Vous pouvez les effacer à tout moment avec le bouton « Recommencer » ou en vidant les données du site dans votre navigateur.</li>
+    <li><b>Cookies et traceurs :</b> aucun. Ni mesure d'audience nominative, ni publicité, ni réseau social intégré. Les polices de caractères sont hébergées sur le site lui-même.</li>
+    <li><b>Compteur de simulations${CFG.COUNTER_URL ? '' : ' (non activé)'} :</b> s'il est activé, il n'enregistre qu'un nombre total, sans aucune réponse ni identifiant.</li>
+    <li><b>Formulaire de contact :</b> le message, l'objet et, si vous la donnez, votre adresse électronique sont transmis au service de réception des messages${CFG.CONTACT_SERVICE ? ' (' + esc(CFG.CONTACT_SERVICE) + ')' : ''}, uniquement pour traiter votre demande. Ils sont conservés au plus douze mois puis supprimés. L'adresse électronique est facultative : sans elle, aucune réponse ne peut vous être apportée.</li>
+    <li><b>Vos droits :</b> vous pouvez demander l'accès, la rectification ou l'effacement des données transmises via le formulaire, et introduire une réclamation auprès de la CNIL (www.cnil.fr).</li>
+  </ul>
+  <h2>Propriété intellectuelle</h2>
+  <p>Les citations restent la propriété de leurs auteurs et sont reproduites au titre du droit de courte citation, avec leur source. Le code et la méthode de l'outil sont publiés ${CFG.LICENCE ? 'sous licence ' + esc(CFG.LICENCE) : 'sur le dépôt du projet'}.</p></div>`;
+}
+
+const CONTACT_OBJETS = ["Signaler une erreur sur une position", "Droit de réponse d'un candidat ou de son équipe", "Proposer une question ou une source", "Autre"];
+function viewContact(params) {
+  const q = params.get('q'), c = params.get('c');
+  const question = q ? D.baseQuestions.find((x) => x.id === q) : null, cand = c ? byId(c) : null;
+  const pre = question ? `${question.id} · « ${question.enonce} »${cand ? ' · ' + cand.nom : ''}` : '';
+  const active = !!CFG.CONTACT_URL;
+  return `<div class="prose"><p class="eyebrow">Contact</p><h1>Écrire à l'éditeur</h1>
+  <p class="lead">Une citation erronée, une position dépassée, un droit de réponse, une suggestion : chaque message est lu.</p>
+  ${active ? '' : '<div class="notice">Le formulaire n\'est pas encore relié à un service de réception : il ne peut pas encore être envoyé.</div>'}
+  <form class="form" id="contact-form" novalidate>
+    <label>Objet<select name="objet" required>${CONTACT_OBJETS.map((o, i) => `<option${(q && i === 0) ? ' selected' : ''}>${esc(o)}</option>`).join('')}</select></label>
+    <label>Question ou candidat concerné (facultatif)<input name="question" maxlength="300" value="${esc(pre)}" placeholder="Par exemple : question sur le SMIC, Marine Tondelier"></label>
+    <label>Message<textarea name="message" required maxlength="3000" placeholder="Décrivez le problème. Pour une correction, indiquez si possible la source exacte (lien, date)."></textarea></label>
+    <label>Votre adresse électronique (facultative, seulement si vous souhaitez une réponse)<input name="email" type="email" maxlength="200" autocomplete="email"></label>
+    <div class="hp" aria-hidden="true"><label>Ne pas remplir<input name="site_web" tabindex="-1" autocomplete="off"></label></div>
+    <p class="small muted">Les données envoyées servent uniquement à traiter votre message et sont supprimées au plus tard douze mois après. Voir <a href="#/mentions">confidentialité</a>.</p>
+    <button class="btn primary block" type="submit" ${active ? '' : 'disabled aria-disabled="true"'}>Envoyer</button>
+    <p class="small muted" id="contact-status" role="status" aria-live="polite"></p>
+  </form></div>`;
+}
+async function sendContact(form) {
+  const st = document.getElementById('contact-status');
+  const f = new FormData(form);
+  if (f.get('site_web')) { st.textContent = 'Message envoyé. Merci.'; form.reset(); return; } // robot
+  const message = String(f.get('message') || '').trim();
+  if (message.length < 10) { st.textContent = 'Le message est trop court.'; return; }
+  const email = String(f.get('email') || '').trim();
+  if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { st.textContent = "L'adresse électronique semble incorrecte."; return; }
+  const btn = form.querySelector('button[type=submit]'); btn.disabled = true; st.textContent = 'Envoi en cours…';
+  try {
+    const r = await fetch(CFG.CONTACT_URL, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({ objet: f.get('objet'), question: f.get('question'), message, email: email || undefined, page: 'Élysée 2027 v' + D.version.version }) });
+    if (!r.ok) throw new Error(r.status);
+    st.textContent = 'Message envoyé. Merci.'; form.reset();
+  } catch { st.textContent = "L'envoi a échoué. Réessayez plus tard."; }
+  btn.disabled = false;
+}
+
 // ---------- routeur ----------
 function route() {
-  const [p, arg] = location.hash.replace(/^#\/?/, '').split('/');
+  const [path, query] = location.hash.replace(/^#\/?/, '').split('?');
+  const [p, arg] = path.split('/');
+  const params = new URLSearchParams(query || '');
   let html;
   if (p === 'quiz') html = viewQuiz(parseInt(arg, 10) || 1);
   else if (p === 'serie') html = viewSeries(parseInt(arg, 10) || 1);
   else if (p === 'resultats') html = viewResults();
   else if (p === 'candidats') html = viewCandidates();
   else if (p === 'methode') html = viewMethod();
+  else if (p === 'avertissement') html = viewDisclaimer();
+  else if (p === 'mentions') html = viewLegal();
+  else if (p === 'contact') html = viewContact(params);
   else html = viewHome();
   document.body.classList.toggle('focus', ['quiz', 'serie', 'resultats'].includes(p));
   $app.innerHTML = html;
@@ -426,6 +515,7 @@ document.addEventListener('click', (e) => {
     if (confirm('Effacer toutes vos réponses sur cet appareil ?')) { reset(); location.hash = '#/'; route(); }
   }
 });
+document.addEventListener('submit', (e) => { if (e.target.id === 'contact-form') { e.preventDefault(); sendContact(e.target); } });
 window.addEventListener('hashchange', route);
 
 (async function init() {

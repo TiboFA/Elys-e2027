@@ -18,9 +18,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://tibofa.github.io/Elys-e2027/identite/4-image-partage/partage-1200x630.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/inter-latin-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -35,9 +33,16 @@
 </header>
 <main id="app" tabindex="-1"><p class="loading">Chargement des dossiers…</p></main>
 <footer class="foot">
+  <nav class="footlinks" aria-label="Informations">
+    <a href="#/avertissement">Avertissement</a>
+    <a href="#/methode">Méthode</a>
+    <a href="#/mentions">Mentions légales et confidentialité</a>
+    <a href="#/contact">Contact</a>
+  </nav>
+  <span>Outil indépendant, sans lien avec un parti, un candidat ou un média. Ce n'est pas une consigne de vote.</span>
   <span id="foot-version"></span>
   <span id="foot-counter"></span>
-  <span>Aucune donnée personnelle collectée. Vos réponses restent sur cet appareil.</span>
+  <span>Le questionnaire ne collecte aucune donnée personnelle : vos réponses restent sur cet appareil.</span>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <noscript><p class="loading">Cet outil a besoin de JavaScript pour fonctionner.</p></noscript>
