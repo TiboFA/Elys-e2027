@@ -55,4 +55,4 @@ echo "  git remote add origin https://github.com/${PSEUDO}/<nom-du-depot>.git"
 echo "  git push -u origin main"
 echo
 echo "Ensuite, sur GitHub : Settings > Pages > Deploy from a branch > main > / (root)."
-echo "Vérifiez l'anonymat avant de publier :  git log --format='%an <%ae>'  (un seul auteur)  et  grep -ri tibofa ."
+echo "Vérifiez l'anonymat avant de publier :  git log --format='%an <%ae>'  (un seul auteur)  et  grep -ri <votre-ancien-pseudo> ."
