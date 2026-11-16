@@ -13,6 +13,8 @@ const NIVEAU = { programme: 3, candidat: 2, proche: 1 };
 const NIVEAU_LABEL = { programme: 'Programme', candidat: 'Déclaration du candidat', proche: "Déclaration d'un proche" };
 const MIN_COMMON = 6;
 const MAX_SEL = 4;
+const PER = 8;          // questions par série
+const MIN_RESULTS = 8;  // réponses avec un avis nécessaires pour afficher le graphe
 
 let D = {};                // données
 let state = { answers: {}, seed: 0, counted: false };
@@ -44,6 +46,9 @@ function posFor(qid, cid) {
 const answered = (qid) => state.answers[qid] && 'v' in state.answers[qid];
 const countAnswered = () => D.questions.filter((q) => answered(q.id)).length;
 const countValued = () => D.questions.filter((q) => answered(q.id) && state.answers[q.id].v !== null).length;
+const nbSeries = () => Math.ceil(D.questions.length / PER);
+const firstUnanswered = () => { const i = D.questions.findIndex((q) => !answered(q.id)); return i < 0 ? D.questions.length : i + 1; };
+const unlocked = () => countValued() >= MIN_RESULTS;
 
 // position sur un axe, de -1 (pôle A) à +1 (pôle B)
 function axisPos(axeId, scoreOf) {
@@ -86,13 +91,14 @@ async function counterBump() {
 function viewHome() {
   const done = countAnswered(), tot = D.questions.length;
   const nw = withData().length;
+  const nxt = firstUnanswered();
   let cta = `<a class="btn primary block" href="#/quiz/1">Commencer la simulation</a>`;
-  if (done > 0 && done < tot) cta = `<a class="btn primary block" href="#/quiz/${done + 1}">Reprendre (question ${done + 1} sur ${tot})</a><button class="btn ghost block" data-act="reset" style="margin-top:10px">Recommencer</button>`;
+  if (done > 0 && done < tot) cta = `<a class="btn primary block" href="#/quiz/${nxt}">Reprendre (question ${nxt} sur ${tot})</a>${unlocked() ? '<a class="btn block" href="#/resultats" style="margin-top:10px">Voir mon graphe</a>' : ''}<button class="btn ghost block" data-act="reset" style="margin-top:10px">Recommencer</button>`;
   if (done === tot) cta = `<a class="btn primary block" href="#/resultats">Voir mon résultat</a><button class="btn ghost block" data-act="reset" style="margin-top:10px">Recommencer</button>`;
   return `
   <p class="eyebrow">Présidentielle 2027 · 18 avril 2027</p>
   <h1>Situez-vous par rapport aux candidats déclarés</h1>
-  <p class="lead">${tot} affirmations, huit thèmes, une carte de vos positions. Pour chaque affirmation, vous pouvez consulter ce que les candidats ont écrit ou dit, avec la source.</p>
+  <p class="lead">${tot} affirmations réparties en ${nbSeries()} séries de ${PER}, sur huit thèmes. Votre graphe apparaît dès ${MIN_RESULTS} réponses avec un avis ; chaque série supplémentaire l'affine. Pour chaque affirmation, vous pouvez consulter ce que les candidats ont écrit ou dit, avec la source.</p>
   <div class="banner">Version de travail. Les positions des candidats sont extraites de leurs textes publiés et attendent une validation humaine avant publication définitive.</div>
   ${cta}
   <div class="stats">
@@ -111,13 +117,16 @@ function viewQuiz(n) {
   const q = D.questions[n - 1];
   const a = state.answers[q.id];
   const axe = D.axes.find((x) => x.id === q.axe);
-  const prog = D.questions.map((x, i) => `<i class="${answered(x.id) ? 'done' : ''} ${i + 1 === n ? 'cur' : ''}"></i>`).join('');
+  const serie = Math.ceil(n / PER), s0 = (serie - 1) * PER;
+  const prog = D.questions.slice(s0, s0 + PER).map((x, i) => `<i class="${answered(x.id) ? 'done' : ''} ${s0 + i + 1 === n ? 'cur' : ''}"></i>`).join('');
   const opts = LEVELS.map((l) => `<button class="opt" data-v="${l.v}" aria-pressed="${a && a.v === l.v}"><span class="dot"></span>${l.t}</button>`).join('')
     + `<button class="opt na" data-v="null" aria-pressed="${a && a.v === null}"><span class="dot"></span>Sans avis</button>`;
-  const last = n === tot;
+  const endSerie = n % PER === 0 || n === tot;
+  const nextHref = n === tot ? '#/resultats' : endSerie ? '#/serie/' + serie : '#/quiz/' + (n + 1);
+  const nextLabel = n === tot ? 'Voir mes résultats' : endSerie ? 'Terminer la série' : 'Question suivante';
   return `
-  <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="${tot}" aria-valuenow="${n}" aria-label="Progression">${prog}</div>
-  <div class="qmeta"><span>${esc(axe.nom)}</span><span>${n} / ${tot}</span></div>
+  <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="${tot}" aria-valuenow="${n}" aria-label="Progression dans la série">${prog}</div>
+  <div class="qmeta"><span>Série ${serie}/${nbSeries()} · ${esc(axe.nom)}</span><span>${n} / ${tot}</span></div>
   <p class="statement">${esc(q.enonce)}</p>
   <p class="context">${esc(q.contexte)}</p>
   <div class="opts" role="group" aria-label="Votre position">${opts}</div>
@@ -125,8 +134,25 @@ function viewQuiz(n) {
   ${a ? `<div id="says">${saysBlock(q)}</div>` : `<div class="locked">Répondez pour voir ce qu'en disent les candidats. Les positions sont masquées avant votre réponse pour ne pas vous influencer.</div>`}
   <div class="qnav">
     ${n > 1 ? `<a class="btn back ghost" href="#/quiz/${n - 1}" aria-label="Question précédente">←</a>` : `<a class="btn back ghost" href="#/" aria-label="Accueil">←</a>`}
-    <a class="btn primary ${a ? '' : 'dis'}" ${a ? `href="${last ? '#/resultats' : '#/quiz/' + (n + 1)}"` : 'aria-disabled="true" tabindex="-1" style="opacity:.45;pointer-events:none"'}>${last ? 'Voir mes résultats' : 'Question suivante'}</a>
+    <a class="btn primary ${a ? '' : 'dis'}" ${a ? `href="${nextHref}"` : 'aria-disabled="true" tabindex="-1" style="opacity:.45;pointer-events:none"'}>${nextLabel}</a>
   </div>`;
+}
+
+function viewSeries(k) {
+  const tot = D.questions.length, done = countAnswered(), val = countValued(), K = nbSeries();
+  if (k >= K) { location.hash = '#/resultats'; return ''; }
+  const ok = unlocked();
+  const msg = ok
+    ? `<p class="lead">Votre graphe est disponible. Il repose sur ${val} réponse${val > 1 ? 's' : ''} avec un avis. Chaque série supplémentaire le rend plus précis.</p>`
+    : `<p class="lead">Il faut au moins ${MIN_RESULTS} réponses avec un avis pour afficher le graphe. Il vous en manque ${MIN_RESULTS - val}.</p>`;
+  return `<p class="eyebrow">Série ${k} sur ${K} terminée</p>
+  <h1>${done} question${done > 1 ? 's' : ''} sur ${tot}</h1>
+  ${msg}
+  <div class="stack">
+    ${ok ? '<a class="btn primary block" href="#/resultats">Voir mon graphe</a>' : ''}
+    <a class="btn ${ok ? '' : 'primary'} block" href="#/quiz/${k * PER + 1}">Continuer : série ${k + 1} (${Math.min(PER, tot - k * PER)} questions)</a>
+  </div>
+  <p class="small muted" style="margin-top:14px">Vous pouvez vous arrêter ici et reprendre plus tard : vos réponses sont gardées sur cet appareil.</p>`;
 }
 
 function saysBlock(q) {
@@ -181,7 +207,7 @@ function radarSVG(selected) {
 let resSel = null;
 function viewResults() {
   const done = countAnswered();
-  if (done === 0) return `<h1>Pas encore de résultat</h1><p class="lead">Répondez d'abord à quelques questions.</p><a class="btn primary" href="#/quiz/1">Commencer</a>`;
+  if (!unlocked()) { const need = MIN_RESULTS - countValued(); return `<p class="eyebrow">Votre carte</p><h1>Graphe verrouillé</h1><p class="lead">Il faut au moins ${MIN_RESULTS} réponses avec un avis pour dessiner vos positions. Il vous en manque ${need}.</p><a class="btn primary block" href="#/quiz/${firstUnanswered()}">${done ? 'Continuer le questionnaire' : 'Commencer'}</a>`; }
   counterBump();
   const prox = withData().map((c) => ({ c, ...proximity(c.id) })).filter((x) => x.pct !== null).sort((a, b) => b.pct - a.pct);
   if (!resSel) resSel = prox.filter((x) => x.n >= MIN_COMMON).slice(0, 3).map((x) => x.c.id);
@@ -192,7 +218,8 @@ function viewResults() {
     const m = (v, cls, col, label) => v === null ? '' : `<span class="mk ${cls}" style="left:${((v + 1) * 50).toFixed(1)}%;--c:${col}" title="${esc(label)}"></span>`;
     const marks = resSel.map((id) => m(candPos(a.id, id), '', byId(id).couleur, byId(id).nom)).join('') + m(u, 'me', '#d8b45a', 'Vous');
     const nd = resSel.filter((id) => candPos(a.id, id) === null).map((id) => byId(id).nom);
-    return `<div class="axis"><h3>${esc(a.nom)}</h3>
+    const na = D.questions.filter((q) => q.axe === a.id && answered(q.id) && state.answers[q.id].v !== null).length, nt = D.questions.filter((q) => q.axe === a.id).length;
+    return `<div class="axis"><h3>${esc(a.nom)} <span class="muted small" style="font-weight:400">· ${na}/${nt} réponse${na > 1 ? 's' : ''}${na === 1 ? ', indicatif' : ''}</span></h3>
       <div class="poles"><span>${esc(a.poleA)}</span><span>${esc(a.poleB)}</span></div>
       <div class="track">${marks}</div>
       ${u === null ? '<p class="nd">Vous n\'avez pas exprimé d\'avis sur ce thème.</p>' : ''}
@@ -205,7 +232,7 @@ function viewResults() {
   return `
   <p class="eyebrow">Votre carte</p>
   <h1>Vos positions</h1>
-  ${done < D.questions.length ? `<div class="banner">Vous avez répondu à ${done} question${done > 1 ? 's' : ''} sur ${D.questions.length}. <a href="#/quiz/${done + 1}">Continuer</a></div>` : ''}
+  ${done < D.questions.length ? `<div class="panel"><b>Graphe établi sur ${countValued()} réponse${countValued() > 1 ? 's' : ''}.</b><p class="small muted" style="margin:6px 0 12px">Il reste ${D.questions.length - done} question${D.questions.length - done > 1 ? 's' : ''}. Chaque réponse affine la carte, surtout sur les thèmes où vous avez peu répondu.</p><a class="btn primary block" href="#/quiz/${firstUnanswered()}">Affiner mon graphe</a></div>` : '<p class="small muted">Vous avez répondu à toutes les questions de cette version.</p>'}
   <p class="muted small">Sur chaque axe, le centre correspond au premier pôle et le bord extérieur au second. Les axes sans réponse ou sans position documentée ne sont pas tracés.</p>
   <div class="radar-wrap">${radarSVG(resSel)}<div class="legend">${legend}</div></div>
   <h2 style="margin-top:22px">Comparer avec</h2>
@@ -255,6 +282,8 @@ function viewMethod() {
   <li>Hiérarchie des sources : un programme publié pèse plus qu'une déclaration du candidat, qui pèse plus que celle d'un proche. Si plusieurs sources existent, la plus haute est retenue.</li>
   <li>Le passage de la citation à une note de -2 à +2 est une lecture d'analyste. Elle est affichée à côté de la citation pour que vous puissiez la contester, et validée par un humain avant publication.</li>
   <li>Quand aucune source ne traite le sujet, l'outil l'écrit. Ce n'est pas un refus de position : cela signifie « non trouvé dans les sources consultées ».</li></ul>
+  <h2>Séries et précision du graphe</h2>
+  <p>Les questions sont groupées en séries de ${PER}. Chaque série comporte une question par thème, de sorte que le graphe est équilibré dès la première série. Il s'affiche à partir de ${MIN_RESULTS} réponses avec un avis ; « sans avis » ne compte pas. Un thème où vous n'avez répondu qu'à une question est signalé comme indicatif.</p>
   <h2>Calcul de la proximité</h2>
   <p>Pour chaque candidat, on compare uniquement les questions où vous avez répondu et où une position est documentée. L'écart moyen est converti en pourcentage ; une question marquée « compte beaucoup pour moi » compte double. Le nombre de questions comparables est toujours indiqué. En dessous de ${MIN_COMMON}, le résultat est signalé comme indicatif.</p>
   <h2>Limites de cette version</h2>
@@ -276,6 +305,7 @@ function route() {
   const [p, arg] = h.split('/');
   let html;
   if (p === 'quiz') html = viewQuiz(parseInt(arg, 10) || 1);
+  else if (p === 'serie') html = viewSeries(parseInt(arg, 10) || 1);
   else if (p === 'resultats') html = viewResults();
   else if (p === 'candidats') html = viewCandidates();
   else if (p === 'methode') html = viewMethod();

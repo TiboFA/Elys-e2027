@@ -1,18 +1,258 @@
 [
- {"id":"q01","axe":"eco","sens":-1,"enonce":"Il faut rétablir un impôt sur la fortune ou créer un impôt plancher sur les très hauts patrimoines.","contexte":"L'ISF a été remplacé en 2018 par un impôt limité au patrimoine immobilier (IFI)."},
- {"id":"q02","axe":"eco","sens":1,"enonce":"Il faut réduire fortement la dépense publique, y compris le nombre d'agents publics.","contexte":"La question porte sur le niveau global de dépense de l'État, des collectivités et de la protection sociale."},
- {"id":"q03","axe":"social","sens":-1,"enonce":"L'âge légal de départ à la retraite doit être ramené à 62 ans ou moins.","contexte":"La réforme de 2023 prévoit un relèvement progressif de l'âge légal à 64 ans."},
- {"id":"q04","axe":"social","sens":-1,"enonce":"Le SMIC doit être porté à au moins 1 600 euros net par mois.","contexte":"La question porte sur une hausse décidée par l'État, et non sur les augmentations négociées en entreprise."},
- {"id":"q05","axe":"ecologie","sens":1,"enonce":"La France doit construire de nouveaux réacteurs nucléaires.","contexte":"Un programme de nouveaux réacteurs EPR2 est engagé ; son ampleur et son principe font débat."},
- {"id":"q06","axe":"ecologie","sens":-1,"enonce":"Il faut accélérer le développement de l'éolien et du solaire.","contexte":"La question porte sur le rythme d'installation et sur le soutien public à ces filières."},
- {"id":"q07","axe":"europe","sens":-1,"enonce":"La France doit accepter de nouveaux transferts de compétences vers l'Union européenne.","contexte":"Par exemple en matière de défense, de budget ou de vote à la majorité qualifiée."},
- {"id":"q08","axe":"europe","sens":-1,"enonce":"La France doit maintenir ou accroître son aide militaire à l'Ukraine.","contexte":"La question porte sur les livraisons d'armes et leur financement."},
- {"id":"q09","axe":"immigration","sens":1,"enonce":"Il faut réduire fortement l'immigration légale.","contexte":"Immigration de travail, familiale et étudiante ; l'asile relève d'un droit distinct."},
- {"id":"q10","axe":"immigration","sens":1,"enonce":"Certaines prestations sociales doivent être réservées aux Français.","contexte":"Mesure souvent désignée sous le nom de priorité ou préférence nationale."},
- {"id":"q11","axe":"securite","sens":1,"enonce":"Il faut rétablir des peines planchers pour les récidivistes.","contexte":"Une peine plancher est une peine minimale que le juge doit en principe prononcer."},
- {"id":"q12","axe":"securite","sens":1,"enonce":"Il faut construire davantage de places de prison.","contexte":"Le nombre de détenus dépasse la capacité des établissements pénitentiaires."},
- {"id":"q13","axe":"societe","sens":-1,"enonce":"La loi doit autoriser une aide active à mourir.","contexte":"La question porte sur le suicide assisté et l'euthanasie, au-delà des soins palliatifs."},
- {"id":"q14","axe":"societe","sens":1,"enonce":"Le port de signes religieux visibles doit être interdit à l'université.","contexte":"L'interdiction s'applique aujourd'hui à l'école, au collège et au lycée publics, pas à l'université."},
- {"id":"q15","axe":"institutions","sens":1,"enonce":"Les députés doivent être élus à la proportionnelle.","contexte":"Ils sont aujourd'hui élus au scrutin majoritaire à deux tours, par circonscription."},
- {"id":"q16","axe":"institutions","sens":1,"enonce":"Les citoyens doivent pouvoir déclencher eux-mêmes un référendum (RIC).","contexte":"Le référendum d'initiative citoyenne permettrait à un nombre donné de signataires d'imposer un vote."}
+ {
+  "id": "q01",
+  "axe": "eco",
+  "sens": -1,
+  "enonce": "Il faut rétablir un impôt sur la fortune ou créer un impôt plancher sur les très hauts patrimoines.",
+  "contexte": "L'ISF a été remplacé en 2018 par un impôt limité au patrimoine immobilier (IFI).",
+  "serie": 1
+ },
+ {
+  "id": "q03",
+  "axe": "social",
+  "sens": -1,
+  "enonce": "L'âge légal de départ à la retraite doit être ramené à 62 ans ou moins.",
+  "contexte": "La réforme de 2023 prévoit un relèvement progressif de l'âge légal à 64 ans.",
+  "serie": 1
+ },
+ {
+  "id": "q05",
+  "axe": "ecologie",
+  "sens": 1,
+  "enonce": "La France doit construire de nouveaux réacteurs nucléaires.",
+  "contexte": "Un programme de nouveaux réacteurs EPR2 est engagé ; son ampleur et son principe font débat.",
+  "serie": 1
+ },
+ {
+  "id": "q07",
+  "axe": "europe",
+  "sens": -1,
+  "enonce": "La France doit accepter de nouveaux transferts de compétences vers l'Union européenne.",
+  "contexte": "Par exemple en matière de défense, de budget ou de vote à la majorité qualifiée.",
+  "serie": 1
+ },
+ {
+  "id": "q09",
+  "axe": "immigration",
+  "sens": 1,
+  "enonce": "Il faut réduire fortement l'immigration légale.",
+  "contexte": "Immigration de travail, familiale et étudiante ; l'asile relève d'un droit distinct.",
+  "serie": 1
+ },
+ {
+  "id": "q11",
+  "axe": "securite",
+  "sens": 1,
+  "enonce": "Il faut rétablir des peines planchers pour les récidivistes.",
+  "contexte": "Une peine plancher est une peine minimale que le juge doit en principe prononcer.",
+  "serie": 1
+ },
+ {
+  "id": "q14",
+  "axe": "societe",
+  "sens": 1,
+  "enonce": "Le port de signes religieux visibles doit être interdit à l'université.",
+  "contexte": "L'interdiction s'applique aujourd'hui à l'école, au collège et au lycée publics, pas à l'université.",
+  "serie": 1
+ },
+ {
+  "id": "q16",
+  "axe": "institutions",
+  "sens": 1,
+  "enonce": "Les citoyens doivent pouvoir déclencher eux-mêmes un référendum (RIC).",
+  "contexte": "Le référendum d'initiative citoyenne permettrait à un nombre donné de signataires d'imposer un vote.",
+  "serie": 1
+ },
+ {
+  "id": "q02",
+  "axe": "eco",
+  "sens": 1,
+  "enonce": "Il faut réduire fortement la dépense publique, y compris le nombre d'agents publics.",
+  "contexte": "La question porte sur le niveau global de dépense de l'État, des collectivités et de la protection sociale.",
+  "serie": 2
+ },
+ {
+  "id": "q04",
+  "axe": "social",
+  "sens": -1,
+  "enonce": "Le SMIC doit être porté à au moins 1 600 euros net par mois.",
+  "contexte": "La question porte sur une hausse décidée par l'État, et non sur les augmentations négociées en entreprise.",
+  "serie": 2
+ },
+ {
+  "id": "q06",
+  "axe": "ecologie",
+  "sens": -1,
+  "enonce": "Il faut accélérer le développement de l'éolien et du solaire.",
+  "contexte": "La question porte sur le rythme d'installation et sur le soutien public à ces filières.",
+  "serie": 2
+ },
+ {
+  "id": "q08",
+  "axe": "europe",
+  "sens": -1,
+  "enonce": "La France doit maintenir ou accroître son aide militaire à l'Ukraine.",
+  "contexte": "La question porte sur les livraisons d'armes et leur financement.",
+  "serie": 2
+ },
+ {
+  "id": "q10",
+  "axe": "immigration",
+  "sens": 1,
+  "enonce": "Certaines prestations sociales doivent être réservées aux Français.",
+  "contexte": "Mesure souvent désignée sous le nom de priorité ou préférence nationale.",
+  "serie": 2
+ },
+ {
+  "id": "q12",
+  "axe": "securite",
+  "sens": 1,
+  "enonce": "Il faut construire davantage de places de prison.",
+  "contexte": "Le nombre de détenus dépasse la capacité des établissements pénitentiaires.",
+  "serie": 2
+ },
+ {
+  "id": "q13",
+  "axe": "societe",
+  "sens": -1,
+  "enonce": "La loi doit autoriser une aide active à mourir.",
+  "contexte": "La question porte sur le suicide assisté et l'euthanasie, au-delà des soins palliatifs.",
+  "serie": 2
+ },
+ {
+  "id": "q15",
+  "axe": "institutions",
+  "sens": 1,
+  "enonce": "Les députés doivent être élus à la proportionnelle.",
+  "contexte": "Ils sont aujourd'hui élus au scrutin majoritaire à deux tours, par circonscription.",
+  "serie": 2
+ },
+ {
+  "id": "q17",
+  "axe": "eco",
+  "sens": 1,
+  "enonce": "Il faut poursuivre la baisse des impôts de production payés par les entreprises.",
+  "contexte": "Ces impôts s'appliquent à l'activité des entreprises, indépendamment de leurs bénéfices. La CVAE en est un exemple.",
+  "serie": 3
+ },
+ {
+  "id": "q19",
+  "axe": "social",
+  "sens": 1,
+  "enonce": "Une partie des pensions de retraite doit reposer sur la capitalisation.",
+  "contexte": "Le système actuel fonctionne par répartition : les cotisations des actifs financent les pensions en cours.",
+  "serie": 3
+ },
+ {
+  "id": "q21",
+  "axe": "ecologie",
+  "sens": 1,
+  "enonce": "L'interdiction de vendre des voitures thermiques neuves en 2035 doit être supprimée ou repoussée.",
+  "contexte": "Cette échéance a été fixée au niveau européen ; son maintien fait débat.",
+  "serie": 3
+ },
+ {
+  "id": "q23",
+  "axe": "europe",
+  "sens": 1,
+  "enonce": "La France doit sortir du commandement intégré de l'OTAN.",
+  "contexte": "La France l'avait quitté en 1966 et y est revenue en 2009.",
+  "serie": 3
+ },
+ {
+  "id": "q25",
+  "axe": "immigration",
+  "sens": -1,
+  "enonce": "Les travailleurs sans papiers doivent pouvoir être régularisés.",
+  "contexte": "Aujourd'hui, la régularisation relève d'une décision du préfet, au cas par cas.",
+  "serie": 3
+ },
+ {
+  "id": "q27",
+  "axe": "securite",
+  "sens": 1,
+  "enonce": "L'âge de la majorité pénale doit être abaissé à 16 ans.",
+  "contexte": "Les mineurs relèvent aujourd'hui d'un régime de justice spécifique jusqu'à 18 ans, avec une atténuation de peine possible dès 13 ans.",
+  "serie": 3
+ },
+ {
+  "id": "q29",
+  "axe": "societe",
+  "sens": 1,
+  "enonce": "Un service national doit être rétabli pour les jeunes.",
+  "contexte": "Le service militaire obligatoire a été suspendu en 1997 ; un service national universel volontaire a été expérimenté.",
+  "serie": 3
+ },
+ {
+  "id": "q31",
+  "axe": "institutions",
+  "sens": 1,
+  "enonce": "L'article 49.3 de la Constitution doit être supprimé.",
+  "contexte": "Il permet au gouvernement de faire adopter un texte sans vote, sauf motion de censure.",
+  "serie": 3
+ },
+ {
+  "id": "q18",
+  "axe": "eco",
+  "sens": 1,
+  "enonce": "Les droits de succession doivent être supprimés ou fortement réduits.",
+  "contexte": "Ils s'appliquent aux transmissions de patrimoine après un décès, avec des abattements selon le lien de parenté.",
+  "serie": 4
+ },
+ {
+  "id": "q20",
+  "axe": "social",
+  "sens": 1,
+  "enonce": "Les règles d'indemnisation du chômage doivent être durcies.",
+  "contexte": "Plusieurs réformes ont modifié ces dernières années les conditions et la durée d'indemnisation.",
+  "serie": 4
+ },
+ {
+  "id": "q22",
+  "axe": "ecologie",
+  "sens": 1,
+  "enonce": "Les zones à faibles émissions (ZFE) doivent être supprimées.",
+  "contexte": "Les ZFE limitent la circulation des véhicules les plus polluants dans certaines agglomérations.",
+  "serie": 4
+ },
+ {
+  "id": "q24",
+  "axe": "europe",
+  "sens": -1,
+  "enonce": "La défense de la France doit être davantage organisée avec ses partenaires européens.",
+  "contexte": "Par exemple : achats d'armement communs, protection antimissile ou dissuasion nucléaire.",
+  "serie": 4
+ },
+ {
+  "id": "q26",
+  "axe": "immigration",
+  "sens": 1,
+  "enonce": "Le droit du sol doit être supprimé ou restreint.",
+  "contexte": "Un enfant né en France de parents étrangers peut acquérir la nationalité française, sous conditions notamment de résidence.",
+  "serie": 4
+ },
+ {
+  "id": "q28",
+  "axe": "securite",
+  "sens": 1,
+  "enonce": "Les aménagements et réductions de peine doivent être fortement limités.",
+  "contexte": "Ils permettent d'exécuter une peine autrement qu'en détention ou d'en réduire la durée.",
+  "serie": 4
+ },
+ {
+  "id": "q30",
+  "axe": "societe",
+  "sens": 1,
+  "enonce": "La gestation pour autrui (GPA) doit rester interdite en France.",
+  "contexte": "La GPA est interdite en France ; certains pays l'autorisent.",
+  "serie": 4
+ },
+ {
+  "id": "q32",
+  "axe": "institutions",
+  "sens": 1,
+  "enonce": "Toute révision de la Constitution doit être soumise à référendum.",
+  "contexte": "Une révision peut aujourd'hui être adoptée par le Parlement réuni en Congrès, sans référendum.",
+  "serie": 4
+ }
 ]

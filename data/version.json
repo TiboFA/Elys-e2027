@@ -1,8 +1,17 @@
 {
- "version":"0.1",
- "date":"2026-11-16",
- "statut":"Proposition en attente de validation",
- "historique":[
-  {"version":"0.1","date":"2026-11-16","resume":"Première proposition : 38 candidats déclarés, 8 axes, 16 questions, 91 positions tirées des programmes publiés par 12 candidats."}
+ "version": "0.2",
+ "date": "2026-11-16",
+ "statut": "Proposition en attente de validation",
+ "historique": [
+  {
+   "version": "0.2",
+   "date": "2026-11-16",
+   "resume": "32 questions en 4 séries de 8, graphe accessible dès 8 réponses avec un avis, 165 positions citées. L'axe Écologie et énergie couvre aussi les normes environnementales."
+  },
+  {
+   "version": "0.1",
+   "date": "2026-11-16",
+   "resume": "Première proposition : 38 candidats déclarés, 8 axes, 16 questions, 91 positions tirées des programmes publiés par 12 candidats."
+  }
  ]
 }

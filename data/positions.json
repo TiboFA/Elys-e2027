@@ -1181,5 +1181,967 @@
   },
   "note": "",
   "statut": "propose"
+ },
+ {
+  "question": "q17",
+  "candidat": "attal",
+  "score": 2,
+  "citation": "poursuivre la baisse des impôts de production",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme/mesures/aucune-hausse-impots",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q17",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "Poursuivre la baisse des impôts de production (CVAE) pour stimuler les implantations industrielles en France",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q17",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "la diminution des impôts de production à travers la suppression de plusieurs contributions (C3S, CVAE…)",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q17",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "50 milliards d’euros d’impôts de production en moins contre 50 milliards d’euros d’aides en moins",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/entreprises",
+   "consulte": "2026-11-16"
+  },
+  "note": "Contrepartie annoncée : une baisse équivalente des aides aux entreprises.",
+  "statut": "propose"
+ },
+ {
+  "question": "q17",
+  "candidat": "retailleau",
+  "score": 2,
+  "citation": "La suppression d’une partie des impôts de production (- 15 milliards d’euros) pesant sur l’outil industriel",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/03/LR_Agriculture.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Extrait du livret « Agriculture » des Républicains.",
+  "statut": "propose"
+ },
+ {
+  "question": "q17",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Baisser les impôts de production",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/economie-travail/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q17",
+  "candidat": "ruffin",
+  "score": -1,
+  "citation": "La baisse récente des « impôts de production » (en particulier la CVAE) a principalement bénéficié aux services et à la grande distribution",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/pour-proteger-notre-industrie-relocaliser-100-produits-strategiques/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Critique des effets de la baisse récente, sans proposition chiffrée sur ce point.",
+  "statut": "propose"
+ },
+ {
+  "question": "q17",
+  "candidat": "melenchon",
+  "score": -1,
+  "citation": "Rendre l’impôt plus juste en remplaçant la cotisation sur la valeur ajoutée des entreprises (CVAE) par un nouvel impôt sur les entreprises, dont la progressivité sera fonction du chiffre d’affaires et de l’empreinte écologique",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2",
+   "consulte": "2026-11-16"
+  },
+  "note": "Remplace la CVAE par un autre impôt plutôt que de la supprimer.",
+  "statut": "propose"
+ },
+ {
+  "question": "q18",
+  "candidat": "zemmour",
+  "score": 2,
+  "citation": "supprimer les droits de succession",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.ericzemmour.fr/ressources/tracts/avenir-est-a-nous.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Tract de campagne d'octobre 2026.",
+  "statut": "propose"
+ },
+ {
+  "question": "q18",
+  "candidat": "attal",
+  "score": 1,
+  "citation": "Les droits de succession et la fiscalité de l'assurance-vie n'augmenteront pas non plus.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme/mesures/aucune-hausse-impots",
+   "consulte": "2026-11-16"
+  },
+  "note": "Pas d'augmentation annoncée, sans suppression.",
+  "statut": "propose"
+ },
+ {
+  "question": "q18",
+  "candidat": "lisnard",
+  "score": 1,
+  "citation": "la réforme des droits de succession sur les entreprises",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Limité aux transmissions d'entreprises.",
+  "statut": "propose"
+ },
+ {
+  "question": "q18",
+  "candidat": "nda",
+  "score": 1,
+  "citation": "faciliter la transmission d’entreprises en les exonérant de droits de succession et de donation sur 90% de leur valeur (75% aujourd’hui)",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/retraites/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Limité aux transmissions d'entreprises.",
+  "statut": "propose"
+ },
+ {
+  "question": "q18",
+  "candidat": "melenchon",
+  "score": -2,
+  "citation": "Augmenter les droits de succession sur les plus hauts patrimoines en comptabilisant l’ensemble des dons et héritages reçus tout au long de la vie",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q19",
+  "candidat": "attal",
+  "score": 2,
+  "citation": "Retraite : une part de capitalisation fléchée vers l'innovation",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q19",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "Généraliser la capitalisation collective à tous les salariés et ouvrir un plan d’épargne retraite à chaque Français.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/retraites",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q19",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "la réforme d’ensemble combinant la répartition et la capitalisation",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q19",
+  "candidat": "retailleau",
+  "score": 2,
+  "citation": "créer un étage de retraite par capitalisation pour tous",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/02/LR_Produire_Plus_LIVRET.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Proposition citée dans le livret « Produire plus » des Républicains.",
+  "statut": "propose"
+ },
+ {
+  "question": "q19",
+  "candidat": "nda",
+  "score": 1,
+  "citation": "un capital de 10 000 euros qui sera bloqué jusqu’à sa retraite et qui sera géré par un fonds public de capitalisation français",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/economie-travail/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Fonds public, versé à chaque naissance.",
+  "statut": "propose"
+ },
+ {
+  "question": "q19",
+  "candidat": "melenchon",
+  "score": -2,
+  "citation": "Supprimer les avantages fiscaux de la retraite par capitalisation pour financer le système par répartition",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q20",
+  "candidat": "retailleau",
+  "score": 2,
+  "citation": "Ces ajustements rendront le système plus équitable et plus incitatif au retour à l’emploi, tout en générant environ 13 milliards d’euros d’économies par an",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q20",
+  "candidat": "attal",
+  "score": 1,
+  "citation": "Année blanche, réforme de l'assurance chômage, nouvelle réforme des retraites, plan contre la dérive des arrêts maladie : les économies remplacent les impôts, ligne par ligne.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme/mesures/aucune-hausse-impots",
+   "consulte": "2026-11-16"
+  },
+  "note": "La réforme de l'assurance chômage est citée parmi les économies, sans détail dans cet extrait.",
+  "statut": "propose"
+ },
+ {
+  "question": "q20",
+  "candidat": "lepen",
+  "score": -2,
+  "citation": "Annulation de la réforme de l’assurance chômage de juillet 2024",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q20",
+  "candidat": "melenchon",
+  "score": -2,
+  "citation": "Rétablir une assurance chômage protectrice",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q20",
+  "candidat": "glucksmann",
+  "score": -2,
+  "citation": "Abroger la réforme Macron de l’assurance chômage, injuste et inefficace.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q20",
+  "candidat": "ruffin",
+  "score": -1,
+  "citation": "On pense à la réforme des retraites, à la réforme de l’assurance chômage, à la fin des contrats aidés",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/pour-une-democratie-en-continu-vive-les-etats-generaux/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Critique de ces réformes, citées parmi celles présentées comme « courageuses ».",
+  "statut": "propose"
+ },
+ {
+  "question": "q21",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "Renoncer à l’interdiction de la vente des voitures à moteur thermique à l’horizon 2035",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q21",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Supprimer l’interdiction des véhicules thermiques à l’horizon 2035 imposée par l’UE.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/transport-automobilistes/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q21",
+  "candidat": "attal",
+  "score": -1,
+  "citation": "il faut aussi préparer l'avenir, en réduisant la dépendance aux véhicules thermiques",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme/mesures/aide-professionnels-vehicule",
+   "consulte": "2026-11-16"
+  },
+  "note": "Extrait d'une mesure d'aide aux professionnels dépendants d'un véhicule ; ne vise pas directement l'échéance de 2035.",
+  "statut": "propose"
+ },
+ {
+  "question": "q21",
+  "candidat": "ruffin",
+  "score": -1,
+  "citation": "Interdiction de la publicité pour les produits les plus polluants, comme les voitures thermiques ou les billets d’avion.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/travaillisme-ecologique/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Reprise d'une proposition de la Convention citoyenne pour le climat ; ne vise pas directement l'échéance de 2035.",
+  "statut": "propose"
+ },
+ {
+  "question": "q22",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "Supprimer les Zones à Faibles Emissions",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q22",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Acter la suppression définitive des zones à faibles émissions.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/transport-automobilistes/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q22",
+  "candidat": "melenchon",
+  "score": 1,
+  "citation": "Décréter un moratoire sur les zones à faibles émissions (ZFE) dans leur conception actuelle",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3",
+   "consulte": "2026-11-16"
+  },
+  "note": "Moratoire, pas suppression.",
+  "statut": "propose"
+ },
+ {
+  "question": "q22",
+  "candidat": "lisnard",
+  "score": 1,
+  "citation": "la suppression des ZFE, des articles essentiels de la loi sur l’immigration ou encore de la loi Duplomb sur les contraintes liées au monde agricole ont subi la censure du Conseil constitutionnel",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://nouvelle-energie-media-prod.s3.fr-par.scw.cloud/media/legacy/2026/06/Discours-de-David-Lisnard-a-Bayeux-17062026.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Discours de Bayeux du 17 juin 2026 : la suppression des ZFE est citée parmi les décisions censurées que le candidat déplore.",
+  "statut": "propose"
+ },
+ {
+  "question": "q22",
+  "candidat": "ruffin",
+  "score": 0,
+  "citation": "Les mesures de protection de l’air comme les ZFE (Zones à Faibles Émissions) ne viendront plus d’en haut, mais des citoyens, au plus près de leurs besoins !",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/travaillisme-ecologique/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Maintien des ZFE avec décision au niveau local.",
+  "statut": "propose"
+ },
+ {
+  "question": "q23",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Sortir du commandement intégré de l’OTAN pour regagner notre indépendance militaire et stratégique",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/defense/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q23",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Se retirer immédiatement du commandement intégré de l’OTAN puis, par étapes, de l’organisation elle-même",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre2",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q23",
+  "candidat": "roussel",
+  "score": 2,
+  "citation": "Par la sortie immédiate de l’OTAN, première étape vers sa dissolution",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q24",
+  "candidat": "attal",
+  "score": 2,
+  "citation": "Créer un dôme de fer européen contre les missiles et les drones",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q24",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "Des armements « made in Europe » : au moins 1 % de la richesse nationale des pays européens de l’OTAN consacrée à des équipements fabriqués en Europe.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/defense",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q24",
+  "candidat": "glucksmann",
+  "score": 2,
+  "citation": "Proposer à nos partenaires de l’UE d’étendre la dissuasion nucléaire française aux autres pays de l’Union européenne, en conservant la souveraineté française sur la décision d’emploi",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q25",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Régulariser les travailleurs, étudiants, parents d’enfants scolarisés sans papiers",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre3",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q25",
+  "candidat": "roussel",
+  "score": 2,
+  "citation": "la régularisation des travailleuses et travailleurs sans papiers comme des familles dont les enfants sont scolarisés sur le sol français",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q25",
+  "candidat": "arthaud",
+  "score": 2,
+  "citation": "Régularisation de tous les sans-papiers, liberté de circulation et d’installation pour chaque être humain de cette planète !",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q25",
+  "candidat": "glucksmann",
+  "score": 1,
+  "citation": "Faciliter les démarches de régularisation des travailleurs sans papiers",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q25",
+  "candidat": "philippe",
+  "score": -1,
+  "citation": "Il veut aussi qu’aucun pays européen ne puisse procéder seul à des régularisations massives de sans-papiers",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/immigration",
+   "consulte": "2026-11-16"
+  },
+  "note": "Opposition aux régularisations massives menées par un seul pays.",
+  "statut": "propose"
+ },
+ {
+  "question": "q25",
+  "candidat": "lepen",
+  "score": -2,
+  "citation": "Suspension de toutes les régularisations de clandestins par les préfets",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q25",
+  "candidat": "lisnard",
+  "score": -2,
+  "citation": "supprimer toute possibilité d’être régularisé après être entré clandestinement sur le territoire",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q25",
+  "candidat": "nda",
+  "score": -2,
+  "citation": "supprimer la régularisation pour les étrangers en situation irrégulière",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/immigration-et-assimilation/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q26",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "Suppression du droit du sol",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q26",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "la suppression du droit du sol",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/immigration-et-assimilation/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q26",
+  "candidat": "lisnard",
+  "score": 1,
+  "citation": "Mettre fin à l’automaticité du droit du sol",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q26",
+  "candidat": "philippe",
+  "score": 1,
+  "citation": "La suspension totale du droit du sol à Mayotte pendant plusieurs années.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/outre-mer",
+   "consulte": "2026-11-16"
+  },
+  "note": "Limité à Mayotte.",
+  "statut": "propose"
+ },
+ {
+  "question": "q26",
+  "candidat": "melenchon",
+  "score": -2,
+  "citation": "Ceux qui naissent en France sont légitimes à devenir Français : c’est le droit du sol, qui existe en France depuis 1515 !",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre4",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q26",
+  "candidat": "roussel",
+  "score": -2,
+  "citation": "Ils refusent la stigmatisation de l’immigration au nom de l’insécurité, la remise en cause du droit du sol",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Texte du 40e congrès du PCF.",
+  "statut": "propose"
+ },
+ {
+  "question": "q27",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "abaissement de la majorité pénale à 16 ans",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q27",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "Nous voulons abaisser la majorité pénale à 16 ans",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/securite/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q27",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Baisser la majorité pénale à 16 ans.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/justice/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q27",
+  "candidat": "philippe",
+  "score": 1,
+  "citation": "Édouard Philippe veut lever l’excuse de minorité pour les faits liés au narcotrafic",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/justice",
+   "consulte": "2026-11-16"
+  },
+  "note": "Limité aux faits liés au narcotrafic.",
+  "statut": "propose"
+ },
+ {
+  "question": "q28",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "la limitation de la possibilité des aménagements et réductions de peine, en particulier pour les atteintes aux personnes",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q28",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "supprimer les réductions de peine automatiques, mettre fin aux aménagements dès l’audience",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/securite/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q28",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "La suppression du juge d’application des peines : une peine prononcée sera une peine exécutée.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/justice",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q28",
+  "candidat": "attal",
+  "score": 2,
+  "citation": "la suppression du juge de l'application des peines",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme/mesures/trois-mille-magistrats-greffiers",
+   "consulte": "2026-11-16"
+  },
+  "note": "Mentionnée dans la mesure sur le recrutement de magistrats.",
+  "statut": "propose"
+ },
+ {
+  "question": "q28",
+  "candidat": "nda",
+  "score": 1,
+  "citation": "Mettre fin aux aménagements de peine pour les multirécidivistes",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/securite/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Limité aux multirécidivistes.",
+  "statut": "propose"
+ },
+ {
+  "question": "q29",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Rétablir un service national d’une durée de trois mois, incluant le passage du permis de conduire financé par l’État",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/famille/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q29",
+  "candidat": "philippe",
+  "score": 0,
+  "citation": "Un service militaire volontaire de 50 000 jeunes par an et un objectif de 250 000 réservistes.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/defense",
+   "consulte": "2026-11-16"
+  },
+  "note": "Service volontaire, non obligatoire.",
+  "statut": "propose"
+ },
+ {
+  "question": "q29",
+  "candidat": "melenchon",
+  "score": -1,
+  "citation": "Le service national universel (SNU), mis en place par Emmanuel Macron, a été aussi coûteux qu’inutile.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2",
+   "consulte": "2026-11-16"
+  },
+  "note": "Le même passage propose une « conscription écologique ».",
+  "statut": "propose"
+ },
+ {
+  "question": "q30",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "refuser la gestation pour autrui (GPA)",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre2",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q30",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Refuser catégoriquement la gestation pour autrui (GPA).",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/famille/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q31",
+  "candidat": "glucksmann",
+  "score": 2,
+  "citation": "ce qui permettra de mettre fin au 49.3",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q31",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Abolir les procédures de « votes forcés » du Parlement comme l’article 49.3 de la Constitution",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q31",
+  "candidat": "ruffin",
+  "score": 1,
+  "citation": "réformes imposées à coups de 49.3",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/notre-programme/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Critique de l'usage du 49.3 dans un cahier de campagne.",
+  "statut": "propose"
+ },
+ {
+  "question": "q32",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "Réserver au peuple seul, par référendum, le pouvoir de modifier la Constitution",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q32",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Rendre le référendum obligatoire pour toute modification affectant la Constitution, l’indépendance nationale ou l’intégrité du territoire.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/refonder-et-moraliser-notre-democratie/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Limité aux modifications touchant la Constitution, l'indépendance ou l'intégrité du territoire.",
+  "statut": "propose"
+ },
+ {
+  "question": "q32",
+  "candidat": "lisnard",
+  "score": 1,
+  "citation": "La Constitution doit pouvoir, à terme, être révisée directement par référendum",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://nouvelle-energie-media-prod.s3.fr-par.scw.cloud/media/legacy/2026/06/Discours-de-David-Lisnard-a-Bayeux-17062026.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Discours de Bayeux du 17 juin 2026, publié par le parti.",
+  "statut": "propose"
  }
 ]
