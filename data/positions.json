@@ -3679,5 +3679,856 @@
   },
   "note": "Texte « Ma vision pour la France » ; pas de mention explicite du RIC.",
   "statut": "propose"
+ },
+ {
+  "question": "q02",
+  "candidat": "philippot",
+  "score": 1,
+  "citation": "Suppression des doublons dans la fonction publique territoriale",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q03",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "Baisser l’âge de départ à la retraite.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q05",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "Investir massivement dans le nucléaire et choisir notre mix énergétique.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q07",
+  "candidat": "philippot",
+  "score": -2,
+  "citation": "La France doit retrouver sa souveraineté nationale en quittant toutes les instances supranationales : UE, Euro, Schengen, CEDH, OTAN, OMS.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q08",
+  "candidat": "philippot",
+  "score": -2,
+  "citation": "Couper les financements de la guerre en Ukraine, qui disparaissent dans la corruption.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q09",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "L’objectif est de mettre un terme à la politique d’immigration massive en revenant à des flux extrêmement limités",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q11",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "Il convient donc de réinstaurer les peines planchers et de généraliser les sanctions dès la première infraction.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q12",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "Construire les dizaines de milliers de places de prison qui manquent",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q13",
+  "candidat": "philippot",
+  "score": -1,
+  "citation": "Refuser toute politique d’incitation à l’euthanasie, assumée ou déguisée, des personnes en situation de handicap.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026). Vise les personnes handicapées, sans position générale sur l'aide à mourir.",
+  "statut": "propose"
+ },
+ {
+  "question": "q16",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "Créer le référendum d’initiative citoyenne (RIC) sur tout sujet et l’inscrire dans la Constitution.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q18",
+  "candidat": "philippot",
+  "score": 1,
+  "citation": "une moindre taxation des petits héritages",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026). Limité aux petits héritages.",
+  "statut": "propose"
+ },
+ {
+  "question": "q21",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "Préserver la voiture thermique au-delà de 2035.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q23",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "Quitter l’OTAN.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026). Sortie de l'organisation, pas seulement du commandement intégré.",
+  "statut": "propose"
+ },
+ {
+  "question": "q24",
+  "candidat": "philippot",
+  "score": -2,
+  "citation": "Rejeter la création d’une armée européenne.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q27",
+  "candidat": "philippot",
+  "score": 1,
+  "citation": "Il faut également en finir avec l’excuse automatique de minorité.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026). Fin du caractère automatique, sans âge de majorité pénale précisé.",
+  "statut": "propose"
+ },
+ {
+  "question": "q32",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "Ne permettre la révision de la Constitution que par référendum",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q33",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "Renationaliser les autoroutes.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q34",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "en instaurant un protectionnisme intelligent qui protège nos industries",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q42",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "Quitter la CEDH (Cour européenne des droits de l’homme).",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q43",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "en quittant toutes les instances supranationales : UE, Euro, Schengen, CEDH, OTAN, OMS",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026). Sortie de l'espace Schengen.",
+  "statut": "propose"
+ },
+ {
+  "question": "q51",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "Revaloriser la voie professionnelle et en finir avec le collège unique.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q15",
+  "candidat": "mikolajczak",
+  "score": 1,
+  "citation": "L’Assemblée nationale associe représentation proportionnelle des forces politiques et ancrage territorial, grâce à un scrutin mixte.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://parti-equinoxe.fr/programme-2027/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme synthétique d'Équinoxe (novembre 2026). Scrutin mixte.",
+  "statut": "propose"
+ },
+ {
+  "question": "q16",
+  "candidat": "mikolajczak",
+  "score": 1,
+  "citation": "référendums d’initiative citoyenne, conventions citoyennes délibératives ou renforcement du référendum d’initiative partagée",
+  "niveau": "programme",
+  "source": {
+   "url": "https://parti-equinoxe.fr/wp-content/uploads/2026/11/Equinoxe-Lessentiel-Programme-synthetique-pour-lelection-presidentielle-1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme synthétique d'Équinoxe (novembre 2026). Plusieurs pistes, sans choix arrêté.",
+  "statut": "propose"
+ },
+ {
+  "question": "q34",
+  "candidat": "mikolajczak",
+  "score": 1,
+  "citation": "Un protectionnisme stratégique est appliqué par de nombreux États et permet de garder un contrôle souverain",
+  "niveau": "programme",
+  "source": {
+   "url": "https://parti-equinoxe.fr/wp-content/uploads/2026/11/Equinoxe-Lessentiel-Programme-synthetique-pour-lelection-presidentielle-1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme synthétique d'Équinoxe (novembre 2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q39",
+  "candidat": "mikolajczak",
+  "score": 2,
+  "citation": "Les dérogations d’urgence accordées actuellement cessent",
+  "niveau": "programme",
+  "source": {
+   "url": "https://parti-equinoxe.fr/wp-content/uploads/2026/11/Equinoxe-Lessentiel-Programme-synthetique-pour-lelection-presidentielle-1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme synthétique d'Équinoxe (novembre 2026). Fin des dérogations à l'interdiction de pesticides.",
+  "statut": "propose"
+ },
+ {
+  "question": "q54",
+  "candidat": "mikolajczak",
+  "score": 2,
+  "citation": "Le nouvel échelon de proximité qui remplace le département et les intercommunalités.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://parti-equinoxe.fr/wp-content/uploads/2026/11/Equinoxe-Lessentiel-Programme-synthetique-pour-lelection-presidentielle-1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme synthétique d'Équinoxe (novembre 2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q55",
+  "candidat": "mikolajczak",
+  "score": 2,
+  "citation": "La présidence de la République fera l’objet d’un mandat unique de sept ans.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://parti-equinoxe.fr/wp-content/uploads/2026/11/Equinoxe-Lessentiel-Programme-synthetique-pour-lelection-presidentielle-1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme synthétique d'Équinoxe (novembre 2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q01",
+  "candidat": "branco",
+  "score": 2,
+  "citation": "Rétablissement de l’ISF avec un mécanisme de précompte sur les droits de succession.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet des Ruches (Juan Branco).",
+  "statut": "propose"
+ },
+ {
+  "question": "q02",
+  "candidat": "branco",
+  "score": 1,
+  "citation": "Baisse des prélèvements obligatoires et des dépenses publiques",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet des Ruches (Juan Branco).",
+  "statut": "propose"
+ },
+ {
+  "question": "q04",
+  "candidat": "branco",
+  "score": 0,
+  "citation": "Déconcentration du SMIC, avec réhaussement du seuil minimal national à 1500 euros net.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet des Ruches (Juan Branco). Hausse limitée à 1 500 euros net.",
+  "statut": "propose"
+ },
+ {
+  "question": "q07",
+  "candidat": "branco",
+  "score": -1,
+  "citation": "Sortie de l’Union Européenne, de l’euro, du Conseil de l’Europe et/ou de l’espace Schengen.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet des Ruches (Juan Branco). Proposé par référendum.",
+  "statut": "propose"
+ },
+ {
+  "question": "q08",
+  "candidat": "branco",
+  "score": -2,
+  "citation": "Arrêt des livraisons d’armes à l’Ukraine.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet des Ruches (Juan Branco).",
+  "statut": "propose"
+ },
+ {
+  "question": "q16",
+  "candidat": "branco",
+  "score": 2,
+  "citation": "Création d’un RIC en toutes matières.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet des Ruches (Juan Branco).",
+  "statut": "propose"
+ },
+ {
+  "question": "q18",
+  "candidat": "branco",
+  "score": 1,
+  "citation": "Fin des DMTG pour 90% des foyers fiscaux.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet des Ruches (Juan Branco). Suppression des droits sur les transmissions pour 90 % des foyers, ISF rétabli par ailleurs.",
+  "statut": "propose"
+ },
+ {
+  "question": "q20",
+  "candidat": "branco",
+  "score": 2,
+  "citation": "Dégressivité des allocations chômage à partir de la première année",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet des Ruches (Juan Branco).",
+  "statut": "propose"
+ },
+ {
+  "question": "q23",
+  "candidat": "branco",
+  "score": 1,
+  "citation": "Référendum sur la sortie de l’OTAN",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet des Ruches (Juan Branco). Décision renvoyée à un référendum.",
+  "statut": "propose"
+ },
+ {
+  "question": "q29",
+  "candidat": "branco",
+  "score": 2,
+  "citation": "Instauration d’un service d’État, civil et militaire annuel.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet des Ruches (Juan Branco).",
+  "statut": "propose"
+ },
+ {
+  "question": "q31",
+  "candidat": "branco",
+  "score": 2,
+  "citation": "Abrogation des articles 49.3 et assimilés de la Constitution.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet des Ruches (Juan Branco).",
+  "statut": "propose"
+ },
+ {
+  "question": "q34",
+  "candidat": "branco",
+  "score": 1,
+  "citation": "Blocage de négociations de traités de libre-échange.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet des Ruches (Juan Branco).",
+  "statut": "propose"
+ },
+ {
+  "question": "q39",
+  "candidat": "branco",
+  "score": 2,
+  "citation": "Interdiction à horizon quinquennal des pesticides CMR de catégorie",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet des Ruches (Juan Branco).",
+  "statut": "propose"
+ },
+ {
+  "question": "q43",
+  "candidat": "branco",
+  "score": 1,
+  "citation": "Sortie de l’Union Européenne, de l’euro, du Conseil de l’Europe et/ou de l’espace Schengen.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet des Ruches (Juan Branco). Proposé par référendum.",
+  "statut": "propose"
+ },
+ {
+  "question": "q48",
+  "candidat": "branco",
+  "score": -2,
+  "citation": "accompagnée d’une dépénalisation de l’usage de toute drogue",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet des Ruches (Juan Branco).",
+  "statut": "propose"
+ },
+ {
+  "question": "q53",
+  "candidat": "branco",
+  "score": -2,
+  "citation": "mettant fin à la décentralisation, renforçant la déconcentration",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet des Ruches (Juan Branco).",
+  "statut": "propose"
+ },
+ {
+  "question": "q54",
+  "candidat": "branco",
+  "score": 2,
+  "citation": "Suppression des régions et déconcentration des services de l’État",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet des Ruches (Juan Branco).",
+  "statut": "propose"
+ },
+ {
+  "question": "q03",
+  "candidat": "kazib",
+  "score": 2,
+  "citation": "Retraite à 60 ans et 55 ans pour les métiers pénibles, sans conditions d'annuité.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://anasse2027.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Premières mesures publiées sur le site de campagne ; programme 2027 en cours d'élaboration.",
+  "statut": "propose"
+ },
+ {
+  "question": "q04",
+  "candidat": "kazib",
+  "score": 2,
+  "citation": "SMIC à 2000 € net",
+  "niveau": "programme",
+  "source": {
+   "url": "https://anasse2027.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Premières mesures publiées sur le site de campagne ; programme 2027 en cours d'élaboration.",
+  "statut": "propose"
+ },
+ {
+  "question": "q08",
+  "candidat": "kazib",
+  "score": -1,
+  "citation": "Pas un euro pour la guerre",
+  "niveau": "programme",
+  "source": {
+   "url": "https://anasse2027.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Premières mesures publiées sur le site de campagne ; programme 2027 en cours d'élaboration. Position générale contre les dépenses militaires.",
+  "statut": "propose"
+ },
+ {
+  "question": "q09",
+  "candidat": "kazib",
+  "score": -2,
+  "citation": "Régularisation de tous les sans-papiers, liberté de circulation et d'installation.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://anasse2027.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Premières mesures publiées sur le site de campagne ; programme 2027 en cours d'élaboration.",
+  "statut": "propose"
+ },
+ {
+  "question": "q14",
+  "candidat": "kazib",
+  "score": -2,
+  "citation": "Abrogation de toutes les lois sécuritaires, racistes et islamophobes, à commencer par la loi de 2004.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://anasse2027.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Premières mesures publiées sur le site de campagne ; programme 2027 en cours d'élaboration. La loi de 2004 interdit les signes religieux à l'école.",
+  "statut": "propose"
+ },
+ {
+  "question": "q25",
+  "candidat": "kazib",
+  "score": 2,
+  "citation": "Régularisation de tous les sans-papiers, liberté de circulation et d'installation.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://anasse2027.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Premières mesures publiées sur le site de campagne ; programme 2027 en cours d'élaboration.",
+  "statut": "propose"
+ },
+ {
+  "question": "q29",
+  "candidat": "kazib",
+  "score": -2,
+  "citation": "Non au SNU et à la militarisation de nos écoles et de nos facs.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://anasse2027.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Premières mesures publiées sur le site de campagne ; programme 2027 en cours d'élaboration.",
+  "statut": "propose"
+ },
+ {
+  "question": "q33",
+  "candidat": "kazib",
+  "score": 2,
+  "citation": "Expropriation des secteurs stratégiques (énergie, transports, banques, santé, …) et placement sous contrôle des travailleur·ses.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://anasse2027.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Premières mesures publiées sur le site de campagne ; programme 2027 en cours d'élaboration.",
+  "statut": "propose"
+ },
+ {
+  "question": "q38",
+  "candidat": "kazib",
+  "score": -2,
+  "citation": "Répartition du travail pour une semaine de 28h sans baisse de salaire.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://anasse2027.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Premières mesures publiées sur le site de campagne ; programme 2027 en cours d'élaboration.",
+  "statut": "propose"
+ },
+ {
+  "question": "q09",
+  "candidat": "labib",
+  "score": -2,
+  "citation": "liberté de circulation et d’installation, régularisation de tous les sans-papiers !",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026",
+   "consulte": "2026-11-16",
+   "media": "NPA-Révolutionnaires, 12 septembre 2026"
+  },
+  "note": "Discours à la fête de l'Humanité, publié par le NPA-Révolutionnaires.",
+  "statut": "propose"
+ },
+ {
+  "question": "q25",
+  "candidat": "labib",
+  "score": 2,
+  "citation": "liberté de circulation et d’installation, régularisation de tous les sans-papiers !",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026",
+   "consulte": "2026-11-16",
+   "media": "NPA-Révolutionnaires, 12 septembre 2026"
+  },
+  "note": "Discours à la fête de l'Humanité, publié par le NPA-Révolutionnaires.",
+  "statut": "propose"
+ },
+ {
+  "question": "q10",
+  "candidat": "labib",
+  "score": -2,
+  "citation": "l’interdiction du voile dans la rue et un référendum pour instaurer la préférence nationale. C’est du pur racisme !",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026",
+   "consulte": "2026-11-16",
+   "media": "NPA-Révolutionnaires, 12 septembre 2026"
+  },
+  "note": "Discours à la fête de l'Humanité, publié par le NPA-Révolutionnaires.",
+  "statut": "propose"
+ },
+ {
+  "question": "q19",
+  "candidat": "labib",
+  "score": -2,
+  "citation": "Numéro un, la retraite par capitalisation.",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026",
+   "consulte": "2026-11-16",
+   "media": "NPA-Révolutionnaires, 12 septembre 2026"
+  },
+  "note": "Discours à la fête de l'Humanité, publié par le NPA-Révolutionnaires. Citée parmi les « mesures dégueulasses » des autres candidats.",
+  "statut": "propose"
+ },
+ {
+  "question": "q29",
+  "candidat": "labib",
+  "score": -2,
+  "citation": "La France c’est donc le retour du service militaire, c’est un record de dépenses militaires pour préparer des guerres impérialistes",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026",
+   "consulte": "2026-11-16",
+   "media": "NPA-Révolutionnaires, 12 septembre 2026"
+  },
+  "note": "Discours à la fête de l'Humanité, publié par le NPA-Révolutionnaires.",
+  "statut": "propose"
+ },
+ {
+  "question": "q38",
+  "candidat": "labib",
+  "score": -2,
+  "citation": "le partage du travail entre tous, sans perte de salaire, pour en finir avec le chômage",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026",
+   "consulte": "2026-11-16",
+   "media": "NPA-Révolutionnaires, 12 septembre 2026"
+  },
+  "note": "Discours à la fête de l'Humanité, publié par le NPA-Révolutionnaires.",
+  "statut": "propose"
+ },
+ {
+  "question": "q16",
+  "candidat": "markovic",
+  "score": 2,
+  "citation": "Instaurer le Référendum d’initiative citoyenne – législatif et abrogatoire – (RIC) en toutes matières",
+  "niveau": "programme",
+  "source": {
+   "url": "https://parti-animaliste.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme publié par le Parti animaliste, rédigé pour le quinquennat 2022-2027.",
+  "statut": "propose"
+ },
+ {
+  "question": "q39",
+  "candidat": "markovic",
+  "score": 2,
+  "citation": "Conditionner les aides publiques à l’agriculture à l’absence d’utilisation de pesticides.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://parti-animaliste.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme publié par le Parti animaliste, rédigé pour le quinquennat 2022-2027.",
+  "statut": "propose"
+ },
+ {
+  "question": "q06",
+  "candidat": "markovic",
+  "score": -1,
+  "citation": "Interdire l’implantation d’antennes relais ou d’éoliennes à une distance de 5 km",
+  "niveau": "programme",
+  "source": {
+   "url": "https://parti-animaliste.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme publié par le Parti animaliste, rédigé pour le quinquennat 2022-2027. Restriction d'implantation près des habitations.",
+  "statut": "propose"
+ },
+ {
+  "question": "q39",
+  "candidat": "batho",
+  "score": 2,
+  "citation": "Sauver notre agriculture et sortir des pesticides en cinq ans",
+  "niveau": "programme",
+  "source": {
+   "url": "https://delphinebatho.fr/priorites/la-pleine-sante/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Priorités publiées sur le site de campagne.",
+  "statut": "propose"
+ },
+ {
+  "question": "q31",
+  "candidat": "egger",
+  "score": 1,
+  "citation": "s’opposera en Conseil des ministres au recours au 49.3, sauf circonstances exceptionnelles",
+  "niveau": "programme",
+  "source": {
+   "url": "https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme de Solution démocratique : refus d'utiliser le 49.3, sans suppression de l'article.",
+  "statut": "propose"
+ },
+ {
+  "question": "q16",
+  "candidat": "egger",
+  "score": 2,
+  "citation": "s’incarne dans le référendum d’initiative citoyenne constituant, aussi connu comme initiative populaire ou initiative constitutionnelle",
+  "niveau": "programme",
+  "source": {
+   "url": "https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme de Solution démocratique.",
+  "statut": "propose"
  }
 ]
