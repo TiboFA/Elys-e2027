@@ -7476,5 +7476,341 @@
   },
   "note": "",
   "statut": "propose"
+ },
+ {
+  "question": "q125",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "Marine Le Pen propose de baisser la TVA sur les carburants de 20 % à 5,5 %",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.sudradio.fr/politique/presidentielle-2027-que-proposent-les-candidats-pour-lutter-contre-la-flambee-des-prix-du-carburant",
+   "consulte": "2026-11-16",
+   "media": "Sud Radio, 16 septembre 2026"
+  },
+  "note": "Proposition reprise par Sud Radio.",
+  "statut": "propose"
+ },
+ {
+  "question": "q125",
+  "candidat": "retailleau",
+  "score": 2,
+  "citation": "en supprimant les certificats d’économies d’énergie (CEE)",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.sudradio.fr/politique/presidentielle-2027-que-proposent-les-candidats-pour-lutter-contre-la-flambee-des-prix-du-carburant",
+   "consulte": "2026-11-16",
+   "media": "Sud Radio, 16 septembre 2026"
+  },
+  "note": "Baisse de 15 à 17 centimes par litre par suppression des CEE.",
+  "statut": "propose"
+ },
+ {
+  "question": "q125",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "Cette mesure est aussi défendue par David Lisnard.",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.sudradio.fr/politique/presidentielle-2027-que-proposent-les-candidats-pour-lutter-contre-la-flambee-des-prix-du-carburant",
+   "consulte": "2026-11-16",
+   "media": "Sud Radio, 16 septembre 2026"
+  },
+  "note": "Suppression des certificats d'économies d'énergie.",
+  "statut": "propose"
+ },
+ {
+  "question": "q125",
+  "candidat": "attal",
+  "score": -2,
+  "citation": "Il rejoint également la politique du gouvernement",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.sudradio.fr/politique/presidentielle-2027-que-proposent-les-candidats-pour-lutter-contre-la-flambee-des-prix-du-carburant",
+   "consulte": "2026-11-16",
+   "media": "Sud Radio, 16 septembre 2026"
+  },
+  "note": "Aides temporaires et ciblées plutôt que baisse générale des taxes.",
+  "statut": "propose"
+ },
+ {
+  "question": "q125",
+  "candidat": "philippe",
+  "score": -2,
+  "citation": "C’est également le cas d’Édouard Philippe.",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.sudradio.fr/politique/presidentielle-2027-que-proposent-les-candidats-pour-lutter-contre-la-flambee-des-prix-du-carburant",
+   "consulte": "2026-11-16",
+   "media": "Sud Radio, 16 septembre 2026"
+  },
+  "note": "Aides temporaires et ciblées.",
+  "statut": "propose"
+ },
+ {
+  "question": "q125",
+  "candidat": "glucksmann",
+  "score": -2,
+  "citation": "financée par cette taxation",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.sudradio.fr/politique/presidentielle-2027-que-proposent-les-candidats-pour-lutter-contre-la-flambee-des-prix-du-carburant",
+   "consulte": "2026-11-16",
+   "media": "Sud Radio, 16 septembre 2026"
+  },
+  "note": "Aide ciblée financée par une taxation des superprofits des pétroliers.",
+  "statut": "propose"
+ },
+ {
+  "question": "q125",
+  "candidat": "tondelier",
+  "score": -2,
+  "citation": "L’écologiste Marine Tondelier soutient le même projet.",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.sudradio.fr/politique/presidentielle-2027-que-proposent-les-candidats-pour-lutter-contre-la-flambee-des-prix-du-carburant",
+   "consulte": "2026-11-16",
+   "media": "Sud Radio, 16 septembre 2026"
+  },
+  "note": "Aide ciblée financée par une taxation des superprofits.",
+  "statut": "propose"
+ },
+ {
+  "question": "q125",
+  "candidat": "melenchon",
+  "score": -1,
+  "citation": "Il estime que la solution se trouve dans le blocage des prix à 1,70 euro par litre.",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.sudradio.fr/politique/presidentielle-2027-que-proposent-les-candidats-pour-lutter-contre-la-flambee-des-prix-du-carburant",
+   "consulte": "2026-11-16",
+   "media": "Sud Radio, 16 septembre 2026"
+  },
+  "note": "Préconise un blocage des prix plutôt qu'une baisse des taxes.",
+  "statut": "propose"
+ },
+ {
+  "question": "q126",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "Mais financièrement, nous ne pouvons plus",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.dhnet.be/dernieres-depeches/2026/09/19/le-rn-hausse-le-ton-face-a-la-russie-mais-est-accuse-de-double-discours-D5MBKUCBQVAQLCMK5OZQKS2IIQ/",
+   "consulte": "2026-11-16",
+   "media": "DH (dépêche AFP), 19 septembre 2026"
+  },
+  "note": "Formation et matériel militaires maintenus, selon la même déclaration.",
+  "statut": "propose"
+ },
+ {
+  "question": "q126",
+  "candidat": "attal",
+  "score": -2,
+  "citation": "ne ferait qu'empirer la domination, et donc la menace, de la Russie",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.dhnet.be/dernieres-depeches/2026/09/19/le-rn-hausse-le-ton-face-a-la-russie-mais-est-accuse-de-double-discours-D5MBKUCBQVAQLCMK5OZQKS2IIQ/",
+   "consulte": "2026-11-16",
+   "media": "DH (dépêche AFP), 19 septembre 2026"
+  },
+  "note": "Réaction à la proposition du RN de « couper le robinet ».",
+  "statut": "propose"
+ },
+ {
+  "question": "q126",
+  "candidat": "philippe",
+  "score": -2,
+  "citation": "Un soutien plein à l’Ukraine.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/defense",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q126",
+  "candidat": "glucksmann",
+  "score": -2,
+  "citation": "Augmenter drastiquement l’aide militaire à l’Ukraine",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q126",
+  "candidat": "nda",
+  "score": 1,
+  "citation": "Mettre fin aux aides à l’Ukraine (7 milliards d’euros par an en comptant les aides de la France et la quote-part des aides de l’UE dues par la France).",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/economie-travail/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Va plus loin : fin de toutes les aides.",
+  "statut": "propose"
+ },
+ {
+  "question": "q126",
+  "candidat": "philippot",
+  "score": 1,
+  "citation": "Couper les financements de la guerre en Ukraine, qui disparaissent dans la corruption.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026). Va plus loin : fin de tous les financements.",
+  "statut": "propose"
+ },
+ {
+  "question": "q127",
+  "candidat": "attal",
+  "score": 2,
+  "citation": "Les parents doivent être responsabilisés et assumer les dégradations commises par leurs enfants.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme/mesures/tu-casses-tu-repares",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q127",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "Suspension des allocations familiales pour les parents de mineurs criminels ou délinquants récidivistes coupables de défaillance",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q127",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Suspendre les aides sociales des familles de mineurs délinquants",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/justice/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q127",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "mettre les parents de mineurs récidivistes face à leurs responsabilités, en conditionnant les prestations sociales",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q128",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "Augmenter de 20 % en moyenne le salaire des enseignants pendant le quinquennat.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/ecole",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q128",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "Nous proposons une augmentation de 20 % des rémunérations en cinq ans",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/education/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Conditionnée à une évaluation, selon le même texte.",
+  "statut": "propose"
+ },
+ {
+  "question": "q128",
+  "candidat": "tondelier",
+  "score": 2,
+  "citation": "l'augmentation du salaire des enseignants de 15% sur le quinquennat",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.lagazettefrance.fr/article/presidentielle-tondelier-propose-un-socle-programmatique-aux-autres-partis-de-gauche",
+   "consulte": "2026-11-16",
+   "media": "AFP, via La Gazette France"
+  },
+  "note": "« Socle » de propositions soumis aux partis de gauche, rapporté par l'AFP.",
+  "statut": "propose"
+ },
+ {
+  "question": "q128",
+  "candidat": "ruffin",
+  "score": 2,
+  "citation": "Mettre en place un grand plan de revalorisation des salaires.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/education-une-ecole-de-tous-les-savoirs/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q128",
+  "candidat": "retailleau",
+  "score": 2,
+  "citation": "revaloriser nettement le salaire de nos professeurs",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/09/LR_Ecole_vF.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Livret École des Républicains.",
+  "statut": "propose"
+ },
+ {
+  "question": "q128",
+  "candidat": "branco",
+  "score": 1,
+  "citation": "la revalorisation salariale des enseignants du secondaire et du supérieur",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q128",
+  "candidat": "attal",
+  "score": 1,
+  "citation": "avec la revalorisation des enseignants qu'il propose",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme/mesures/remplacement-enseignants-absents",
+   "consulte": "2026-11-16"
+  },
+  "note": "Revalorisation sans chiffre dans cet extrait.",
+  "statut": "propose"
  }
 ]

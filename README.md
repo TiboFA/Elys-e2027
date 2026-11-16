@@ -39,3 +39,7 @@ Le dossier `corpus/` n'est pas versionné.
 ## Statistiques anonymes (facultatif)
 
 Voir `tools/nas-server/README.md` : serveur Docker pour NAS (statistiques anonymes brouillées, formulaire de contact, tableau de bord privé), relié par un tunnel Cloudflare. Désactivé tant que `STATS_URL` est vide dans `js/config.js`.
+
+## Questions d'actualité
+
+Quelques questions hors radar portent sur un sujet récent qui a fait réagir des candidats de camps différents. Chacune a une date `jusqu_au` dans `tools/build_questions.py` (dictionnaire `ACTU`) : passée cette date, le site ne la pose plus. Avant chaque mise à jour, lancer `python3 tools/check_actualite.py` : il signale les questions échues ou proches de l'échéance, moins de trois questions actives, ou des positions trop peu nombreuses / d'un seul camp. Remplacer une question = l'ajouter dans `build_questions.py` et `gen.py` (positions citées et vérifiées), puis relancer les deux scripts.

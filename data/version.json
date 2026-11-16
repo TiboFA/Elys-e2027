@@ -1,8 +1,13 @@
 {
- "version": "1.8",
+ "version": "1.9",
  "date": "2026-11-16",
  "statut": "Proposition en attente de validation",
  "historique": [
+  {
+   "version": "1.9",
+   "date": "2026-11-16",
+   "resume": "Questions d'actualité : 4 questions hors radar sur des sujets qui ont fait réagir plusieurs candidats (carburants, aide à l'Ukraine, responsabilité des parents, salaires des enseignants), 25 positions citées, retrait automatique à la date d'échéance, script de contrôle tools/check_actualite.py."
+  },
   {
    "version": "1.8",
    "date": "2026-11-16",

@@ -1007,5 +1007,77 @@
   "contexte": "La loi de 2021 contre le séparatisme a renforcé le contrôle des associations cultuelles.",
   "serie": 17,
   "theme": "Laïcité"
+ },
+ {
+  "id": "q125",
+  "axe": null,
+  "sens": 1,
+  "enonce": "L'État doit baisser les taxes sur les carburants (TVA, certificats d'économies d'énergie) plutôt que verser des aides ciblées.",
+  "contexte": "Les prix des carburants ont fortement augmenté à l'automne 2026 ; le gouvernement privilégie des aides temporaires et ciblées.",
+  "actualite": {
+   "depuis": "2026-09-16",
+   "jusqu_au": "2026-12-31",
+   "evenement": "Flambée des prix des carburants et divergences entre candidats sur les taxes et les aides.",
+   "source": {
+    "titre": "Sud Radio, « Que proposent les candidats pour lutter contre la flambée des prix du carburant ? »",
+    "url": "https://www.sudradio.fr/politique/presidentielle-2027-que-proposent-les-candidats-pour-lutter-contre-la-flambee-des-prix-du-carburant"
+   }
+  },
+  "theme": "Actualité",
+  "serie": 18
+ },
+ {
+  "id": "q126",
+  "axe": null,
+  "sens": 1,
+  "enonce": "La France doit cesser son aide financière à l'Ukraine, tout en continuant à former et à équiper son armée.",
+  "contexte": "En septembre 2026, Marine Le Pen a proposé cette orientation ; plusieurs candidats et le gouvernement ont réagi.",
+  "actualite": {
+   "depuis": "2026-09-17",
+   "jusqu_au": "2026-12-31",
+   "evenement": "Marine Le Pen propose de mettre fin à l'aide financière à l'Ukraine ; réactions de plusieurs candidats.",
+   "source": {
+    "titre": "DH (dépêche AFP), « Le RN hausse le ton face à la Russie mais est accusé de double discours »",
+    "url": "https://www.dhnet.be/dernieres-depeches/2026/09/19/le-rn-hausse-le-ton-face-a-la-russie-mais-est-accuse-de-double-discours-D5MBKUCBQVAQLCMK5OZQKS2IIQ/"
+   }
+  },
+  "theme": "Actualité",
+  "serie": 18
+ },
+ {
+  "id": "q127",
+  "axe": null,
+  "sens": 1,
+  "enonce": "Les parents de mineurs auteurs de dégradations ou de délits doivent en répondre financièrement.",
+  "contexte": "Après les violences et dégradations lors des blocages de lycées à l'automne 2026, le garde des Sceaux a demandé aux procureurs d'engager la responsabilité civile des parents.",
+  "actualite": {
+   "depuis": "2026-10-02",
+   "jusqu_au": "2026-12-15",
+   "evenement": "Blocages de lycées : le garde des Sceaux demande aux procureurs de faire payer les réparations aux parents.",
+   "source": {
+    "titre": "Public Sénat, « Les parents doivent prendre leur responsabilité »",
+    "url": "https://www.publicsenat.fr/actualites/politique/les-parents-doivent-prendre-leur-responsabilite-darmanin-souhaite-que-les-parents-payent-pour-les-degradations-des-lycees"
+   }
+  },
+  "theme": "Actualité",
+  "serie": 18
+ },
+ {
+  "id": "q128",
+  "axe": null,
+  "sens": -1,
+  "enonce": "Il faut augmenter fortement le salaire des enseignants.",
+  "contexte": "Le mouvement de blocage des lycées de l'automne 2026 a notamment dénoncé un manque de professeurs et de moyens.",
+  "actualite": {
+   "depuis": "2026-10-02",
+   "jusqu_au": "2026-12-15",
+   "evenement": "Mouvement lycéen : manque de professeurs et de moyens dénoncé.",
+   "source": {
+    "titre": "Public Sénat, « Les parents doivent prendre leur responsabilité »",
+    "url": "https://www.publicsenat.fr/actualites/politique/les-parents-doivent-prendre-leur-responsabilite-darmanin-souhaite-que-les-parents-payent-pour-les-degradations-des-lycees"
+   }
+  },
+  "theme": "Actualité",
+  "serie": 18
  }
 ]

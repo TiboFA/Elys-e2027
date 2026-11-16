@@ -57,11 +57,16 @@ function orderQuestions(qs) {
   const pick = (list, salt) => { const l = [...list].sort((x, y) => cover(y.id) - cover(x.id)), h = Math.ceil(l.length / 2); return [...shuffled(l.slice(0, h), salt), ...shuffled(l.slice(h), salt + 50)]; };
   const byAxe = {};
   D.axes.forEach((a, ai) => { byAxe[a.id] = pick(qs.filter((q) => q.axe === a.id), 101 + ai); });
-  const hors = pick(qs.filter((q) => !q.axe), 777);
-  const rounds = Math.max(...Object.values(byAxe).map((l) => l.length), hors.length);
+  // Hors radar : les questions d'actualité passent en premier (deux dans la première série, puis une par série),
+  // de sorte qu'il y en ait toujours quelques-unes quel que soit le nombre de questions posées.
+  const actu = shuffled(qs.filter((q) => !q.axe && q.actualite), 555);
+  const hors = [...actu, ...pick(qs.filter((q) => !q.axe && !q.actualite), 777)];
+  let cur = 0;
+  const takeHors = (r) => { const n = r === 0 && actu.length >= 2 ? 2 : 1; const out = hors.slice(cur, cur + n); cur += out.length; return out; };
+  const rounds = Math.max(...Object.values(byAxe).map((l) => l.length), 1 + Math.max(0, hors.length - (actu.length >= 2 ? 2 : 1)));
   const out = [], series = [];
   for (let r = 0; r < rounds; r++) {
-    const round = shuffled([...D.axes.map((a) => byAxe[a.id][r]), hors[r]].filter(Boolean), 1009 + r);
+    const round = shuffled([...D.axes.map((a) => byAxe[a.id][r]), ...takeHors(r)].filter(Boolean), 1009 + r);
     if (!round.length) continue;
     series.push([out.length + 1, out.length + round.length]);
     out.push(...round);
@@ -251,8 +256,8 @@ function viewQuiz(n) {
     <a class="textbtn" href="#/">Quitter</a>
   </div>
   <div class="track-progress" role="progressbar" aria-valuemin="0" aria-valuemax="${tot}" aria-valuenow="${n}" aria-label="Progression"><i style="width:${((n - 1) / tot) * 100}%"></i></div>
-  <div class="theme">${miniRadar(ai)}<div><p class="eyebrow">${axe ? `Thème ${ai + 1} sur ${D.axes.length}` : 'Hors radar'} · série ${serie}/${nbSeries()}</p><b>${esc(axe ? axe.nom : q.theme)}</b></div></div>
-  ${axe ? '' : '<p class="small muted" style="margin:-6px 0 12px">Cette question compte dans la proximité avec les candidats, mais ne déplace pas votre radar : elle ne se range sur aucun des axes.</p>'}
+  <div class="theme">${miniRadar(ai)}<div><p class="eyebrow">${axe ? `Thème ${ai + 1} sur ${D.axes.length}` : q.actualite ? 'Actualité' : 'Hors radar'} · série ${serie}/${nbSeries()}</p><b>${esc(axe ? axe.nom : q.theme)}</b></div></div>
+  ${q.actualite ? `<div class="notice"><b>Dans l'actualité depuis le ${frDate(q.actualite.depuis)}.</b> ${esc(q.actualite.evenement)} <a href="${esc(q.actualite.source.url)}" target="_blank" rel="noopener noreferrer">${esc(q.actualite.source.titre)}</a><br><span class="small muted">Cette question compte dans la proximité avec les candidats, mais ne déplace pas votre radar. Elle sera retirée quand le sujet ne fera plus l'actualité.</span></div>` : axe ? '' : '<p class="small muted" style="margin:-6px 0 12px">Cette question compte dans la proximité avec les candidats, mais ne déplace pas votre radar : elle ne se range sur aucun des axes.</p>'}
   <div class="card affirm"><p class="eyebrow">Affirmation</p><p class="statement">« ${esc(q.enonce)} »</p><p class="context">${esc(q.contexte)}</p></div>
   <div class="opts" role="group" aria-label="Votre position">${opts}</div>
   ${imp ? `<div class="importance"><p>Importance de ce sujet pour vous</p><div class="seg" role="group" aria-label="Importance">${IMPORTANCE.map(([k, t]) => `<button data-imp="${k}" aria-pressed="${imp === k}">${t}</button>`).join('')}</div></div>` : ''}
@@ -389,6 +394,8 @@ function viewMethod() {
   <h2>Les ${D.axes.length} axes</h2>
   <div class="tablewrap"><table><thead><tr><th>Axe</th><th>Centre du radar</th><th>Bord du radar</th></tr></thead><tbody>${axes}</tbody></table></div>
   <p class="small muted">Les deux pôles décrivent des positions, pas un jugement. Il n'y a pas de « bon » côté.</p>
+  <h2>Questions d'actualité</h2>
+  <p>Quelques questions portent sur un événement récent qui a fait réagir plusieurs candidats (prix des carburants, aide à l'Ukraine, violences lors de mouvements sociaux…). Règles : un sujet n'est retenu que si au moins deux candidats de camps différents ont réagi publiquement ; l'affirmation est reformulée de façon neutre, avec l'événement et une source datée ; la question est hors radar (elle compte dans la proximité, sans déplacer votre graphe) ; elle est retirée dès que le sujet ne fait plus l'actualité, ou au plus tard à la date indiquée dans le code. Il y en a toujours quelques-unes, dont deux dans la première série. Questions d'actualité en ce moment : ${D.questions.filter((q) => q.actualite).length}.</p>
   <h2>Questions hors radar</h2>
   <p>Certaines questions ne se rangent sur aucun axe sans fausser son sens : le choix du nucléaire (on peut être pro-nucléaire et très exigeant sur le climat), l'organisation territoriale, la protection des enfants face aux écrans, certains sujets internationaux, la laïcité (une laïcité stricte peut viser l'État, comme l'abrogation du Concordat, ou les individus, comme l'interdiction du voile : ces deux exigences se compenseraient sur l'axe Société). Elles restent posées et comptent dans la proximité avec les candidats, mais ne déplacent pas le radar. Thèmes concernés : ${[...new Set(D.questions.filter((q) => !q.axe).map((q) => q.theme))].join(', ')}.</p>
   <h2>Comment une position est établie</h2>
@@ -566,6 +573,8 @@ window.addEventListener('hashchange', route);
     $app.innerHTML = '<p class="loading">Impossible de charger les données. Ouvrez le site depuis un serveur web (et non directement depuis un fichier).</p>'; return;
   }
   load();
+  const today = CFG.TODAY || new Date().toISOString().slice(0, 10);
+  D.questions = D.questions.filter((q) => !q.actualite || q.actualite.jusqu_au >= today); // questions d'actualité échues : retirées
   D.baseQuestions = D.questions;
   D.questions = orderQuestions(D.baseQuestions);
   document.getElementById('foot-version').textContent = `Version ${D.version.version} · ${frDate(D.version.date)}`;

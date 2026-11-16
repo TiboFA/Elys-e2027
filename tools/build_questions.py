@@ -117,6 +117,10 @@ new = [
     ("q122", "societe", -1, "Le Concordat d'Alsace-Moselle, qui finance certains cultes sur fonds publics, doit être abrogé.", "En Alsace et en Moselle, la loi de 1905 ne s'applique pas : l'État rémunère les ministres de quatre cultes."),
     ("q123", "societe", 1, "Les parents qui accompagnent les sorties scolaires doivent être soumis à la neutralité religieuse.", "La loi de 2004 interdit les signes religieux ostensibles aux élèves, pas aux parents accompagnateurs."),
     ("q124", "societe", 1, "L'ouverture d'un lieu de culte doit être conditionnée à un engagement écrit de respect des principes républicains.", "La loi de 2021 contre le séparatisme a renforcé le contrôle des associations cultuelles."),
+    ("q125", None, 1, "L'État doit baisser les taxes sur les carburants (TVA, certificats d'économies d'énergie) plutôt que verser des aides ciblées.", "Les prix des carburants ont fortement augmenté à l'automne 2026 ; le gouvernement privilégie des aides temporaires et ciblées."),
+    ("q126", None, 1, "La France doit cesser son aide financière à l'Ukraine, tout en continuant à former et à équiper son armée.", "En septembre 2026, Marine Le Pen a proposé cette orientation ; plusieurs candidats et le gouvernement ont réagi."),
+    ("q127", None, 1, "Les parents de mineurs auteurs de dégradations ou de délits doivent en répondre financièrement.", "Après les violences et dégradations lors des blocages de lycées à l'automne 2026, le garde des Sceaux a demandé aux procureurs d'engager la responsabilité civile des parents."),
+    ("q128", None, -1, "Il faut augmenter fortement le salaire des enseignants.", "Le mouvement de blocage des lycées de l'automne 2026 a notamment dénoncé un manque de professeurs et de moyens."),
 ]
 for i, a, s, e, c in new:
     Q.setdefault(i, {"id": i, "axe": a, "sens": s, "enonce": e, "contexte": c})
@@ -128,7 +132,23 @@ HORS = {"q05": "Énergie", "q63": "Énergie", "q53": "Territoires et pouvoirs", 
         "q55": "Territoires et pouvoirs", "q56": "Enfance et numérique", "q75": "Enfance et numérique",
         "q107": "International", "q108": "International", "q114": "Défense nationale",
         "q14": "Laïcité", "q99": "Laïcité", "q117": "Laïcité", "q98": "Laïcité",
-        "q122": "Laïcité", "q123": "Laïcité", "q124": "Laïcité"}
+        "q122": "Laïcité", "q123": "Laïcité", "q124": "Laïcité",
+        "q125": "Actualité", "q126": "Actualité", "q127": "Actualité", "q128": "Actualité"}
+
+# Questions d'actualité : liées à un événement récent qui a fait réagir plusieurs candidats.
+# Elles sont retirées automatiquement après `jusqu_au` (les positions restent dans positions.json).
+ACTU = {
+    "q125": {"depuis": "2026-09-16", "jusqu_au": "2026-12-31", "evenement": "Flambée des prix des carburants et divergences entre candidats sur les taxes et les aides.",
+             "source": {"titre": "Sud Radio, « Que proposent les candidats pour lutter contre la flambée des prix du carburant ? »", "url": "https://www.sudradio.fr/politique/presidentielle-2027-que-proposent-les-candidats-pour-lutter-contre-la-flambee-des-prix-du-carburant"}},
+    "q126": {"depuis": "2026-09-17", "jusqu_au": "2026-12-31", "evenement": "Marine Le Pen propose de mettre fin à l'aide financière à l'Ukraine ; réactions de plusieurs candidats.",
+             "source": {"titre": "DH (dépêche AFP), « Le RN hausse le ton face à la Russie mais est accusé de double discours »", "url": "https://www.dhnet.be/dernieres-depeches/2026/09/19/le-rn-hausse-le-ton-face-a-la-russie-mais-est-accuse-de-double-discours-D5MBKUCBQVAQLCMK5OZQKS2IIQ/"}},
+    "q127": {"depuis": "2026-10-02", "jusqu_au": "2026-12-15", "evenement": "Blocages de lycées : le garde des Sceaux demande aux procureurs de faire payer les réparations aux parents.",
+             "source": {"titre": "Public Sénat, « Les parents doivent prendre leur responsabilité »", "url": "https://www.publicsenat.fr/actualites/politique/les-parents-doivent-prendre-leur-responsabilite-darmanin-souhaite-que-les-parents-payent-pour-les-degradations-des-lycees"}},
+    "q128": {"depuis": "2026-10-02", "jusqu_au": "2026-12-15", "evenement": "Mouvement lycéen : manque de professeurs et de moyens dénoncé.",
+             "source": {"titre": "Public Sénat, « Les parents doivent prendre leur responsabilité »", "url": "https://www.publicsenat.fr/actualites/politique/les-parents-doivent-prendre-leur-responsabilite-darmanin-souhaite-que-les-parents-payent-pour-les-degradations-des-lycees"}},
+}
+for qid, meta in ACTU.items():
+    Q[qid]["actualite"] = meta
 for qid, ax in AXE_V11.items():
     Q[qid]["axe"] = ax
 for qid, th in HORS.items():
@@ -154,6 +174,7 @@ waves = [
     ["q109", "q110", "q111", "q112", "q113", "q114"],
     ["q115", "q116", "q117", "q118", "q119", "q120", "q121"],
     ["q122", "q123", "q124"],
+    ["q125", "q126", "q127", "q128"],
 ]
 out = []
 for k, w in enumerate(waves, 1):

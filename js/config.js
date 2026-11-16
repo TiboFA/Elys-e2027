@@ -15,6 +15,7 @@
 // STATS_URL : adresse de votre serveur (voir tools/nas-server), par exemple 'https://api.votre-domaine.example'. Vide = désactivé :
 //   aucune case de consentement n'est alors affichée et rien n'est envoyé.
 // STATS_P : part des réponses remplacées au hasard avant envoi (0.25 par défaut).
+// TODAY : (tests uniquement) date forcée au format AAAA-MM-JJ pour simuler l'expiration des questions d'actualité.
 window.E2027_CONFIG = {
   STATS_URL: '',
   STATS_P: 0.25,
