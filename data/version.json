@@ -1,8 +1,13 @@
 {
- "version": "1.6",
+ "version": "1.7",
  "date": "2026-11-16",
  "statut": "Proposition en attente de validation",
  "historique": [
+  {
+   "version": "1.7",
+   "date": "2026-11-16",
+   "resume": "Statistiques anonymes facultatives (désactivées tant qu'aucun service n'est relié) : accord explicite, compteurs seuls, réponses en partie brouillées au hasard, aucune adresse IP conservée. Service et tableau de bord privé dans tools/stats-worker."
+  },
   {
    "version": "1.6",
    "date": "2026-11-16",

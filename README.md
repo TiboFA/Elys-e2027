@@ -35,3 +35,7 @@ Le dossier `corpus/` n'est pas versionné.
 ## Compteur de simulations
 
 `js/config.js` : renseigner `COUNTER_URL` avec un service qui répond `{"total": n}` en GET et incrémente en POST. Vide, le compteur est masqué. Aucune réponse n'est transmise.
+
+## Statistiques anonymes (facultatif)
+
+Voir `tools/stats-worker/README.md` : service de comptage (Cloudflare Workers + D1), brouillage aléatoire des réponses, tableau de bord privé. Désactivé tant que `STATS_URL` est vide dans `js/config.js`.

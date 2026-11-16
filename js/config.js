@@ -13,7 +13,12 @@
 // CONTACT_SERVICE : nom du service de réception, affiché dans la page de confidentialité (ex. 'Formspree').
 // HOST_INFO : coordonnées de l'hébergeur affichées dans les mentions légales (GitHub par défaut).
 // LICENCE : licence du code et de la méthode (ex. 'MIT pour le code, CC BY-SA 4.0 pour les données').
+// STATS_URL : adresse du service de statistiques anonymes (voir tools/stats-worker). Vide = désactivé :
+//   aucune case de consentement n'est alors affichée et rien n'est envoyé.
+// STATS_P : part des réponses remplacées au hasard avant envoi (0.25 par défaut).
 window.E2027_CONFIG = {
+  STATS_URL: '',
+  STATS_P: 0.25,
   COUNTER_URL: '',
   CONTACT_URL: '',
   CONTACT_SERVICE: '',

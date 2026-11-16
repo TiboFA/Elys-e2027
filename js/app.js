@@ -46,7 +46,7 @@ function load() {
 function rng(seed) { let a = seed >>> 0; return () => { a = (a + 0x6d2b79f5) >>> 0; let t = a; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
 function shuffled(arr, salt = 0) { const r = rng(state.seed + salt), a = [...arr]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch { mem = state; } }
-function reset() { state = { answers: {}, counted: false, seed: (Math.random() * 2 ** 31) | 0 }; save(); resSel = null; D.questions = orderQuestions(D.baseQuestions); }
+function reset() { state = { answers: {}, counted: false, seed: (Math.random() * 2 ** 31) | 0, statsConsent: state.statsConsent }; save(); resSel = null; D.questions = orderQuestions(D.baseQuestions); }
 
 // Ordre semi-aléatoire, propre à chaque appareil. Chaque série (« tour ») contient une question par axe
 // du radar, dans un ordre tiré au sort, plus une question hors radar tant qu'il en reste : les axes restent
@@ -125,6 +125,34 @@ async function counter(method) {
   } catch { /* compteur facultatif */ }
 }
 function counterBump() { if (state.counted) return; state.counted = true; save(); counter('POST'); }
+
+// ---------- statistiques anonymes (avec accord explicite) ----------
+// Rien n'est envoyé sans accord. Avec accord, le navigateur envoie seulement des incréments
+// « question, réponse, +1 », sans identifiant ni score de proximité. Une fraction des réponses
+// (STATS_P, 25 % par défaut) est remplacée par une valeur tirée au hasard : il est impossible de
+// connaître la réponse réelle d'une personne, mais les totaux restent exploitables une fois redressés.
+const STATS_VALUES = ['2', '1', '0', '-1', '-2', 'na'];
+const statsOn = () => !!CFG.STATS_URL && state.statsConsent === true;
+function randomize(v) {
+  const p = typeof CFG.STATS_P === 'number' ? CFG.STATS_P : 0.25;
+  return Math.random() < p ? STATS_VALUES[Math.floor(Math.random() * STATS_VALUES.length)] : v;
+}
+function statsFlush(serie) {
+  if (!statsOn()) return;
+  state.sent = state.sent || [];
+  const items = D.questions.filter((q) => answered(q.id) && !state.sent.includes(q.id))
+    .map((q) => ({ q: q.id, a: randomize(state.answers[q.id].v === null ? 'na' : String(state.answers[q.id].v)) }));
+  const events = serie ? [{ e: 'serie', k: serie }] : [];
+  if (!items.length && !events.length) return;
+  state.sent.push(...items.map((i) => i.q)); save();
+  try { fetch(CFG.STATS_URL.replace(/\/$/, '') + '/hit', { method: 'POST', keepalive: true, credentials: 'omit', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ v: 1, items, events }) }).catch(() => {}); } catch { /* facultatif */ }
+}
+function consentBlock(where) {
+  if (!CFG.STATS_URL) return '';
+  const on = state.statsConsent === true;
+  return `<div class="card consent"><label class="switch" style="color:var(--txt);margin:0"><input type="checkbox" data-consent ${on ? 'checked' : ''}> Partager anonymement mes réponses pour aider à améliorer l'outil</label>
+  <p class="small muted" style="margin:8px 0 0">Facultatif. Seuls des compteurs par question sont envoyés, sans identifiant ni adresse IP conservée, et une partie des réponses est volontairement remplacée au hasard : aucune réponse reçue ne peut être attribuée avec certitude, ni rattachée à vous. Aucun résultat n'est publié. ${where === 'legal' ? '' : '<a href="#/mentions">En savoir plus</a>.'}</p></div>`;
+}
 
 // ---------- dessins ----------
 function radarSVG(series, opt = {}) {
@@ -263,6 +291,7 @@ function viewSeries(k) {
   const tot = D.questions.length, done = countAnswered(), val = countValued(), K = nbSeries();
   if (k >= K) { location.hash = '#/resultats'; return ''; }
   const ok = unlocked();
+  statsFlush(k);
   return `<div class="topbar"><a class="iconbtn" href="#/quiz/${D.series[k - 1][1]}" aria-label="Question précédente">${ICON.back}</a><span class="title">Série ${k} sur ${K}</span><a class="textbtn" href="#/">Quitter</a></div>
   <div class="track-progress"><i style="width:${(done / tot) * 100}%"></i></div>
   <p class="eyebrow or">Série terminée</p>
@@ -272,6 +301,7 @@ function viewSeries(k) {
     ${ok ? '<a class="btn primary block" href="#/resultats">Voir mon graphe</a>' : ''}
     <a class="btn ${ok ? '' : 'primary'} block" href="#/quiz/${D.series[k][0]}">Continuer : série ${k + 1} (${D.series[k][1] - D.series[k][0] + 1} questions)</a>
   </div>
+  ${state.statsConsent === undefined || k === 1 ? consentBlock('serie') : ''}
   <p class="small muted">Vous pouvez vous arrêter ici : vos réponses sont gardées sur cet appareil.</p>`;
 }
 
@@ -283,6 +313,7 @@ function viewResults() {
     return `${head}<p class="eyebrow">Résultat · ${D.axes.length} axes</p><h1>Graphe verrouillé</h1><p class="lead">Il faut au moins ${MIN_RESULTS} réponses avec un avis pour dessiner vos positions. Il vous en manque ${need}.</p><div class="stack"><a class="btn primary block" href="#/quiz/${firstUnanswered()}">${done ? 'Continuer le questionnaire' : 'Commencer'}</a></div>`;
   }
   counterBump();
+  statsFlush();
   const prox = withData().map((c) => ({ c, ...proximity(c.id) })).filter((x) => x.pct !== null).sort((a, b) => b.pct - a.pct || b.n - a.n);
   if (!resSel) resSel = prox.filter((x) => x.n >= MIN_COMMON).slice(0, PRESEL).map((x) => x.c.id);
   const ds = displayStyles(resSel);
@@ -325,7 +356,8 @@ function viewResults() {
   ${thin.length ? `<h3 style="margin:18px 0 4px">Base trop étroite pour comparer</h3><p class="small muted">Moins de ${MIN_COMMON} questions comparables : pourcentages fragiles, non classés avec les autres.</p><div class="prox">${thin.sort((a, b) => alpha(a.c, b.c)).map(row).join('')}</div>` : ''}
   <p class="small muted" style="margin-top:12px">${nodata} autres candidats déclarés n'ont pas encore de position sourcée : <a href="#/candidats">voir la liste</a>.</p>
   <div class="duo" style="margin-top:20px"><a class="btn" href="#/methode">Méthodologie</a><button class="btn primary" data-act="share">Partager</button></div>
-  <button class="btn quiet block" data-act="reset" style="margin-top:8px">Recommencer</button>`;
+  <button class="btn quiet block" data-act="reset" style="margin-top:8px">Recommencer</button>
+  ${consentBlock('results')}`;
 }
 
 function viewCandidates() {
@@ -392,7 +424,7 @@ function viewDisclaimer() {
     <li>Le radar et les pourcentages de proximité reflètent uniquement les questions posées et les positions qu'il a été possible de documenter. Ils simplifient des positions politiques souvent plus nuancées.</li>
     <li>Un candidat sans position documentée sur un sujet n'est pas « neutre » sur ce sujet : il ne s'est simplement pas exprimé, ou l'outil n'a pas trouvé la source.</li>
     <li>La proximité avec un candidat n'est pas une recommandation. Un score élevé sur peu de questions dit peu de chose ; l'outil l'indique.</li>
-    <li>Ce n'est pas un sondage : aucun résultat agrégé des utilisateurs n'est collecté ni publié.</li>
+    <li>Ce n'est pas un sondage. Aucun résultat agrégé n'est publié. Seuls les utilisateurs qui l'acceptent explicitement partagent des compteurs anonymes et brouillés, utilisés uniquement pour améliorer les questions.</li>
   </ul>
   <h2>Sources et lecture des positions</h2>
   <ul>
@@ -416,6 +448,7 @@ function viewLegal() {
   <ul>
     <li><b>Questionnaire :</b> aucune donnée n'est envoyée. Vos réponses, l'ordre des questions et vos préférences sont enregistrés uniquement dans le stockage local de votre navigateur. Vous pouvez les effacer à tout moment avec le bouton « Recommencer » ou en vidant les données du site dans votre navigateur.</li>
     <li><b>Cookies et traceurs :</b> aucun. Ni mesure d'audience nominative, ni publicité, ni réseau social intégré. Les polices de caractères sont hébergées sur le site lui-même.</li>
+    <li><b>Statistiques anonymes${CFG.STATS_URL ? '' : ' (non activées)'} :</b> uniquement si vous cochez la case prévue (désactivée par défaut, modifiable à tout moment ci-dessous). Le navigateur envoie alors, pour chaque question répondue, un simple incrément « question, réponse » : ni identifiant, ni ensemble de vos réponses, ni score de proximité avec les candidats. Le service ne conserve pas les adresses IP. Une réponse sur quatre environ est remplacée au hasard avant l'envoi, si bien qu'aucune réponse reçue ne peut être tenue pour certaine, et qu'aucune n'est rattachée à une personne : le service ne conserve aucun identifiant qui permettrait de regrouper les réponses d'un même utilisateur. Ces totaux servent uniquement à améliorer les questions (questions incomprises, souvent passées, peu discriminantes) ; ils ne sont jamais publiés ni communiqués, et ne constituent pas un sondage.${consentBlock('legal')}</li>
     <li><b>Compteur de simulations${CFG.COUNTER_URL ? '' : ' (non activé)'} :</b> s'il est activé, il n'enregistre qu'un nombre total, sans aucune réponse ni identifiant.</li>
     <li><b>Formulaire de contact :</b> le message, l'objet et, si vous la donnez, votre adresse électronique sont transmis au service de réception des messages${CFG.CONTACT_SERVICE ? ' (' + esc(CFG.CONTACT_SERVICE) + ')' : ''}, uniquement pour traiter votre demande. Ils sont conservés au plus douze mois puis supprimés. L'adresse électronique est facultative : sans elle, aucune réponse ne peut vous être apportée.</li>
     <li><b>Vos droits :</b> vous pouvez demander l'accès, la rectification ou l'effacement des données transmises via le formulaire, et introduire une réclamation auprès de la CNIL (www.cnil.fr).</li>
@@ -514,6 +547,11 @@ document.addEventListener('click', (e) => {
   else if (t.dataset.act === 'reset') {
     if (confirm('Effacer toutes vos réponses sur cet appareil ?')) { reset(); location.hash = '#/'; route(); }
   }
+});
+document.addEventListener('change', (e) => {
+  if (!e.target.matches('[data-consent]')) return;
+  state.statsConsent = e.target.checked; save();
+  if (state.statsConsent) statsFlush(); toast(state.statsConsent ? 'Partage anonyme activé. Merci.' : 'Partage anonyme désactivé.');
 });
 document.addEventListener('submit', (e) => { if (e.target.id === 'contact-form') { e.preventDefault(); sendContact(e.target); } });
 window.addEventListener('hashchange', route);
