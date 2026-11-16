@@ -23,7 +23,7 @@
 <h1>Tableau de bord privé</h1>
 <p class="muted">Usage interne uniquement : ces chiffres ne sont jamais publiés ni communiqués. Ils servent à améliorer les questions, pas à mesurer l'opinion : l'échantillon est auto-sélectionné et sans valeur représentative. Le jeton est gardé en mémoire dans cette page et n'est jamais enregistré.</p>
 <div class="card">
-  <label>Adresse du service de statistiques<input id="url" placeholder="https://elysee2027-stats.votre-compte.workers.dev"></label>
+  <label>Adresse du service de statistiques<input id="url" placeholder="https://api.votre-domaine.example"></label>
   <label>Jeton d'administration<input id="token" type="password" autocomplete="off"></label>
   <label>Part de réponses brouillées (doit correspondre à STATS_P du site)<input id="p" type="number" min="0" max="0.9" step="0.01" value="0.25"></label>
   <label>Adresse du site (pour lire le texte des questions)<input id="site" value="../../"></label>
@@ -31,6 +31,7 @@
   <p id="status" class="muted"></p>
 </div>
 <div id="out"></div>
+<div id="msgs"></div>
 <script type="module">
 import { debias, byQuestion, CATS } from './debias.js';
 const $ = (id) => document.getElementById(id);
@@ -46,9 +47,25 @@ $('go').onclick = async () => {
     let qs = [];
     try { qs = await (await fetch($('site').value.replace(/\/?$/, '/') + 'data/questions.json')).json(); } catch { /* texte facultatif */ }
     render(counters, qs, Number($('p').value));
+    await loadMessages(base);
     $('status').textContent = 'À jour.';
   } catch (e) { $('status').textContent = 'Échec : ' + e.message; }
 };
+const hdr = () => ({ Authorization: 'Bearer ' + $('token').value });
+async function loadMessages(base) {
+  const r = await fetch(base + '/admin/messages', { headers: hdr(), cache: 'no-store' });
+  if (!r.ok) { $('msgs').innerHTML = ''; return; }
+  const { messages, retentionDays } = await r.json();
+  let h = `<h2>Messages du formulaire (${messages.length})</h2><p class="muted">Supprimés automatiquement après ${retentionDays} jours. Supprimez-les vous-même dès traitement.</p>`;
+  h += messages.length ? messages.map((m) => `<div class="card" style="${m.lu ? 'opacity:.6' : ''}"><b>${esc(m.objet)}</b> <span class="muted">· ${esc(m.day)}${m.question ? ' · ' + esc(m.question) : ''}</span><p style="white-space:pre-wrap;margin:8px 0">${esc(m.message)}</p><span class="muted">${m.email ? 'Réponse souhaitée : ' + esc(m.email) : 'Sans adresse de réponse'}</span><br><button data-lu="${m.id}" style="width:auto;margin-right:8px">Marquer comme lu</button><button data-del="${m.id}" style="width:auto;background:#E2776A">Supprimer</button></div>`).join('') : '<div class="card muted">Aucun message.</div>';
+  $('msgs').innerHTML = h;
+  $('msgs').onclick = async (e) => {
+    const lu = e.target.dataset.lu, del = e.target.dataset.del;
+    if (!lu && !del) return;
+    await fetch(base + '/admin/messages/' + (lu || del) + (lu ? '/lu' : ''), { method: lu ? 'POST' : 'DELETE', headers: hdr() });
+    loadMessages(base);
+  };
+}
 function render(counters, qs, p) {
   const text = Object.fromEntries(qs.map((q) => [q.id, q]));
   const rows = Object.entries(byQuestion(counters)).map(([id, obs]) => ({ id, ...debias(obs, p) })).sort((a, b) => b.N - a.N);

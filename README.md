@@ -38,4 +38,4 @@ Le dossier `corpus/` n'est pas versionné.
 
 ## Statistiques anonymes (facultatif)
 
-Voir `tools/stats-worker/README.md` : service de comptage (Cloudflare Workers + D1), brouillage aléatoire des réponses, tableau de bord privé. Désactivé tant que `STATS_URL` est vide dans `js/config.js`.
+Voir `tools/nas-server/README.md` : serveur Docker pour NAS (statistiques anonymes brouillées, formulaire de contact, tableau de bord privé), relié par un tunnel Cloudflare. Désactivé tant que `STATS_URL` est vide dans `js/config.js`.

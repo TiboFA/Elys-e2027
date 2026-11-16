@@ -5,15 +5,14 @@
 // Laisser vide pour masquer le compteur. Aucune réponse de l'utilisateur n'est transmise.
 //
 // CONTACT_URL : adresse du service qui reçoit le formulaire de contact (facultatif).
-//   Le formulaire envoie un POST JSON {objet, question, message, email, page} avec l'en-tête
-//   Accept: application/json (format compatible avec Formspree et services équivalents).
-//   Votre adresse électronique n'apparaît jamais dans le site : elle reste chez le service.
-//   Laisser vide tant que le service n'est pas configuré : le formulaire l'indique.
+//   Avec le serveur NAS : 'https://api.votre-domaine.example/contact'. Le formulaire envoie un POST JSON
+//   {objet, question, message, email, page}. Votre adresse électronique n'apparaît jamais dans le site.
+//   Laisser vide tant que le serveur n'est pas configuré : le formulaire l'indique.
 //
-// CONTACT_SERVICE : nom du service de réception, affiché dans la page de confidentialité (ex. 'Formspree').
+// CONTACT_SERVICE : précision affichée dans la page de confidentialité (ex. 'relayé par Cloudflare').
 // HOST_INFO : coordonnées de l'hébergeur affichées dans les mentions légales (GitHub par défaut).
 // LICENCE : licence du code et de la méthode (ex. 'MIT pour le code, CC BY-SA 4.0 pour les données').
-// STATS_URL : adresse du service de statistiques anonymes (voir tools/stats-worker). Vide = désactivé :
+// STATS_URL : adresse de votre serveur (voir tools/nas-server), par exemple 'https://api.votre-domaine.example'. Vide = désactivé :
 //   aucune case de consentement n'est alors affichée et rien n'est envoyé.
 // STATS_P : part des réponses remplacées au hasard avant envoi (0.25 par défaut).
 window.E2027_CONFIG = {
