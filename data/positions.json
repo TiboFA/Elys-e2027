@@ -5676,5 +5676,946 @@
   },
   "note": "",
   "statut": "propose"
+ },
+ {
+  "question": "q81",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "l’organisation d’une société de l’entraide et la planification écologique",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre3",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q81",
+  "candidat": "ruffin",
+  "score": 2,
+  "citation": "nous devons embarquer toute la société pour planifier, organiser et mener à bien d’innombrables travaux",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/travaillisme-ecologique/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q81",
+  "candidat": "roussel",
+  "score": 2,
+  "citation": "faire du travail, de l’emploi, de la production, de la planification, le cœur de la reconstruction du pays",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Texte du 40e congrès du PCF.",
+  "statut": "propose"
+ },
+ {
+  "question": "q81",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "Développer une planification économique souveraine et cohérente",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q81",
+  "candidat": "polony",
+  "score": 2,
+  "citation": "L’État doit redevenir stratège. Planifier les investissements essentiels.",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://natachapolony2027.fr/natacha-polony/ma-vision",
+   "consulte": "2026-11-16",
+   "media": "Site de campagne"
+  },
+  "note": "Texte « Ma vision pour la France » sur le site de campagne.",
+  "statut": "propose"
+ },
+ {
+  "question": "q81",
+  "candidat": "retailleau",
+  "score": 1,
+  "citation": "L’État stratège fixe le cap, finance les infrastructures critiques, oriente la commande publique vers nos champions",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/07/LR_IA.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Livret IA des Républicains.",
+  "statut": "propose"
+ },
+ {
+  "question": "q82",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "Zéro nouvelle norme et zéro surtransposition",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q82",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "Supprimer les surtranspositions françaises des normes européennes.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouvelle-energie-media-prod.s3.fr-par.scw.cloud/media/legacy/2026/06/AGRICULTURE.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q82",
+  "candidat": "retailleau",
+  "score": 2,
+  "citation": "nous mettrons fin à la pratique française de surtransposition des règles européennes",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/05/LR_Logement.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q82",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "zéro taxe et zéro norme supplémentaire pour les TPE/PME",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/economie-travail/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q82",
+  "candidat": "attal",
+  "score": 1,
+  "citation": "pas de surtransposition des normes européennes",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme/mesures/prix-planchers-agricoles",
+   "consulte": "2026-11-16"
+  },
+  "note": "Appliqué à l'agriculture.",
+  "statut": "propose"
+ },
+ {
+  "question": "q83",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Supprimer la flat tax et imposer les revenus du capital comme ceux du travail",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q83",
+  "candidat": "attal",
+  "score": -2,
+  "citation": "la flat tax et la suppression de l'ISF, qui ont restauré l'attractivité du pays",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme/mesures/loi-de-stabilite-fiscale",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q83",
+  "candidat": "retailleau",
+  "score": -1,
+  "citation": "percevoir demain l’impôt là où il est juste, au prélèvement forfaitaire unique",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/07/LR_IA.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Maintien du prélèvement forfaitaire, livret IA des Républicains.",
+  "statut": "propose"
+ },
+ {
+  "question": "q84",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "le minimum vieillesse au niveau du seuil de pauvreté",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q84",
+  "candidat": "lisnard",
+  "score": 1,
+  "citation": "il faut augmenter les petites retraites",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Dans le cadre d'un report de l'âge légal à 65 ans.",
+  "statut": "propose"
+ },
+ {
+  "question": "q84",
+  "candidat": "attal",
+  "score": 1,
+  "citation": "Les petites pensions protégées",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q85",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Construire la Sécurité sociale intégrale",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q86",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "commencer à aider les familles dès le premier enfant",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/famille",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q87",
+  "candidat": "ruffin",
+  "score": 2,
+  "citation": "Le premier d’entre eux : sortir des énergies fossiles",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/travaillisme-ecologique/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q87",
+  "candidat": "batho",
+  "score": 2,
+  "citation": "la pluriannualité budgétaire pour la sortie des énergies fossiles",
+  "niveau": "programme",
+  "source": {
+   "url": "https://delphinebatho.fr/priorites/la-republique-terrestre/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Priorités publiées sur le site de campagne.",
+  "statut": "propose"
+ },
+ {
+  "question": "q87",
+  "candidat": "philippe",
+  "score": 1,
+  "citation": "Électrifier massivement nos usages pour sortir du pétrole et du gaz.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/energie",
+   "consulte": "2026-11-16"
+  },
+  "note": "Sans date butoir dans cet extrait.",
+  "statut": "propose"
+ },
+ {
+  "question": "q87",
+  "candidat": "mikolajczak",
+  "score": 1,
+  "citation": "sortir progressivement des énergies fossiles",
+  "niveau": "programme",
+  "source": {
+   "url": "https://parti-equinoxe.fr/wp-content/uploads/2026/11/Equinoxe-Lessentiel-Programme-synthetique-pour-lelection-presidentielle-1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme synthétique d'Équinoxe.",
+  "statut": "propose"
+ },
+ {
+  "question": "q87",
+  "candidat": "melenchon",
+  "score": 1,
+  "citation": "Défendre un moratoire sur les forages en Méditerranée",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre5",
+   "consulte": "2026-11-16"
+  },
+  "note": "Limité aux forages en Méditerranée.",
+  "statut": "propose"
+ },
+ {
+  "question": "q88",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "un volet climatique visant à taxer les gros pollueurs",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/une-economie-au-service-des-besoins/chapitre2",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q88",
+  "candidat": "glucksmann",
+  "score": 2,
+  "citation": "taxation des plus gros pollueurs individuels (jets privés",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q88",
+  "candidat": "tondelier",
+  "score": 2,
+  "citation": "un ISF climatique",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.lagazettefrance.fr/article/2027-les-ecologistes-veulent-instaurer-la-premiere-republique-ecologique-et-citoyenne",
+   "consulte": "2026-11-16",
+   "media": "AFP, via La Gazette France"
+  },
+  "note": "Projet des Écologistes, cité par l'AFP.",
+  "statut": "propose"
+ },
+ {
+  "question": "q89",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "Créer un prix du carbone aux frontières européennes.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/energie",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q89",
+  "candidat": "retailleau",
+  "score": 2,
+  "citation": "le mécanisme d’ajustement carbone aux frontières sera renforcé et étendu aux produits transformés",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/02/LR_Produire_Plus_LIVRET.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q89",
+  "candidat": "mikolajczak",
+  "score": 2,
+  "citation": "une taxation douanière selon leur empreinte carbone, en cohérence avec le mécanisme d’ajustement carbone aux frontières",
+  "niveau": "programme",
+  "source": {
+   "url": "https://parti-equinoxe.fr/wp-content/uploads/2026/11/Equinoxe-Lessentiel-Programme-synthetique-pour-lelection-presidentielle-1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme synthétique d'Équinoxe.",
+  "statut": "propose"
+ },
+ {
+  "question": "q90",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "Quitter le marché européen de l’électricité.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q90",
+  "candidat": "branco",
+  "score": 2,
+  "citation": "Sortie du marché européen de l’électricité.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q90",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "Sortie des règles européennes de fixation des prix de l’électricité",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q90",
+  "candidat": "nda",
+  "score": 1,
+  "citation": "Rétablissant le monopole de production et de distribution d’EDF.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/economie-travail/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Monopole public et tarif réglementé national.",
+  "statut": "propose"
+ },
+ {
+  "question": "q91",
+  "candidat": "glucksmann",
+  "score": 2,
+  "citation": "un fonds européen de défense de 500 milliards d’euros via un emprunt commun",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q91",
+  "candidat": "attal",
+  "score": 2,
+  "citation": "par une politique IA commune adossée au budget européen et à un endettement commun",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme/mesures/puissance-de-calcul-europeenne",
+   "consulte": "2026-11-16"
+  },
+  "note": "Appliqué à l'intelligence artificielle.",
+  "statut": "propose"
+ },
+ {
+  "question": "q92",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "Retour du délit de séjour irrégulier",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q92",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "Rétablir le délit de séjour irrégulier",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q92",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Rétablir le délit de séjour irrégulier puni d’emprisonnement ferme.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/immigration-et-assimilation/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q93",
+  "candidat": "glucksmann",
+  "score": 2,
+  "citation": "Créer des voies légales et sécurisées d’immigration de travail",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q93",
+  "candidat": "attal",
+  "score": 1,
+  "citation": "Gabriel Attal fait de l'immigration de travail la priorité.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme/mesures/durcir-regroupement-familial",
+   "consulte": "2026-11-16"
+  },
+  "note": "Au détriment de l'immigration familiale.",
+  "statut": "propose"
+ },
+ {
+  "question": "q93",
+  "candidat": "philippe",
+  "score": 1,
+  "citation": "Des quotas pour choisir l’immigration de travail.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/immigration",
+   "consulte": "2026-11-16"
+  },
+  "note": "Dans le cadre d'une division par deux de l'immigration.",
+  "statut": "propose"
+ },
+ {
+  "question": "q93",
+  "candidat": "philippot",
+  "score": -2,
+  "citation": "Mettre fin à l’immigration de travail et à la directive européenne des travailleurs détachés.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q94",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "en interdisant toute régularisation ou naturalisation au titre de la vie privée et familiale",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/immigration-et-assimilation/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q95",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "Instituer une présomption de légitime défense pour les forces de l’ordre",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q95",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Instaurer une présomption de légitime défense pour permettre aux policiers de se défendre contre des agresseurs.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/securite/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q95",
+  "candidat": "melenchon",
+  "score": -2,
+  "citation": "refuser la loi dite « permis de tuer XXL » instaurant une présomption de légitime défense pour les policiers",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q96",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Supprimer l’Inspection générale de la police nationale (IGPN) et l’Inspection générale de la gendarmerie nationale (IGGN) et les remplacer par une autorité indépendante",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre2",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q96",
+  "candidat": "roussel",
+  "score": 1,
+  "citation": "une institution indépendante doit permettre les recours contre tout abus",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Texte du 40e congrès du PCF.",
+  "statut": "propose"
+ },
+ {
+  "question": "q97",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Une « Île du Diable 2.0 » gérée par l’administration pénitentiaire",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/securite/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Prison isolée pour les têtes de réseau du narcotrafic.",
+  "statut": "propose"
+ },
+ {
+  "question": "q98",
+  "candidat": "roussel",
+  "score": 2,
+  "citation": "Nous portons la fin du financement public des écoles privées sous contrat.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Texte du 40e congrès du PCF.",
+  "statut": "propose"
+ },
+ {
+  "question": "q98",
+  "candidat": "melenchon",
+  "score": 1,
+  "citation": "Abolir les privilèges de l’enseignement privé en interdisant les subventions d’investissement facultatives des collectivités",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2",
+   "consulte": "2026-11-16"
+  },
+  "note": "Fin des subventions facultatives, pas de l'ensemble du financement.",
+  "statut": "propose"
+ },
+ {
+  "question": "q98",
+  "candidat": "ruffin",
+  "score": 1,
+  "citation": "sans aucune contrepartie en termes d’objectifs sociaux",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/education-une-ecole-de-tous-les-savoirs/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Critique d'un financement sans contreparties.",
+  "statut": "propose"
+ },
+ {
+  "question": "q98",
+  "candidat": "lisnard",
+  "score": -2,
+  "citation": "L’enseignement privé n’est pas le problème. Il est souvent la réponse à une école publique disqualifiée.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/education/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q99",
+  "candidat": "platret",
+  "score": 2,
+  "citation": "interdire le voile dans l’espace public",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+   "consulte": "2026-11-16",
+   "media": "franceinfo"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q99",
+  "candidat": "labib",
+  "score": -2,
+  "citation": "l’interdiction du voile dans la rue et un référendum pour instaurer la préférence nationale. C’est du pur racisme !",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026",
+   "consulte": "2026-11-16",
+   "media": "NPA-Révolutionnaires, 12 septembre 2026"
+  },
+  "note": "Discours à la fête de l'Humanité, publié par le NPA-Révolutionnaires.",
+  "statut": "propose"
+ },
+ {
+  "question": "q99",
+  "candidat": "kazib",
+  "score": -2,
+  "citation": "Abrogation de toutes les lois sécuritaires, racistes et islamophobes, à commencer par la loi de 2004.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://anasse2027.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Premières mesures de campagne ; vise aussi l'interdiction à l'école.",
+  "statut": "propose"
+ },
+ {
+  "question": "q100",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Passer à une 6e République, qui soit un régime parlementaire stable et d’intervention citoyenne",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q100",
+  "candidat": "branco",
+  "score": 2,
+  "citation": "proposant la convocation d’une assemblée constituante dotée d’un mandat de 12 mois",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q100",
+  "candidat": "glucksmann",
+  "score": 2,
+  "citation": "une grande convention citoyenne qui jettera les bases d’une assemblée constituante pour changer la Constitution",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q100",
+  "candidat": "kazib",
+  "score": 2,
+  "citation": "Fin de la Ve République, du Sénat et de la figure présidentielle.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://anasse2027.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q100",
+  "candidat": "tondelier",
+  "score": 1,
+  "citation": "Les Ecologistes entendent mettre fin au \"présidentialisme\"",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.lagazettefrance.fr/article/2027-les-ecologistes-veulent-instaurer-la-premiere-republique-ecologique-et-citoyenne",
+   "consulte": "2026-11-16",
+   "media": "AFP, via La Gazette France"
+  },
+  "note": "Projet des Écologistes, rapporté par l'AFP.",
+  "statut": "propose"
+ },
+ {
+  "question": "q100",
+  "candidat": "nda",
+  "score": -1,
+  "citation": "L’esprit de la Ve République a été trahi par les partis.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/refonder-et-moraliser-notre-democratie/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Défend l'esprit des institutions actuelles.",
+  "statut": "propose"
+ },
+ {
+  "question": "q101",
+  "candidat": "branco",
+  "score": 2,
+  "citation": "RIC et mandats impératifs et révocables",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q101",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "peuvent révoquer des élus",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "Par référendum d'initiative citoyenne.",
+  "statut": "propose"
+ },
+ {
+  "question": "q101",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "la possibilité d’un référendum révocatoire d’initiative citoyenne à mi-mandat",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/refonder-et-moraliser-notre-democratie/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q101",
+  "candidat": "mikolajczak",
+  "score": 1,
+  "citation": "mandatés, responsables, révocables",
+  "niveau": "programme",
+  "source": {
+   "url": "https://parti-equinoxe.fr/wp-content/uploads/2026/11/Equinoxe-Lessentiel-Programme-synthetique-pour-lelection-presidentielle-1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme synthétique d'Équinoxe.",
+  "statut": "propose"
+ },
+ {
+  "question": "q102",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Donner le droit de vote à 16 ans",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/fonder-la-6e-republique/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q102",
+  "candidat": "glucksmann",
+  "score": 2,
+  "citation": "Ouvrir le droit de vote à 16 ans",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q103",
+  "candidat": "kazib",
+  "score": 2,
+  "citation": "Fin de la Ve République, du Sénat et de la figure présidentielle.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://anasse2027.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q103",
+  "candidat": "branco",
+  "score": 2,
+  "citation": "Création d’une chambre haute absorbant le Sénat et le Conseil Économique, Social et Environnemental (CESE)",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q103",
+  "candidat": "lisnard",
+  "score": -1,
+  "citation": "Et le Sénat retrouvera une mission essentielle",
+  "niveau": "candidat",
+  "source": {
+   "url": "https://nouvelle-energie-media-prod.s3.fr-par.scw.cloud/media/legacy/2026/06/Discours-de-David-Lisnard-a-Bayeux-17062026.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Discours de Bayeux du 17 juin 2026 : Sénat maintenu et recentré sur l'évaluation.",
+  "statut": "propose"
  }
 ]

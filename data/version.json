@@ -1,8 +1,13 @@
 {
- "version": "0.9",
+ "version": "1.0",
  "date": "2026-11-16",
  "statut": "Proposition en attente de validation",
  "historique": [
+  {
+   "version": "1.0",
+   "date": "2026-11-16",
+   "resume": "103 questions, 506 positions citées. Nouveaux sujets : planification, normes, flat tax, petites retraites, sortie des fossiles, marché européen de l'électricité, délit de séjour, légitime défense, enseignement privé, VIe République, révocation des élus, vote à 16 ans, Sénat."
+  },
   {
    "version": "0.9",
    "date": "2026-11-16",

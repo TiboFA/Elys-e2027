@@ -638,5 +638,189 @@
   "enonce": "Les étrangers non européens résidant en France doivent pouvoir voter aux élections locales.",
   "contexte": "Seuls les citoyens de l'Union européenne peuvent aujourd'hui voter aux élections municipales.",
   "serie": 10
+ },
+ {
+  "id": "q81",
+  "axe": "eco",
+  "sens": -1,
+  "enonce": "L'État doit planifier les grands investissements et orienter l'économie.",
+  "contexte": "La planification fixe des objectifs pluriannuels (énergie, industrie, infrastructures) et les moyens publics pour les atteindre.",
+  "serie": 11
+ },
+ {
+  "id": "q84",
+  "axe": "social",
+  "sens": -1,
+  "enonce": "Il faut relever fortement les petites retraites et le minimum vieillesse.",
+  "contexte": "Le minimum vieillesse (ASPA) est inférieur au seuil de pauvreté.",
+  "serie": 11
+ },
+ {
+  "id": "q87",
+  "axe": "ecologie",
+  "sens": -1,
+  "enonce": "La France doit accélérer sa sortie du pétrole et du gaz, avec un calendrier contraignant.",
+  "contexte": "Les énergies fossiles représentent encore environ 60 % de l'énergie consommée en France.",
+  "serie": 11
+ },
+ {
+  "id": "q90",
+  "axe": "europe",
+  "sens": 1,
+  "enonce": "La France doit sortir du marché européen de l'électricité.",
+  "contexte": "Les prix de gros de l'électricité sont fixés dans un marché européen interconnecté.",
+  "serie": 11
+ },
+ {
+  "id": "q92",
+  "axe": "immigration",
+  "sens": 1,
+  "enonce": "Le séjour irrégulier doit redevenir un délit.",
+  "contexte": "Le délit de séjour irrégulier a été supprimé en 2012 ; le séjour irrégulier relève aujourd'hui de mesures administratives.",
+  "serie": 11
+ },
+ {
+  "id": "q95",
+  "axe": "securite",
+  "sens": 1,
+  "enonce": "Les policiers doivent bénéficier d'une présomption de légitime défense.",
+  "contexte": "Aujourd'hui, l'usage de l'arme par un policier est examiné au cas par cas par la justice.",
+  "serie": 11
+ },
+ {
+  "id": "q98",
+  "axe": "societe",
+  "sens": -1,
+  "enonce": "Le financement public de l'enseignement privé sous contrat doit être réduit.",
+  "contexte": "L'État rémunère les enseignants des écoles privées sous contrat, qui scolarisent environ 17 % des élèves.",
+  "serie": 11
+ },
+ {
+  "id": "q100",
+  "axe": "institutions",
+  "sens": 1,
+  "enonce": "Il faut changer de Constitution (VIe République, assemblée constituante).",
+  "contexte": "La Constitution de la Ve République date de 1958.",
+  "serie": 11
+ },
+ {
+  "id": "q82",
+  "axe": "eco",
+  "sens": 1,
+  "enonce": "Il faut supprimer massivement des normes et interdire d'aller au-delà des règles européennes.",
+  "contexte": "La « surtransposition » consiste à ajouter des exigences françaises aux règles européennes.",
+  "serie": 12
+ },
+ {
+  "id": "q85",
+  "axe": "social",
+  "sens": -1,
+  "enonce": "Les soins doivent être remboursés intégralement par la Sécurité sociale.",
+  "contexte": "Une partie des soins reste à la charge des patients ou de leur complémentaire santé.",
+  "serie": 12
+ },
+ {
+  "id": "q88",
+  "axe": "ecologie",
+  "sens": -1,
+  "enonce": "Les plus gros pollueurs individuels (patrimoines élevés, jets privés) doivent être davantage taxés.",
+  "contexte": "Les émissions de gaz à effet de serre augmentent fortement avec le niveau de revenu et de patrimoine.",
+  "serie": 12
+ },
+ {
+  "id": "q91",
+  "axe": "europe",
+  "sens": -1,
+  "enonce": "L'Union européenne doit emprunter en commun pour financer sa défense et son industrie.",
+  "contexte": "Un emprunt commun a déjà été lancé en 2020 pour le plan de relance européen.",
+  "serie": 12
+ },
+ {
+  "id": "q93",
+  "axe": "immigration",
+  "sens": -1,
+  "enonce": "La France doit ouvrir davantage de voies légales d'immigration de travail.",
+  "contexte": "Les titres de séjour pour motif professionnel sont délivrés notamment pour les métiers en tension.",
+  "serie": 12
+ },
+ {
+  "id": "q96",
+  "axe": "securite",
+  "sens": -1,
+  "enonce": "Le contrôle de la police doit être confié à une autorité indépendante du ministère de l'Intérieur.",
+  "contexte": "Les enquêtes internes sont aujourd'hui menées par l'IGPN, rattachée à la police nationale.",
+  "serie": 12
+ },
+ {
+  "id": "q99",
+  "axe": "societe",
+  "sens": 1,
+  "enonce": "Le port du voile doit être interdit dans tout l'espace public.",
+  "contexte": "Le voile est interdit à l'école publique et pour les agents publics, pas dans la rue.",
+  "serie": 12
+ },
+ {
+  "id": "q101",
+  "axe": "institutions",
+  "sens": 1,
+  "enonce": "Les citoyens doivent pouvoir révoquer un élu en cours de mandat.",
+  "contexte": "Un élu ne peut aujourd'hui être démis qu'en cas de condamnation ou de procédure exceptionnelle.",
+  "serie": 12
+ },
+ {
+  "id": "q83",
+  "axe": "eco",
+  "sens": -1,
+  "enonce": "Le prélèvement forfaitaire sur les revenus du capital (« flat tax ») doit être supprimé.",
+  "contexte": "Depuis 2018, dividendes et plus-values sont taxés à un taux unique d'environ 30 %, prélèvements sociaux compris.",
+  "serie": 13
+ },
+ {
+  "id": "q86",
+  "axe": "social",
+  "sens": -1,
+  "enonce": "Les allocations familiales doivent être versées dès le premier enfant.",
+  "contexte": "Elles ne sont aujourd'hui versées qu'à partir du deuxième enfant.",
+  "serie": 13
+ },
+ {
+  "id": "q89",
+  "axe": "ecologie",
+  "sens": -1,
+  "enonce": "Il faut taxer aux frontières de l'Europe les importations selon leur empreinte carbone.",
+  "contexte": "Un mécanisme européen d'ajustement carbone aux frontières se met en place pour certains produits.",
+  "serie": 13
+ },
+ {
+  "id": "q94",
+  "axe": "immigration",
+  "sens": 1,
+  "enonce": "L'accès à la nationalité française doit être rendu plus difficile.",
+  "contexte": "La naturalisation exige notamment plusieurs années de résidence, un niveau de français et une adhésion aux valeurs républicaines.",
+  "serie": 13
+ },
+ {
+  "id": "q97",
+  "axe": "securite",
+  "sens": 1,
+  "enonce": "Il faut créer des prisons de très haute sécurité, isolées, pour les chefs du narcotrafic.",
+  "contexte": "Des quartiers de haute sécurité existent déjà dans certains établissements pénitentiaires.",
+  "serie": 13
+ },
+ {
+  "id": "q102",
+  "axe": "institutions",
+  "sens": 1,
+  "enonce": "Le droit de vote doit être abaissé à 16 ans.",
+  "contexte": "On vote aujourd'hui à partir de 18 ans.",
+  "serie": 13
+ },
+ {
+  "id": "q103",
+  "axe": "institutions",
+  "sens": 1,
+  "enonce": "Le Sénat doit être supprimé ou profondément transformé.",
+  "contexte": "Le Sénat, élu au suffrage indirect, partage le pouvoir législatif avec l'Assemblée nationale.",
+  "serie": 13
  }
 ]

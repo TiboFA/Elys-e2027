@@ -73,6 +73,29 @@ new = [
     ("q78", "institutions", 1, "Des citoyens tirés au sort doivent participer à la décision publique.", "Des conventions citoyennes tirées au sort ont déjà été réunies, à titre consultatif."),
     ("q79", "institutions", 1, "Le vote blanc doit être reconnu comme suffrage exprimé, voire le vote rendu obligatoire.", "Les votes blancs sont comptés mais n'entrent pas dans le calcul des résultats."),
     ("q80", "institutions", 1, "Les étrangers non européens résidant en France doivent pouvoir voter aux élections locales.", "Seuls les citoyens de l'Union européenne peuvent aujourd'hui voter aux élections municipales."),
+    ("q81", "eco", -1, "L'État doit planifier les grands investissements et orienter l'économie.", "La planification fixe des objectifs pluriannuels (énergie, industrie, infrastructures) et les moyens publics pour les atteindre."),
+    ("q82", "eco", 1, "Il faut supprimer massivement des normes et interdire d'aller au-delà des règles européennes.", "La « surtransposition » consiste à ajouter des exigences françaises aux règles européennes."),
+    ("q83", "eco", -1, "Le prélèvement forfaitaire sur les revenus du capital (« flat tax ») doit être supprimé.", "Depuis 2018, dividendes et plus-values sont taxés à un taux unique d'environ 30 %, prélèvements sociaux compris."),
+    ("q84", "social", -1, "Il faut relever fortement les petites retraites et le minimum vieillesse.", "Le minimum vieillesse (ASPA) est inférieur au seuil de pauvreté."),
+    ("q85", "social", -1, "Les soins doivent être remboursés intégralement par la Sécurité sociale.", "Une partie des soins reste à la charge des patients ou de leur complémentaire santé."),
+    ("q86", "social", -1, "Les allocations familiales doivent être versées dès le premier enfant.", "Elles ne sont aujourd'hui versées qu'à partir du deuxième enfant."),
+    ("q87", "ecologie", -1, "La France doit accélérer sa sortie du pétrole et du gaz, avec un calendrier contraignant.", "Les énergies fossiles représentent encore environ 60 % de l'énergie consommée en France."),
+    ("q88", "ecologie", -1, "Les plus gros pollueurs individuels (patrimoines élevés, jets privés) doivent être davantage taxés.", "Les émissions de gaz à effet de serre augmentent fortement avec le niveau de revenu et de patrimoine."),
+    ("q89", "ecologie", -1, "Il faut taxer aux frontières de l'Europe les importations selon leur empreinte carbone.", "Un mécanisme européen d'ajustement carbone aux frontières se met en place pour certains produits."),
+    ("q90", "europe", 1, "La France doit sortir du marché européen de l'électricité.", "Les prix de gros de l'électricité sont fixés dans un marché européen interconnecté."),
+    ("q91", "europe", -1, "L'Union européenne doit emprunter en commun pour financer sa défense et son industrie.", "Un emprunt commun a déjà été lancé en 2020 pour le plan de relance européen."),
+    ("q92", "immigration", 1, "Le séjour irrégulier doit redevenir un délit.", "Le délit de séjour irrégulier a été supprimé en 2012 ; le séjour irrégulier relève aujourd'hui de mesures administratives."),
+    ("q93", "immigration", -1, "La France doit ouvrir davantage de voies légales d'immigration de travail.", "Les titres de séjour pour motif professionnel sont délivrés notamment pour les métiers en tension."),
+    ("q94", "immigration", 1, "L'accès à la nationalité française doit être rendu plus difficile.", "La naturalisation exige notamment plusieurs années de résidence, un niveau de français et une adhésion aux valeurs républicaines."),
+    ("q95", "securite", 1, "Les policiers doivent bénéficier d'une présomption de légitime défense.", "Aujourd'hui, l'usage de l'arme par un policier est examiné au cas par cas par la justice."),
+    ("q96", "securite", -1, "Le contrôle de la police doit être confié à une autorité indépendante du ministère de l'Intérieur.", "Les enquêtes internes sont aujourd'hui menées par l'IGPN, rattachée à la police nationale."),
+    ("q97", "securite", 1, "Il faut créer des prisons de très haute sécurité, isolées, pour les chefs du narcotrafic.", "Des quartiers de haute sécurité existent déjà dans certains établissements pénitentiaires."),
+    ("q98", "societe", -1, "Le financement public de l'enseignement privé sous contrat doit être réduit.", "L'État rémunère les enseignants des écoles privées sous contrat, qui scolarisent environ 17 % des élèves."),
+    ("q99", "societe", 1, "Le port du voile doit être interdit dans tout l'espace public.", "Le voile est interdit à l'école publique et pour les agents publics, pas dans la rue."),
+    ("q100", "institutions", 1, "Il faut changer de Constitution (VIe République, assemblée constituante).", "La Constitution de la Ve République date de 1958."),
+    ("q101", "institutions", 1, "Les citoyens doivent pouvoir révoquer un élu en cours de mandat.", "Un élu ne peut aujourd'hui être démis qu'en cas de condamnation ou de procédure exceptionnelle."),
+    ("q102", "institutions", 1, "Le droit de vote doit être abaissé à 16 ans.", "On vote aujourd'hui à partir de 18 ans."),
+    ("q103", "institutions", 1, "Le Sénat doit être supprimé ou profondément transformé.", "Le Sénat, élu au suffrage indirect, partage le pouvoir législatif avec l'Assemblée nationale."),
 ]
 for i, a, s, e, c in new:
     Q.setdefault(i, {"id": i, "axe": a, "sens": s, "enonce": e, "contexte": c})
@@ -89,6 +112,9 @@ waves = [
     ["q57", "q60", "q63", "q66", "q69", "q72", "q75", "q78"],
     ["q58", "q61", "q64", "q67", "q70", "q73", "q76", "q79"],
     ["q59", "q62", "q65", "q68", "q71", "q74", "q77", "q80"],
+    ["q81", "q84", "q87", "q90", "q92", "q95", "q98", "q100"],
+    ["q82", "q85", "q88", "q91", "q93", "q96", "q99", "q101"],
+    ["q83", "q86", "q89", "q94", "q97", "q102", "q103"],
 ]
 out = []
 for k, w in enumerate(waves, 1):
