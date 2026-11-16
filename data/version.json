@@ -1,8 +1,13 @@
 {
- "version": "0.8",
+ "version": "0.9",
  "date": "2026-11-16",
  "statut": "Proposition en attente de validation",
  "historique": [
+  {
+   "version": "0.9",
+   "date": "2026-11-16",
+   "resume": "Ordre des questions semi-aléatoire, propre à chaque appareil : une question par thème dans chaque série, axes toujours équilibrés, questions les mieux documentées en premier."
+  },
   {
    "version": "0.8",
    "date": "2026-11-16",

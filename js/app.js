@@ -47,7 +47,25 @@ function load() {
 function rng(seed) { let a = seed >>> 0; return () => { a = (a + 0x6d2b79f5) >>> 0; let t = a; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
 function shuffled(arr, salt = 0) { const r = rng(state.seed + salt), a = [...arr]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch { mem = state; } }
-function reset() { state = { answers: {}, counted: false, seed: (Math.random() * 2 ** 31) | 0 }; save(); resSel = null; }
+function reset() { state = { answers: {}, counted: false, seed: (Math.random() * 2 ** 31) | 0 }; save(); resSel = null; D.questions = orderQuestions(D.baseQuestions); }
+
+// Ordre semi-aléatoire, propre à chaque appareil : chaque série de 8 contient une question par thème
+// (ordre des thèmes tiré au sort dans la série), de sorte que les axes restent équilibrés quel que
+// soit le nombre de réponses. Dans chaque thème, les questions les mieux documentées sortent en
+// premier (tirées au sort entre elles), puis les autres.
+function orderQuestions(qs) {
+  const cover = (id) => new Set(D.positions.filter((p) => p.question === id).map((p) => p.candidat)).size;
+  const byAxe = {};
+  D.axes.forEach((a, ai) => {
+    const list = qs.filter((q) => q.axe === a.id).sort((x, y) => cover(y.id) - cover(x.id));
+    const half = Math.ceil(list.length / 2);
+    byAxe[a.id] = [...shuffled(list.slice(0, half), 101 + ai), ...shuffled(list.slice(half), 211 + ai)];
+  });
+  const rounds = Math.max(...Object.values(byAxe).map((l) => l.length));
+  const out = [];
+  for (let r = 0; r < rounds; r++) out.push(...shuffled(D.axes.map((a) => a.id), 1009 + r).map((id) => byAxe[id][r]).filter(Boolean));
+  return out;
+}
 
 // ---------- calculs ----------
 function posFor(qid, cid) {
@@ -337,7 +355,7 @@ function viewMethod() {
   <li>Le passage de la citation à une note de -2 à +2 est une lecture d'analyste, affichée à côté de la citation et validée par un humain avant publication.</li>
   <li>Quand aucune source ne traite le sujet, l'outil l'écrit : cela signifie « non trouvé dans les sources consultées ».</li></ul>
   <h2>Séries et précision du graphe</h2>
-  <p>Les questions sont groupées en séries de ${PER}, chacune comportant une question par thème. Le graphe s'affiche à partir de ${MIN_RESULTS} réponses avec un avis. Un thème où vous n'avez répondu qu'à une question est signalé comme indicatif.</p>
+  <p>Les questions sont groupées en séries de ${PER}, chacune comportant une question par thème : quel que soit le nombre de réponses, les huit axes restent équilibrés. L'ordre est tiré au sort pour chaque appareil, dans l'ordre des thèmes comme dans le choix des questions ; les questions où le plus de candidats ont une position documentée sont proposées en premier. Le graphe s'affiche à partir de ${MIN_RESULTS} réponses avec un avis. Un thème où vous n'avez répondu qu'à une question est signalé comme indicatif.</p>
   <h2>Calcul de la proximité</h2>
   <p>Pour chaque candidat, on compare uniquement les questions où vous avez répondu et où une position est documentée. L'écart moyen est converti en pourcentage ; l'importance indiquée pondère chaque question (faible ×0,5, moyenne ×1, forte ×2). Le nombre de questions comparables est toujours indiqué. En dessous de ${MIN_COMMON}, le résultat est signalé comme indicatif. Les candidats sont classés par proximité ; ceux qui ont trop peu de questions comparables sont présentés à part, sans classement. Le radar présélectionne les deux plus proches sur une base suffisante.</p>
   <h2>Limites de cette version</h2>
@@ -411,6 +429,8 @@ window.addEventListener('hashchange', route);
     $app.innerHTML = '<p class="loading">Impossible de charger les données. Ouvrez le site depuis un serveur web (et non directement depuis un fichier).</p>'; return;
   }
   load();
+  D.baseQuestions = D.questions;
+  D.questions = orderQuestions(D.baseQuestions);
   document.getElementById('foot-version').textContent = `Version ${D.version.version} · ${frDate(D.version.date)}`;
   counter('GET');
   route();
