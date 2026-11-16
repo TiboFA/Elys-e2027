@@ -107,6 +107,13 @@ new = [
     ("q112", "defense", -1, "Les pays européens doivent acheter en priorité des armements produits en Europe.", "Une part importante des équipements militaires achetés en Europe vient des États-Unis."),
     ("q113", "defense", -1, "L'Europe doit construire sa propre défense, sans dépendre des États-Unis.", "La sécurité de l'Europe repose largement sur l'OTAN, dont les États-Unis sont le premier contributeur."),
     ("q114", None, 1, "La réserve militaire doit être fortement augmentée, par exemple sous la forme d'une garde nationale.", "La France compte quelques dizaines de milliers de réservistes opérationnels."),
+    ("q115", "societe", -1, "Le cannabis doit être légalisé et sa vente encadrée par l'État.", "L'usage de cannabis est un délit en France ; plusieurs pays l'ont légalisé."),
+    ("q116", "societe", -1, "Le changement de genre (état civil, parcours médical) doit être facilité.", "Le changement de la mention du sexe à l'état civil passe aujourd'hui par un tribunal."),
+    ("q117", "societe", 1, "Il faut interdire les organisations islamistes comme les Frères musulmans et fermer les mosquées radicales.", "Une loi de 2021 contre le séparatisme permet déjà de dissoudre des associations et de fermer des lieux de culte."),
+    ("q118", "societe", -1, "Les spectacles avec animaux sauvages (cirques, delphinariums) doivent être interdits.", "Une loi de 2021 prévoit leur interdiction progressive, avec des délais de plusieurs années."),
+    ("q119", "societe", 1, "L'école doit transmettre en priorité l'histoire de France et un récit national commun.", "Les programmes d'histoire combinent histoire de France, de l'Europe et du monde."),
+    ("q120", "societe", 1, "L'écriture inclusive doit être interdite dans les documents officiels et à l'école.", "Une circulaire de 2021 la proscrit déjà dans l'enseignement, sans valeur législative."),
+    ("q121", "societe", -1, "La prostitution doit être légalisée et encadrée.", "Depuis 2016, l'achat d'actes sexuels est sanctionné en France, pas leur vente."),
 ]
 for i, a, s, e, c in new:
     Q.setdefault(i, {"id": i, "axe": a, "sens": s, "enonce": e, "contexte": c})
@@ -140,6 +147,7 @@ waves = [
     ["q83", "q86", "q89", "q94", "q97", "q102", "q103"],
     ["q104", "q105", "q106", "q107", "q108"],
     ["q109", "q110", "q111", "q112", "q113", "q114"],
+    ["q115", "q116", "q117", "q118", "q119", "q120", "q121"],
 ]
 out = []
 for k, w in enumerate(waves, 1):

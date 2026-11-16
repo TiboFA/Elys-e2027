@@ -7125,5 +7125,291 @@
   },
   "note": "Sous commandement civil, avec abrogation du service militaire volontaire.",
   "statut": "propose"
+ },
+ {
+  "question": "q115",
+  "candidat": "branco",
+  "score": 2,
+  "citation": "accompagnée d’une dépénalisation de l’usage de toute drogue",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q115",
+  "candidat": "glucksmann",
+  "score": 1,
+  "citation": "notamment la question de la légalisation du cannabis",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Question renvoyée à une convention citoyenne.",
+  "statut": "propose"
+ },
+ {
+  "question": "q115",
+  "candidat": "melenchon",
+  "score": 1,
+  "citation": "C’est une affaire de santé publique ! L’heure est venue de changer de stratégie",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre4",
+   "consulte": "2026-11-16"
+  },
+  "note": "Approche de santé publique, sans légalisation explicite dans cet extrait.",
+  "statut": "propose"
+ },
+ {
+  "question": "q115",
+  "candidat": "philippe",
+  "score": -2,
+  "citation": "La saisie de l’argent des trafiquants et des amendes plus fortes pour les consommateurs",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/securite",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q116",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "Déjudiciariser le changement de sexe à l’état civil en le rendant libre et gratuit devant un officier d’état civil",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre2",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q116",
+  "candidat": "kazib",
+  "score": 2,
+  "citation": "Avortement, PMA, transitions libres et gratuits.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://anasse2027.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Premières mesures de campagne.",
+  "statut": "propose"
+ },
+ {
+  "question": "q116",
+  "candidat": "nda",
+  "score": -1,
+  "citation": "Interdire définitivement les transitions de genre médicales chez les mineurs.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/famille/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Vise les mineurs.",
+  "statut": "propose"
+ },
+ {
+  "question": "q117",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "Édouard Philippe veut combattre l’islamisme et éradiquer les Frères musulmans et les organisations qui y sont affiliées",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/securite",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q117",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "la fermeture immédiate des mosquées fondamentalistes",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/immigration-et-assimilation/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q117",
+  "candidat": "lisnard",
+  "score": 2,
+  "citation": "interdiction des Frères musulmans, contrôle des écoles hors contrat, expulsion des",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/securite/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q117",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "une législation spécifique visant les idéologies islamistes",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q117",
+  "candidat": "retailleau",
+  "score": 1,
+  "citation": "Faire respecter la laïcité, sans rien céder à l’islamisme",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/09/LR_Ecole_vF.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Livret École des Républicains.",
+  "statut": "propose"
+ },
+ {
+  "question": "q117",
+  "candidat": "melenchon",
+  "score": -1,
+  "citation": "Abroger les mesures liberticides de la loi dite « contre le séparatisme » et le contrat d’engagement républicain",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre4",
+   "consulte": "2026-11-16"
+  },
+  "note": "Opposé à la loi de 2021 contre le séparatisme.",
+  "statut": "propose"
+ },
+ {
+  "question": "q118",
+  "candidat": "melenchon",
+  "score": 2,
+  "citation": "exploitation des animaux sauvages dans les cirques et les delphinariums",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/pour-une-bifurcation-ecologique-et-sociale/chapitre3",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q118",
+  "candidat": "markovic",
+  "score": 2,
+  "citation": "Interdire la détention d’animaux dans les cirques et autres spectacles.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://parti-animaliste.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme publié par le Parti animaliste, rédigé pour le quinquennat 2022-2027.",
+  "statut": "propose"
+ },
+ {
+  "question": "q119",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "Elle doit transmettre une culture commune, enseigner l’histoire de France, sa langue, ses principes.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q119",
+  "candidat": "zemmour",
+  "score": 2,
+  "citation": "Rétablir l’exigence, le mérite et la transmission de notre histoire et de notre culture.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.ericzemmour.fr/ressources/tracts/avenir-est-a-nous.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Tract de campagne d'octobre 2026.",
+  "statut": "propose"
+ },
+ {
+  "question": "q119",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "permettant à tous de se familiariser avec le récit national",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/culture-patrimoine/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q120",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Interdire l’écriture inclusive dans tout document administratif et son utilisation dans le matériel pé-dagogique et les sujets d’examen.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/enseignement-superieur/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q121",
+  "candidat": "branco",
+  "score": 1,
+  "citation": "Une légalisation de la prostitution adulte, la recréation de maisons closes sur le modèle allemand",
+  "niveau": "programme",
+  "source": {
+   "url": "https://ruches.org/le-projet",
+   "consulte": "2026-11-16"
+  },
+  "note": "Option soumise à une assemblée constituante, parmi d'autres.",
+  "statut": "propose"
+ },
+ {
+  "question": "q121",
+  "candidat": "melenchon",
+  "score": -2,
+  "citation": "Abolir la prostitution, garantir la dignité de la personne",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/mettre-en-securite-sociale/chapitre3",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q121",
+  "candidat": "roussel",
+  "score": -2,
+  "citation": "pour l’abolition de la prostitution",
+  "niveau": "programme",
+  "source": {
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Texte du 40e congrès du PCF.",
+  "statut": "propose"
  }
 ]

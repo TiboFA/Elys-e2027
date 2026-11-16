@@ -920,5 +920,61 @@
   "contexte": "La France compte quelques dizaines de milliers de réservistes opérationnels.",
   "theme": "Défense nationale",
   "serie": 15
+ },
+ {
+  "id": "q115",
+  "axe": "societe",
+  "sens": -1,
+  "enonce": "Le cannabis doit être légalisé et sa vente encadrée par l'État.",
+  "contexte": "L'usage de cannabis est un délit en France ; plusieurs pays l'ont légalisé.",
+  "serie": 16
+ },
+ {
+  "id": "q116",
+  "axe": "societe",
+  "sens": -1,
+  "enonce": "Le changement de genre (état civil, parcours médical) doit être facilité.",
+  "contexte": "Le changement de la mention du sexe à l'état civil passe aujourd'hui par un tribunal.",
+  "serie": 16
+ },
+ {
+  "id": "q117",
+  "axe": "societe",
+  "sens": 1,
+  "enonce": "Il faut interdire les organisations islamistes comme les Frères musulmans et fermer les mosquées radicales.",
+  "contexte": "Une loi de 2021 contre le séparatisme permet déjà de dissoudre des associations et de fermer des lieux de culte.",
+  "serie": 16
+ },
+ {
+  "id": "q118",
+  "axe": "societe",
+  "sens": -1,
+  "enonce": "Les spectacles avec animaux sauvages (cirques, delphinariums) doivent être interdits.",
+  "contexte": "Une loi de 2021 prévoit leur interdiction progressive, avec des délais de plusieurs années.",
+  "serie": 16
+ },
+ {
+  "id": "q119",
+  "axe": "societe",
+  "sens": 1,
+  "enonce": "L'école doit transmettre en priorité l'histoire de France et un récit national commun.",
+  "contexte": "Les programmes d'histoire combinent histoire de France, de l'Europe et du monde.",
+  "serie": 16
+ },
+ {
+  "id": "q120",
+  "axe": "societe",
+  "sens": 1,
+  "enonce": "L'écriture inclusive doit être interdite dans les documents officiels et à l'école.",
+  "contexte": "Une circulaire de 2021 la proscrit déjà dans l'enseignement, sans valeur législative.",
+  "serie": 16
+ },
+ {
+  "id": "q121",
+  "axe": "societe",
+  "sens": -1,
+  "enonce": "La prostitution doit être légalisée et encadrée.",
+  "contexte": "Depuis 2016, l'achat d'actes sexuels est sanctionné en France, pas leur vente.",
+  "serie": 16
  }
 ]
