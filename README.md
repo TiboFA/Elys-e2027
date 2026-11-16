@@ -43,3 +43,7 @@ Voir `tools/nas-server/README.md` : serveur Docker pour NAS (statistiques anonym
 ## Questions d'actualité
 
 Quelques questions hors radar portent sur un sujet récent qui a fait réagir des candidats de camps différents. Chacune a une date `jusqu_au` dans `tools/build_questions.py` (dictionnaire `ACTU`) : passée cette date, le site ne la pose plus. Avant chaque mise à jour, lancer `python3 tools/check_actualite.py` : il signale les questions échues ou proches de l'échéance, moins de trois questions actives, ou des positions trop peu nombreuses / d'un seul camp. Remplacer une question = l'ajouter dans `build_questions.py` et `gen.py` (positions citées et vérifiées), puis relancer les deux scripts.
+
+## Relecture des positions
+
+Ouvrir `tools/relecture.html` (serveur local : `python3 -m http.server`, puis `/tools/relecture.html`). La page présente les questions une à une : énoncé et contexte à valider ou reformuler, puis chaque position citée (citation, niveau de source, lien) à valider, corriger (nouveau score) ou rejeter. Les décisions restent dans le navigateur ; « Exporter » produit `relecture.json`, à placer dans `data/`. Ensuite : `python3 tools/apply_relecture.py` (option `--dry` pour simuler) passe les positions en `valide`, applique les corrections, archive les rejets dans `data/positions_rejetees.json` et liste les questions à reformuler (à reporter dans `tools/build_questions.py`). Le script est idempotent : le relancer après tout `tools/gen.py`.
