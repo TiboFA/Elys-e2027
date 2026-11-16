@@ -6852,5 +6852,278 @@
   },
   "note": "Texte du 40e congrès du PCF, à propos d'Israël.",
   "statut": "propose"
+ },
+ {
+  "question": "q109",
+  "candidat": "nda",
+  "score": -2,
+  "citation": "le processus d’élargissement irrationnel sans fin à des pays n’ayant pas les mêmes normes sociales et environnementales a entraîné un nivellement général par le bas",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/affaires-europeennes/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q109",
+  "candidat": "philippot",
+  "score": -1,
+  "citation": "l’élargissement qui se poursuit à l’Est et les prétentions politiques de plus en plus folles de l’UE",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q109",
+  "candidat": "melenchon",
+  "score": -1,
+  "citation": "droit de veto sur les accords de libre-échange ou projet d’élargissement",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "Veto possible de la France sur tout élargissement.",
+  "statut": "propose"
+ },
+ {
+  "question": "q109",
+  "candidat": "ruffin",
+  "score": -1,
+  "citation": "Avec les élargissements à l’Europe de l’Est, avec l’entrée de la Chine dans l’OMC, avec les délocalisations en série",
+  "niveau": "programme",
+  "source": {
+   "url": "https://nouspresident.fr/pour-proteger-notre-industrie-relocaliser-100-produits-strategiques/",
+   "consulte": "2026-11-16"
+  },
+  "note": "Critique des effets des élargissements passés.",
+  "statut": "propose"
+ },
+ {
+  "question": "q110",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Abroger la directive dite « travailleurs détachés » qui légalise le travail low-cost et la concurrence déloyale des pays européens de l’Est et du Sud",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/economie-travail/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q110",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "Mettre fin à l’immigration de travail et à la directive européenne des travailleurs détachés.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q110",
+  "candidat": "melenchon",
+  "score": 1,
+  "citation": "De la directive sur les travailleurs détachés, qui tire vers le bas les systèmes de sécurité sociale des États membres",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/un-monde-ordonne/chapitre1",
+   "consulte": "2026-11-16"
+  },
+  "note": "Citée parmi les règles européennes auxquelles la France pourrait faire objection.",
+  "statut": "propose"
+ },
+ {
+  "question": "q111",
+  "candidat": "philippot",
+  "score": 2,
+  "citation": "Supprimer la PAC, ses normes absurdes (tel que le taux de jachère obligatoire) et ses contraintes administratives.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Projet pour la France des Patriotes (2026).",
+  "statut": "propose"
+ },
+ {
+  "question": "q111",
+  "candidat": "retailleau",
+  "score": -2,
+  "citation": "à laquelle nous nous opposerons fermement dans le cadre de la future PAC",
+  "niveau": "programme",
+  "source": {
+   "url": "https://republicains.fr/wp-content/uploads/2026/03/LR_Agriculture.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Opposition à une « renationalisation » de la PAC, livret Agriculture des Républicains.",
+  "statut": "propose"
+ },
+ {
+  "question": "q111",
+  "candidat": "attal",
+  "score": -1,
+  "citation": "Renforcer la PAC",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q111",
+  "candidat": "glucksmann",
+  "score": -1,
+  "citation": "Réformer la PAC pour soutenir l’emploi et le revenu agricole",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q112",
+  "candidat": "lepen",
+  "score": 2,
+  "citation": "favoriser une préférence européenne dans les achats militaires effectués par les États européens",
+  "niveau": "programme",
+  "source": {
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "Programme RN de 2024.",
+  "statut": "propose"
+ },
+ {
+  "question": "q112",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Conditionner la préférence européenne systématique dans les appels d’offres et contrats d’équipement lancés en matière militaire par les états européens.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/defense/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q112",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "Des armements « made in Europe » : au moins 1 % de la richesse nationale des pays européens de l’OTAN consacrée à des équipements fabriqués en Europe.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/defense",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q112",
+  "candidat": "attal",
+  "score": 2,
+  "citation": "Une préférence européenne dans la commande publique de défense",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q112",
+  "candidat": "glucksmann",
+  "score": 2,
+  "citation": "réservant les investissements européens aux productions européennes (EDIP)",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q113",
+  "candidat": "glucksmann",
+  "score": 2,
+  "citation": "nous ne pouvons plus compter sur le parapluie américain et que nous devons assurer nous-mêmes notre propre sécurité",
+  "niveau": "programme",
+  "source": {
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q113",
+  "candidat": "attal",
+  "score": 1,
+  "citation": "Le parapluie américain s'effrite et les États-Unis tournent progressivement le dos à l'Europe.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://attalpresident.fr/programme/mesures/dome-de-fer-europeen",
+   "consulte": "2026-11-16"
+  },
+  "note": "Constat à l'appui d'un « dôme de fer » européen.",
+  "statut": "propose"
+ },
+ {
+  "question": "q114",
+  "candidat": "philippe",
+  "score": 2,
+  "citation": "Un service militaire volontaire de 50 000 jeunes par an et un objectif de 250 000 réservistes.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.edouardphilippe.fr/programme/defense",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q114",
+  "candidat": "nda",
+  "score": 2,
+  "citation": "Transformer la réserve opérationnelle en une véritable garde nationale de 100 000 réservistes.",
+  "niveau": "programme",
+  "source": {
+   "url": "https://www.debout-la-france.fr/projet/defense/",
+   "consulte": "2026-11-16"
+  },
+  "note": "",
+  "statut": "propose"
+ },
+ {
+  "question": "q114",
+  "candidat": "melenchon",
+  "score": 1,
+  "citation": "Créer une garde nationale et régionale sous commandement civil",
+  "niveau": "programme",
+  "source": {
+   "url": "https://melenchon2027.fr/programme/livre/le-gout-du-futur-aux-nouvelles-frontieres-de-l-humanite/chapitre2",
+   "consulte": "2026-11-16"
+  },
+  "note": "Sous commandement civil, avec abrogation du service militaire volontaire.",
+  "statut": "propose"
  }
 ]

@@ -101,6 +101,12 @@ new = [
     ("q106", "defense", 1, "Les sanctions contre la Russie doivent être levées.", "L'Union européenne applique des sanctions contre la Russie depuis l'invasion de l'Ukraine en 2022."),
     ("q107", None, 1, "L'Union européenne doit suspendre son accord d'association avec Israël.", "Cet accord encadre les relations commerciales et politiques entre l'UE et Israël depuis 2000."),
     ("q108", None, 1, "Les exportations d'armes françaises doivent être restreintes et contrôlées par le Parlement.", "La France est l'un des premiers exportateurs d'armes au monde ; les autorisations relèvent aujourd'hui du gouvernement."),
+    ("q109", "europe", -1, "L'Union européenne doit continuer à s'élargir (Ukraine, Moldavie, Balkans).", "Plusieurs pays sont officiellement candidats à l'adhésion, dont l'Ukraine et la Moldavie depuis 2022."),
+    ("q110", "europe", 1, "La directive européenne sur les travailleurs détachés doit être abrogée ou cesser de s'appliquer en France.", "Elle permet à une entreprise d'un autre pays de l'UE d'envoyer temporairement ses salariés en France, avec des cotisations payées dans le pays d'origine."),
+    ("q111", "europe", 1, "La politique agricole commune (PAC) doit être remplacée par une politique agricole nationale.", "La PAC est le premier poste du budget européen ; les agriculteurs français en sont les principaux bénéficiaires."),
+    ("q112", "defense", -1, "Les pays européens doivent acheter en priorité des armements produits en Europe.", "Une part importante des équipements militaires achetés en Europe vient des États-Unis."),
+    ("q113", "defense", -1, "L'Europe doit construire sa propre défense, sans dépendre des États-Unis.", "La sécurité de l'Europe repose largement sur l'OTAN, dont les États-Unis sont le premier contributeur."),
+    ("q114", None, 1, "La réserve militaire doit être fortement augmentée, par exemple sous la forme d'une garde nationale.", "La France compte quelques dizaines de milliers de réservistes opérationnels."),
 ]
 for i, a, s, e, c in new:
     Q.setdefault(i, {"id": i, "axe": a, "sens": s, "enonce": e, "contexte": c})
@@ -110,7 +116,7 @@ for i, a, s, e, c in new:
 AXE_V11 = {"q08": "defense", "q23": "defense", "q24": "defense", "q67": "defense"}
 HORS = {"q05": "Énergie", "q63": "Énergie", "q53": "Territoires et pouvoirs", "q54": "Territoires et pouvoirs",
         "q55": "Territoires et pouvoirs", "q56": "Enfance et numérique", "q75": "Enfance et numérique",
-        "q107": "International", "q108": "International"}
+        "q107": "International", "q108": "International", "q114": "Défense nationale"}
 for qid, ax in AXE_V11.items():
     Q[qid]["axe"] = ax
 for qid, th in HORS.items():
@@ -133,6 +139,7 @@ waves = [
     ["q82", "q85", "q88", "q91", "q93", "q96", "q99", "q101"],
     ["q83", "q86", "q89", "q94", "q97", "q102", "q103"],
     ["q104", "q105", "q106", "q107", "q108"],
+    ["q109", "q110", "q111", "q112", "q113", "q114"],
 ]
 out = []
 for k, w in enumerate(waves, 1):
