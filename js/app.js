@@ -281,7 +281,7 @@ function saysBlock(q) {
       <div class="body">
         <blockquote>« ${esc(it.citation)} »</blockquote>
         ${it.note ? `<p class="small muted">${esc(it.note)}</p>` : ''}
-        <p class="src"><span class="lvl">${NIVEAU_LABEL[it.niveau]}</span><a href="${esc(it.source.url)}" target="_blank" rel="noopener noreferrer">${esc(media)}</a>, consultée le ${frDate(it.source.consulte)}</p>
+        <p class="src"><span class="lvl">${NIVEAU_LABEL[it.niveau]}</span><a href="${esc(it.source.url)}" target="_blank" rel="noopener noreferrer">${esc(media)}</a>, consultée le ${frDate(it.source.consulte)}${it.statut === 'valide' ? '' : ' · <i>lecture pas encore relue</i>'}</p>
         <a class="report" href="#/contact?q=${q.id}&c=${c.id}">Signaler une erreur sur cette position</a>
       </div></details>`;
   }).join('');
@@ -407,7 +407,7 @@ function viewMethod() {
   <h2>Comment une position est établie</h2>
   <ul><li>Chaque position repose sur une citation exacte, vérifiée mot pour mot dans le document source, avec lien et date de consultation.</li>
   <li>Hiérarchie des sources : un programme publié pèse plus qu'une déclaration du candidat, qui pèse plus que celle d'un proche. Si plusieurs sources existent, la plus haute est retenue.</li>
-  <li>Le passage de la citation à une note de -2 à +2 est une lecture d'analyste, affichée à côté de la citation et validée par un humain avant publication.</li>
+  <li>Le passage de la citation à une note de -2 à +2 est une lecture d'analyste, affichée à côté de la citation. Chaque position est relue une à une par un humain : tant qu'elle porte la mention « lecture pas encore relue », seule la citation et sa source font foi, et la note est une proposition.</li>
   <li>Quand aucune source ne traite le sujet, l'outil l'écrit : cela signifie « non trouvé dans les sources consultées ».</li></ul>
   <h2>Séries et précision du graphe</h2>
   <p>Les questions sont groupées en séries d'une dizaine : chacune comporte une question par axe du radar, plus une question hors radar tant qu'il en reste. Quel que soit le nombre de réponses, les ${D.axes.length} axes restent équilibrés. L'ordre est tiré au sort pour chaque appareil, dans l'ordre des thèmes comme dans le choix des questions ; les questions où le plus de candidats ont une position documentée sont proposées en premier. Le graphe s'affiche à partir de ${MIN_RESULTS} réponses avec un avis sur les thèmes du radar. Un thème où vous n'avez répondu qu'à une question est signalé comme indicatif.</p>
@@ -419,7 +419,7 @@ function viewMethod() {
   <li>Le programme des Écologistes n'a pas pu être lu automatiquement : les positions de Marine Tondelier viennent de la presse.</li>
   <li>${nd.length} candidats déclarés n'ont pas encore de position sourcée : ${nd.map((c) => esc(c.nom)).join(', ')}.</li></ul>
   <h2>Mises à jour</h2>
-  <p>Questions, candidats et positions sont revus régulièrement. Une veille automatisée peut proposer des ajouts, mais rien n'est publié sans validation humaine. Chaque version est datée.</p>
+  <p>Questions, candidats et positions sont revus régulièrement. Une veille automatisée propose des ajouts, qu'un humain relit ensuite ; la relecture est en cours et les positions pas encore relues sont publiées avec une mention explicite. Chaque version est datée.</p>
   <ul>${hist}</ul>
   <h2>Vos données</h2>
   <p>Il n'y a ni compte ni suivi. Vos réponses sont enregistrées uniquement dans le navigateur de cet appareil et ne sont envoyées nulle part. Seul un compteur global du nombre de simulations peut exister, sans aucune information sur les réponses.</p></div>`;
