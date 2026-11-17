@@ -2,7 +2,7 @@
 # Prépare une copie propre du projet pour un nouveau dépôt, SANS historique ni trace d'identité.
 #
 # Usage :
-#   tools/make-clean-copy.sh <dossier-destination> <pseudonyme-github> <url-du-site> [url-api]
+#   [EMAIL=<id>+<pseudo>@users.noreply.github.com] tools/make-clean-copy.sh <dossier-destination> <pseudonyme-github> <url-du-site> [url-api]
 # Exemple :
 #   tools/make-clean-copy.sh ~/mon-candidat elysee-2027 https://elysee-2027.github.io/mon-candidat https://api.mon-domaine.fr
 #
@@ -13,8 +13,9 @@
 #   - ne pousse rien : vous poussez vous-même, depuis votre compte dédié.
 set -euo pipefail
 
-if [ $# -lt 3 ]; then sed -n '2,12p' "$0"; exit 1; fi
+if [ $# -lt 3 ]; then sed -n "2,13p" "$0"; exit 1; fi
 DEST="$1"; PSEUDO="$2"; SITE="${3%/}"; API="${4:-}"
+EMAIL="${EMAIL:-${PSEUDO}@users.noreply.github.com}"   # adresse « noreply » de GitHub (Settings > Emails), de la forme 12345+pseudo@users.noreply.github.com
 SRC="$(cd "$(dirname "$0")/.." && pwd)"
 
 if [ -e "$DEST" ] && [ -n "$(ls -A "$DEST" 2>/dev/null)" ]; then echo "Le dossier $DEST n'est pas vide." >&2; exit 1; fi
@@ -39,15 +40,15 @@ PY
 cd "$DEST"
 git init -q -b main
 git config user.name "$PSEUDO"
-git config user.email "${PSEUDO}@users.noreply.github.com"
+git config user.email "$EMAIL"
 git add -A
-GIT_AUTHOR_NAME="$PSEUDO" GIT_AUTHOR_EMAIL="${PSEUDO}@users.noreply.github.com" \
-GIT_COMMITTER_NAME="$PSEUDO" GIT_COMMITTER_EMAIL="${PSEUDO}@users.noreply.github.com" \
+GIT_AUTHOR_NAME="$PSEUDO" GIT_AUTHOR_EMAIL="$EMAIL" \
+GIT_COMMITTER_NAME="$PSEUDO" GIT_COMMITTER_EMAIL="$EMAIL" \
   git commit -q -m "Première publication"
 
 echo
 echo "Copie propre prête dans : $DEST"
-echo "Auteur du seul commit    : $PSEUDO <${PSEUDO}@users.noreply.github.com>"
+echo "Auteur du seul commit    : $PSEUDO <$EMAIL>"
 echo
 echo "Pour publier (depuis votre compte dédié) :"
 echo "  cd $DEST"
